@@ -1,0 +1,60 @@
+{
+    "teams": {
+        "Halmstad": "Halmstad BK",
+        "IK Sirius FK": "IK Sirius",
+        "Hammarby": "Hammarby IF"
+    },
+    "year": 2018,
+    "squad": {
+        "01": "Johan Wiland",
+        "02": "Simon Sandberg",
+        "03": "Neto Borges",
+        "04": "Bjørn Paulsen",
+        "05": "David Fällman",
+        "06": "Jiloan Hamad",
+        "07": "Imad Khalili",
+        "08": "Jeppe Andersen",
+        "09": "Sander Svendsen",
+        "10": "Kennedy Bakirgioglu",
+        "11": "Arnór Smárason",
+        "13": "Mads Fenger",
+        "14": "Pa Dibba",
+        "15": "Marcus Degerlund",
+        "16": "Leo Bengtsson",
+        "17": "Dusan Jajic",
+        "18": "Rebin Asaad",
+        "19": "Junior",
+        "21": "Oscar Krusnell",
+        "22": "Muamer Tankovic",
+        "25": "Davor Blazevic",
+        "26": "Erkan Zengin",
+        "27": "Benny Lekström",
+        "28": "Gershon Koffie",
+        "77": "Mats Solheim",
+        "40": "Nicola Djurdjic"
+    },
+    "shortnames": {
+        "10": "Kennedy"
+    },
+    "matchIds": [
+	3791290,
+	3791292,
+	3791294,
+        3795745
+    ],
+    "sc": [
+	3791294,
+	3791292,
+	3791290
+    ],
+    "sc_map": {
+	"90":"06",
+	"23":"15",
+	"30":"03",
+	"34":"16",
+	"06":"21"
+    }
+    
+
+
+}
