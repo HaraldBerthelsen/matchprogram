@@ -91,8 +91,11 @@ class Season(object):
 
         
     def getPlayerStatistics(self, nr):
+        ignoreCupGames = True
         ps = PlayerStats(nr)        
         for match in self.matches:
+            if ignoreCupGames and match.matchid in self.info["sc"]:
+                continue
             ps_match = match.getPlayerStats(nr)
             self.sumPlayerStats(ps, ps_match)
             if ps_match.get("start") or ps_match.get("sub_in"):
