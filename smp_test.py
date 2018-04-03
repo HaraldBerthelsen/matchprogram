@@ -142,7 +142,7 @@ class Season(object):
         #Finns detta summerat för varje spelare på svensk fotboll?
 
         print("\nSpelarstatistik\n")    
-        print("%s\t%s\t%s (%s)\t%s\t%s\t%s\t%s\t%s" % ("nr","spelare","matcher","mål","skott","skott på mål","orsakat frispark","gula kort","röda kort"))
+        print("%s\t%-9s\t%s (%s)\t%s\t%s\t%s\t%s\t%s" % ("nr","spelare","matcher","mål","skott","skott på mål","orsakat frispark","gula kort","röda kort"))
 
         for nr in sorted(self.info["squad"]):
             shortname = self.getShortname(nr)
@@ -155,7 +155,7 @@ class Season(object):
             causedfreekicks = stats.get("orf")
             yellow_cards = stats.get("yellow_card")
             red_cards = stats.get("red_card")
-            print("%s\t%s\t%d (%d)\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,shots,shotsongoal,causedfreekicks,yellow_cards,red_cards))
+            print("%s\t%-9s\t%d (%d)\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,shots,shotsongoal,causedfreekicks,yellow_cards,red_cards))
 
     
         
@@ -254,9 +254,8 @@ class Match(object):
         date_to_print = "%s/%s" % (day, month)
 
 
-        match_stats_to_print = "%s\t%s\t%s-%s\t%s (%s)" % (date_to_print, opponent, bajen_score, opponent_score, spectators, spectators_away)
+        match_stats_to_print = "%s\t%-9s\t%s-%s\t%-6s (%s)" % (date_to_print, opponent, bajen_score, opponent_score, spectators, spectators_away)
 
-        #season = Season(2018)
 
         player_stats_to_print = []
     #    for player in sorted(players):
