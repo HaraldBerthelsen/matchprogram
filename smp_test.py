@@ -21,15 +21,16 @@ import util
 #sen med 2018
 #matches = [3795745]
 
-#KOLLA blir fel med cupmatcherna eftersom numrena inte stämmer, Hamad, Borges, Degerlund, Bengtsson, Krusnell
+
 
 
 def main():
     year = 2018
+    #TEST TODO rätt trupp! year = 2017
     season = Season(year)
     season.loadJson("season_%d_info.json" % year)
     #Uppdatera från SF och spara til fil
-    season.loadMatchesFromSF()
+    #season.loadMatchesFromSF()
     season.loadMatchesFromJson()
     #Skriv ut statistik för senast spelade
     #season.printLastPlayedMatchStatistics()
@@ -41,6 +42,7 @@ def main():
 class Season(object):
 
     def __init__(self, year):
+        self.year = year
         self.info = {}
         self.matches = []
         
@@ -49,14 +51,14 @@ class Season(object):
         for matchid in self.info["matchIds"]:
             match = Match(nr, matchid)
             match.loadFromSF(self)
-            match.saveJson("matchid_%d.json" % matchid)
+            match.saveJson("%s/matchid_%d.json" % (self.year, matchid))
             nr += 1
 
     def loadMatchesFromJson(self):
         nr = 1
         for matchid in self.info["matchIds"]:
             match = Match(nr, matchid)
-            match.loadJson("matchid_%d.json" % matchid)
+            match.loadJson("%s/matchid_%d.json" % (self.year,matchid))
             self.matches.append(match)
             nr += 1
 

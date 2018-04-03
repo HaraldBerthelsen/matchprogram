@@ -89,7 +89,11 @@ def getPlayers(game_info, bajen_is_home_team,cup=False, cup_mapping=[]):
 
     for hif_goal in hif_goals:
         time = hif_goal.find("span", attrs={"class":"time"}).text
-        player = hif_goal.a.text
+        #This is apparently not always true TODO
+        try:
+            player = hif_goal.a.text
+        except:
+            pass
         #print("%s\t%s" % (time,player))
 
 
@@ -155,26 +159,28 @@ def getPlayers(game_info, bajen_is_home_team,cup=False, cup_mapping=[]):
     playerstats_section = game_info.find("div", attrs={"class":"playerstats-section"})
     #It's not always there - not for the cup games apparently
     if playerstats_section:
-    
-        hifteam = playerstats_section.find("div",  attrs={"class":stats_class})
-        tbody = hifteam.find("tbody")
-        player_stats_table = tbody.find_all("tr")
-        for player_stat_tr in player_stats_table:
-            tds = player_stat_tr.find_all("td")
-            nr = int(tds[0].span.text)
-            number = "%02d" % nr
-            if cup and number in cup_mapping:
-                number = cup_mapping[number]
-            #name = tds[1]
-            #goals = [tds2]
 
-            players[number]["pas"] = int(tds[3].text)
-            players[number]["sko"] = int(tds[4].text)
-            players[number]["sks"] = int(tds[5].text)
-            players[number]["off"] = int(tds[6].text)
-            players[number]["orf"] = int(tds[7].text)
-            players[number]["tif"] = int(tds[8].text)
-    
+        try:
+            hifteam = playerstats_section.find("div",  attrs={"class":stats_class})
+            tbody = hifteam.find("tbody")
+            player_stats_table = tbody.find_all("tr")
+            for player_stat_tr in player_stats_table:
+                tds = player_stat_tr.find_all("td")
+                nr = int(tds[0].span.text)
+                number = "%02d" % nr
+                if cup and number in cup_mapping:
+                    number = cup_mapping[number]
+                #name = tds[1]
+                #goals = [tds2]
+
+                players[number]["pas"] = int(tds[3].text)
+                players[number]["sko"] = int(tds[4].text)
+                players[number]["sks"] = int(tds[5].text)
+                players[number]["off"] = int(tds[6].text)
+                players[number]["orf"] = int(tds[7].text)
+                players[number]["tif"] = int(tds[8].text)
+        except:
+            pass
         
 
     return players
