@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import sys, re, json
-import util
+import util, corrections
 
 #KOLLA
 #Spelartruppen finns på svf men utan nummer. Nummer kan ju ändras också.. Gör en egen lista med nummer och det namn som vi vill ha i programmet, en del namn är olika på svf.
@@ -26,11 +26,14 @@ import util
 
 def main():
     year = 2018
-    #TEST TODO rätt trupp! year = 2017
+    #TEST TODO rätt trupp!
+    #year = 2017
     season = Season(year)
     season.loadJson("season_%d_info.json" % year)
     #Uppdatera från SF och spara til fil
     #season.loadMatchesFromSF()
+    #season.loadLatestMatchFromSF()
+
     season.loadMatchesFromJson()
     #Skriv ut statistik för senast spelade
     #season.printLastPlayedMatchStatistics()
@@ -48,17 +51,27 @@ class Season(object):
         
     def loadMatchesFromSF(self):
         nr = 1
+        matchid = self.info["matchIds"][-1]
+        match = Match(nr, matchid)
+        match.loadFromSF(self)
+        match.saveJson("%s/matchid_%d.json" % (self.year, matchid))
+
+
+    def loadLatestMatchFromSF(self):
+        nr = 1
         for matchid in self.info["matchIds"]:
             match = Match(nr, matchid)
             match.loadFromSF(self)
             match.saveJson("%s/matchid_%d.json" % (self.year, matchid))
             nr += 1
 
+            
     def loadMatchesFromJson(self):
         nr = 1
         for matchid in self.info["matchIds"]:
             match = Match(nr, matchid)
             match.loadJson("%s/matchid_%d.json" % (self.year,matchid))
+            match = corrections.correct(self.year, matchid, match)
             self.matches.append(match)
             nr += 1
 
@@ -102,6 +115,19 @@ class Season(object):
             self.sumPlayerStats(ps, ps_match)
             if ps_match.get("start") or ps_match.get("sub_in"):
                 ps.set("matches", ps.get("matches") + 1)
+            if ps_match.get("start"):
+                minutes_played = 90
+                if ps_match.get("sub_out"):
+                    #TODO exact time
+                    time_event = ps_match.get("sub_out")
+                    minutes_played = minutes_played-(90-time_event)
+                ps.set("minutes_played", ps.get("minutes_played")+minutes_played)
+            if ps_match.get("sub_in"):
+                #TODO exect time
+                time_event = ps_match.get("sub_in")
+                minutes_played = 90-time_event
+                ps.set("minutes_played", ps.get("minutes_played")+minutes_played)
+                
         return ps
 
     def sumPlayerStats(self, s1, s2):        
@@ -120,7 +146,7 @@ class Season(object):
             match.printMatchStatistics(self)
 
     def printMatchStatisticsHeader(self):
-        header_to_print = "datum\tmotståndare\tres\tåskådare" 
+        header_to_print = "datum\tmotståndare        \tres\tåskådare" 
         for player in sorted(self.info["squad"]):
             initials = self.getPrintInitials(player)
             header_to_print += "\t%s %s" % (player,initials)
@@ -129,7 +155,7 @@ class Season(object):
         print(header_to_print)
 
             
-    def printPlayerStatistics(self):
+    def printPlayerStatisticsOLD(self):
         #2: Spelarstatistik
         #Summerat alla matcher, för varje spelare i nummerordning:
         #matcher (mål) Räknas inbytt? KOLLA
@@ -157,6 +183,59 @@ class Season(object):
             red_cards = stats.get("red_card")
             print("%s\t%-9s\t%d (%d)\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,shots,shotsongoal,causedfreekicks,yellow_cards,red_cards))
 
+    def printPlayerStatistics(self):
+        #2: Spelarstatistik
+        #Summerat alla matcher, för varje spelare i nummerordning:
+        #matcher (mål) Räknas inbytt? KOLLA
+        #skott
+        #skott på mål
+        #orsakat frispark
+        #gula kort
+        #röda kort
+        #Obs finns mer info i spelarstatistiken, ta med allting och spara!
+        #Finns detta summerat för varje spelare på svensk fotboll?
+
+        #Läs skottstatistik från msn-fil
+        #msn_file = "2018/msn_gbg_hif.txt"
+        msn_file = "2018/msn_hif_bp.txt"
+        msn_shots = {}
+        with open(msn_file) as f:
+            lines = f.readlines()
+            for line in lines:
+                #print(line)
+                info = line.split("\t")
+                nr = info[0]
+                shots = int(info[-2])
+                msn_shots[nr] = shots
+        #print(msn_shots)
+        
+        print("\nSpelarstatistik\n")    
+        #print("%s\t%-9s\t%s (%s)\t%s\t%s\t%s\t%s\t%s" % ("nr","spelare","matcher","mål","skott","skott på mål","orsakat frispark","gula kort","röda kort"))
+        print("%s\t%-9s\t%s/%s\t%s\t%s\t%s\t%s\t%s" % ("nr", "spelare", "matcher", "mål", "assist", "skott", "min", "gula","röda kort"))
+
+        for nr in sorted(self.info["squad"]):
+            shortname = self.getShortname(nr)
+            stats = self.getPlayerStatistics(nr)
+
+            matches = stats.get("matches")
+            goals = stats.get("goals")
+
+            #använd msn för skott istf svenskfotboll
+            #shots = stats.get("sko") + stats.get("spm")
+            if nr in msn_shots:
+                shots = msn_shots[nr]
+            else:
+                shots = 0
+                
+            #shotsongoal = stats.get("spm")
+            #causedfreekicks = stats.get("orf")
+            minutes_played = stats.get("minutes_played")
+            assists = stats.get("pas")
+            yellow_cards = stats.get("yellow_card")
+            red_cards = stats.get("red_card")
+            #print("%s\t%-9s\t%d (%d)\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,shots,shotsongoal,causedfreekicks,yellow_cards,red_cards))
+            print("%s\t%-9s\t%3d / %-3d\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,assists,shots,minutes_played,yellow_cards,red_cards))
+
     
         
 class Match(object):
@@ -178,6 +257,13 @@ class Match(object):
         #away_lineup
         #away_subs
 
+    def get(self, key):
+        return self.info[key]
+
+    def set(self, key, value):
+        self.info[key] = value
+
+        
     def loadFromSF(self,season):
         self.info = util.loadFromSF(self.matchid,season)
         
@@ -247,14 +333,17 @@ class Match(object):
 
 
 
-        m = re.match("^[0-9]{4}-0?([1-9]+)-0?([1-9]+)", date)
+        m = re.match("^[0-9]{4}-([0-9]+)-([0-9]+)", date)
         if m:
-            month = m.group(1)
-            day = m.group(2)
-        date_to_print = "%s/%s" % (day, month)
+            month = int(m.group(1))
+            day = int(m.group(2))
+        try:
+            date_to_print = "%d/%d" % (day, month)
+        except:
+            print("Something wrong with date '%s'" % date)
+            date_to_print = date
 
-
-        match_stats_to_print = "%s\t%-9s\t%s-%s\t%-6s (%s)" % (date_to_print, opponent, bajen_score, opponent_score, spectators, spectators_away)
+        match_stats_to_print = "%s\t%-20s\t%s-%s\t%-6s (%s)" % (date_to_print, opponent, bajen_score, opponent_score, spectators, spectators_away)
 
 
         player_stats_to_print = []
@@ -273,8 +362,9 @@ class Match(object):
                     info_to_print = "U"
                 if player_match_info["goals"] > 0:
                     info_to_print = "%s%d" % (info_to_print, player_match_info["goals"])
-                if player_match_info["yellow_card"]:
-                    info_to_print = "%s%s" % (info_to_print, "G")
+                #Skippar G för gula kort 180410
+                #if player_match_info["yellow_card"]:
+                #    info_to_print = "%s%s" % (info_to_print, "G")
                 if player_match_info["red_card"]:
                     info_to_print = "%s%s" % (info_to_print, "R")
             else:

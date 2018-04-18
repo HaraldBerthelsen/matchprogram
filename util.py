@@ -131,11 +131,11 @@ def getPlayers(game_info, bajen_is_home_team,cup=False, cup_mapping=[]):
             number = cup_mapping[number]
         goals = len(player.find_all("span",attrs={"data-symbol":"goal"}))
         if player.find("span",attrs={"data-symbol":"sub-out"}):
-            sub_out = 1
+            sub_out = int(player.find("span",attrs={"data-symbol":"sub-out"}).text[:-1])
         else:
             sub_out = 0
         if player.find("span",attrs={"data-symbol":"sub-in"}):
-            sub_in = 1
+            sub_in = int(player.find("span",attrs={"data-symbol":"sub-in"}).text[:-1])
         else:
             sub_in = 0
 
@@ -160,27 +160,30 @@ def getPlayers(game_info, bajen_is_home_team,cup=False, cup_mapping=[]):
     #It's not always there - not for the cup games apparently
     if playerstats_section:
 
-        try:
-            hifteam = playerstats_section.find("div",  attrs={"class":stats_class})
+        
+        hifteam = playerstats_section.find("div",  attrs={"class":stats_class})
+        if hifteam:
             tbody = hifteam.find("tbody")
-            player_stats_table = tbody.find_all("tr")
-            for player_stat_tr in player_stats_table:
-                tds = player_stat_tr.find_all("td")
-                nr = int(tds[0].span.text)
-                number = "%02d" % nr
-                if cup and number in cup_mapping:
-                    number = cup_mapping[number]
-                #name = tds[1]
-                #goals = [tds2]
+        else:
+            #I gbg-bajen står båda som "hometeam"..
+            tbody = playerstats_section.find_all("tbody")[1]
+            
+        player_stats_table = tbody.find_all("tr")
+        for player_stat_tr in player_stats_table:
+            tds = player_stat_tr.find_all("td")
+            nr = int(tds[0].span.text)
+            number = "%02d" % nr
+            if cup and number in cup_mapping:
+                number = cup_mapping[number]
+            #name = tds[1]
+            #goals = [tds2]
 
-                players[number]["pas"] = int(tds[3].text)
-                players[number]["sko"] = int(tds[4].text)
-                players[number]["sks"] = int(tds[5].text)
-                players[number]["off"] = int(tds[6].text)
-                players[number]["orf"] = int(tds[7].text)
-                players[number]["tif"] = int(tds[8].text)
-        except:
-            pass
+            players[number]["pas"] = int(tds[3].text)
+            players[number]["sko"] = int(tds[4].text)
+            players[number]["sks"] = int(tds[5].text)
+            players[number]["off"] = int(tds[6].text)
+            players[number]["orf"] = int(tds[7].text)
+            players[number]["tif"] = int(tds[8].text)
         
 
     return players

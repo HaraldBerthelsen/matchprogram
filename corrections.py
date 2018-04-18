@@ -1,13 +1,26 @@
 
 
-corrections = {
-    2018:{
-        3791294:[
-            (["players","09","sub_in"],69), 
-            (["players","09","sub_out"],0)
-            ]
-        }
-    }
+corrections = {}
+corrections[2018] = {}
+
+corrections[2018][3791294] = [
+    (["players","09","sub_in"],69), 
+    (["players","09","sub_out"],0)
+]
+    
+corrections[2018][3795764] = [
+    #Jeppe Andersen, inte Hamad, ska ha målpass (gbg-hif)
+    (["players","06","pas"],0), 
+    (["players","08","pas"],1)
+]
+
+corrections[2018][3795956] = [
+    #Bajen - bp
+    #Hamads pass fram till Khalilis andra mål
+    (["players", "06", "pas"], 1),
+    #Paulsen till Hamad 3-0
+    (["players", "04", "pas"], 1)
+]
 
 
 
@@ -18,7 +31,6 @@ def correct(year, matchid, match):
         for (keylist, newvalue) in corrs:
             info = updateDict(info, keylist, newvalue)
         match.info = info
-        #print(match.info["players"]["04"])
     return match
 
 def updateDict(info, keylist, newvalue):
