@@ -1,0 +1,39 @@
+
+Match- & spelarstatistik
+
+datum	motståndare	res	åskådare	01 JW	02 SS	03 NB	04 BP	05 DF	06 JH	07 IK	08 JA	09 SS	10 KB	11 AS	13 MF	14 PD	15 MD	16 LB	17 DJ	18 RA	19 J	20 AH	21 OK	22 MT	25 DB	26 EZ	27 BL	28 GK	40 ND	77 MS
+18/2	Vasalund IF	3-1	5 207  (-)	.	S	SG	SG	.	S2	.	.	S	I	.	.	I	S	I	SG	U	U1	.	-	U	-	.	S	.	.	-
+25/2	GAIS     	3-3	-      (-)	.	S	SG	S	U	I	S1	UG	U1	I	.	.	I1	SG	-	-	S	S	.	.	.	-	.	S	-	.	.
+4/3	IF Elfsborg	1-2	-      (-)	.	.	S	S	.	UG	U	U	I	I1	-	.	S	SG	I	-	.	S	.	.	S	-	.	S	-	.	S
+1/4	IK Sirius FK	3-1	30 220 (-)	S	S	S	S	S	S3	U	UG	I	I	I	-	U	.	-	.	.	S	.	.	S	-	.	.	.	.	-
+
+Spelarstatistik
+
+nr	spelare  	matcher	min	mål	assist	skott	gula	röda kort
+01	Wiland   	1	90	0	0	0	0	0
+02	Sandberg 	1	90	0	0	0	0	0
+03	Borges   	1	90	0	0	0	0	0
+04	Paulsen  	1	90	0	0	0	0	0
+05	Fällman  	1	90	0	0	0	0	0
+06	Hamad    	1	90	3	0	0	0	0
+07	Khalili  	1	83	0	0	2	0	0
+08	Andersen 	1	63	0	0	0	1	0
+09	Svendsen 	1	27	0	0	0	0	0
+10	Kennedy  	1	27	0	0	0	0	0
+11	Smárason 	1	7	0	0	0	0	0
+13	Fenger   	0	0	0	0	0	0	0
+14	Dibba    	1	63	0	0	1	0	0
+15	Degerlund	0	0	0	0	0	0	0
+16	Bengtsson	0	0	0	0	0	0	0
+17	Jajic    	0	0	0	0	0	0	0
+18	Asaad    	0	0	0	0	0	0	0
+19	Junior   	1	90	0	0	0	0	0
+20	Hudu (Rooney)	0	0	0	0	0	0	0
+21	Krusnell 	0	0	0	0	0	0	0
+22	Tankovic 	1	90	0	1	2	0	0
+25	Blazevic 	0	0	0	0	0	0	0
+26	Zengin   	0	0	0	0	0	0	0
+27	Lekström 	0	0	0	0	0	0	0
+28	Koffie   	0	0	0	0	0	0	0
+40	Djurdjic 	0	0	0	0	0	0	0
+77	Solheim  	0	0	0	0	0	0	0

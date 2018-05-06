@@ -1,0 +1,176 @@
+{
+    "players": {
+        "28": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Gershon Koffie"
+        },
+        "27": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Benny Lekstr\u00f6m"
+        },
+        "09": {
+            "goals": 1,
+            "start": 1,
+            "sub_out": 57,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Sander Svendsen"
+        },
+        "17": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Dusan Jajic"
+        },
+        "10": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 61,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Kennedy Bakircioglu"
+        },
+        "16": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Leo Bengtsson"
+        },
+        "08": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 61,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 1,
+            "name": "Jeppe Andrup Andersen"
+        },
+        "19": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Serge-Junior Martinsson Ngouali"
+        },
+        "18": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Rebin Asaad"
+        },
+        "07": {
+            "goals": 1,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Imad Khalili"
+        },
+        "04": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Bj\u00f6rn Paulsen"
+        },
+        "25": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Davor Blazevic"
+        },
+        "15": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 1,
+            "name": "Marcus Degerlund"
+        },
+        "02": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Simon Sandberg"
+        },
+        "14": {
+            "goals": 1,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 57,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Pa Amat Dibba"
+        },
+        "05": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 76,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "David F\u00e4llman"
+        },
+        "06": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 76,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Jiloan Hamad"
+        },
+        "03": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 1,
+            "name": "Vivaldo Borges dos Santos Neto"
+        }
+    },
+    "finished": true,
+    "date": "2018-02-25 17:00",
+    "spectators_away": "-",
+    "away_score": "3",
+    "home_team": "Hammarby",
+    "spectators": "-",
+    "away_team": "GAIS",
+    "arena": "Tele2 Arena",
+    "home_score": "3",
+    "referee": "Kristoffer Karlsson"
+}

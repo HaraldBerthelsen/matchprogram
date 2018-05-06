@@ -1,0 +1,43 @@
+
+Match- & spelarstatistik
+
+datum	motståndare        	res	åskådare	01 JW	02 SS	03 NB	04 BP	05 DF	06 JH	07 IK	08 JA	09 SS	10 KB	11 AS	13 MF	14 PD	16 LB	17 DJ	18 RA	19 J	20 AH	21 OK	22 MT	23 MD	25 DB	26 EZ	27 BL	28 GK	40 ND	77 MS
+18/2	Vasalund IF         	3-1	5 207  (-)	.	S	S	S	.	S2	.	.	S	I	.	.	I	I	S	U	U1	.	-	U	S	-	.	S	.	.	-
+25/2	GAIS                	3-3	-      (-)	.	S	S	S	U	I	S1	U	U1	I	.	.	I1	-	-	S	S	.	.	.	S	-	.	S	-	.	.
+4/3	IF Elfsborg         	1-2	-      (-)	.	.	S	S	.	U	U	U	I	I1	-	.	S	I	-	.	S	.	.	S	S	-	.	S	-	.	S
+1/4	IK Sirius FK        	3-1	30 220 (-)	S	S	S	S	S	S3	U	U	I	I	I	-	U	-	.	.	S	.	.	S	.	-	.	.	.	.	-
+10/4	IFK Göteborg        	2-1	15 467 (-)	S	S	S	S1	S	S1	U	U	-	I	I	.	I	.	.	.	S	.	.	S	-	-	.	.	.	U	-
+16/4	IF Brommapojkarna   	4-0	20 630 (-)	S	.	S	S	S	U1	S2	U	-	I	-	.	I1	.	.	.	S	.	.	S	-	-	I	.	.	U	S
+19/4	IFK Norrköping FK   	2-1	21 337 (-)	S	.	S	S	S	S	I	U	U	I	.	.	S1	.	.	-	S	.	.	U1	-	-	-	.	.	I	S
+22/4	BK Häcken           	2-2	4 410  (-)	S	S	S	S	U	U	U	S	I	-	.	.	-	.	.	.	S	.	.	S	I	-	I	.	.	S2	-
+
+Spelarstatistik
+
+nr	spelare  	matcher/mål	assist	skott	min	gula	röda kort
+01	Wiland   	  5 / 0  	0	0	450	0	0
+02	Sandberg 	  3 / 0  	0	0	270	0	0
+03	Borges   	  5 / 0  	1	2	450	0	0
+04	Paulsen  	  5 / 1  	1	4	450	1	0
+05	Fällman  	  5 / 0  	0	1	423	1	0
+06	Hamad    	  5 / 5  	1	16	421	0	0
+07	Khalili  	  5 / 2  	0	9	323	0	0
+08	Andersen 	  5 / 0  	1	0	382	2	0
+09	Svendsen 	  3 / 0  	0	6	128	0	0
+10	Kennedy  	  4 / 0  	0	2	68	0	0
+11	Smárason 	  2 / 0  	0	1	26	0	0
+13	Fenger   	  0 / 0  	0	0	0	0	0
+14	Dibba    	  4 / 2  	0	10	205	1	0
+16	Bengtsson	  0 / 0  	0	0	0	0	0
+17	Jajic    	  0 / 0  	0	0	0	0	0
+18	Asaad    	  0 / 0  	0	0	0	0	0
+19	Junior   	  5 / 0  	0	1	450	0	0
+20	Hudu (Rooney)	  0 / 0  	0	0	0	0	0
+21	Krusnell 	  0 / 0  	0	0	0	0	0
+22	Tankovic 	  5 / 1  	2	10	416	0	0
+23	Degerlund	  1 / 0  	0	0	27	0	0
+25	Blazevic 	  0 / 0  	0	0	0	0	0
+26	Zengin   	  2 / 0  	0	1	29	0	0
+27	Lekström 	  0 / 0  	0	0	0	0	0
+28	Koffie   	  0 / 0  	0	0	0	0	0
+40	Djurdjic 	  4 / 2  	0	7	252	0	0
+77	Solheim  	  2 / 0  	0	4	180	0	0

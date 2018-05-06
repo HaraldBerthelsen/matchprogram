@@ -1,0 +1,176 @@
+{
+    "players": {
+        "27": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Benny Lekstr\u00f6m"
+        },
+        "21": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Oscar Krusnell"
+        },
+        "09": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Sander Svendsen"
+        },
+        "17": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 1,
+            "name": "Dusan Jajic"
+        },
+        "16": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 56,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Leo Bengtsson"
+        },
+        "22": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 56,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Muamer Tankovic"
+        },
+        "77": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Mats Goberg Solheim"
+        },
+        "19": {
+            "goals": 1,
+            "start": 1,
+            "sub_out": 74,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Serge-Junior Martinsson Ngouali"
+        },
+        "18": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 81,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Rebin Asaad"
+        },
+        "14": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 81,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Pa Amat Dibba"
+        },
+        "04": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 1,
+            "name": "Bj\u00f6rn Paulsen"
+        },
+        "25": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Davor Blazevic"
+        },
+        "15": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Marcus Degerlund"
+        },
+        "02": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Simon Sandberg"
+        },
+        "31": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Kevin Daniel Enrique Jarrett"
+        },
+        "10": {
+            "goals": 0,
+            "start": 0,
+            "sub_out": 0,
+            "sub_in": 74,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Kennedy Bakircioglu"
+        },
+        "06": {
+            "goals": 2,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "name": "Jiloan Hamad"
+        },
+        "03": {
+            "goals": 0,
+            "start": 1,
+            "sub_out": 0,
+            "sub_in": 0,
+            "red_card": 0,
+            "yellow_card": 1,
+            "name": "Vivaldo Borges dos Santos Neto"
+        }
+    },
+    "finished": true,
+    "date": "2018-02-18 15:00",
+    "spectators_away": "-",
+    "away_score": "3",
+    "home_team": "Vasalund IF",
+    "spectators": "5 207",
+    "away_team": "Hammarby",
+    "arena": "Tele2 Arena",
+    "home_score": "1",
+    "referee": "Farouk Nehdi"
+}
