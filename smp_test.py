@@ -197,7 +197,10 @@ class Season(object):
 
         #Läs skottstatistik från msn-fil
         #msn_file = "2018/msn_gbg_hif.txt"
-        msn_file = "2018/msn_hif_bp.txt"
+        #msn_file = "2018/msn_hif_bp.txt"
+        #msn_file = "2018/msn_hacken_bajen.txt"
+        #msn_file = "2018/msn_dif_bajen.txt"
+        msn_file = "2018/msn_bajen_sundsvall.txt"
         msn_shots = {}
         with open(msn_file) as f:
             lines = f.readlines()

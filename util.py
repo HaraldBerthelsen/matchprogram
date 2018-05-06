@@ -178,13 +178,21 @@ def getPlayers(game_info, bajen_is_home_team,cup=False, cup_mapping=[]):
             #name = tds[1]
             #goals = [tds2]
 
-            players[number]["pas"] = int(tds[3].text)
-            players[number]["sko"] = int(tds[4].text)
-            players[number]["sks"] = int(tds[5].text)
-            players[number]["off"] = int(tds[6].text)
-            players[number]["orf"] = int(tds[7].text)
-            players[number]["tif"] = int(tds[8].text)
-        
+            if len(tds) == 9:
+                #det var så här före dif-bajen
+                players[number]["pas"] = int(tds[3].text)
+                players[number]["sko"] = int(tds[4].text)
+                players[number]["sks"] = int(tds[5].text)
+                players[number]["off"] = int(tds[6].text)
+                players[number]["orf"] = int(tds[7].text)
+                players[number]["tif"] = int(tds[8].text)
+            elif len(tds) == 6:
+                #så här på dif-bajen. Är det en ändring som kommer fortsätta?
+                players[number]["pas"] = int(tds[3].text)
+                players[number]["sko"] = int(tds[4].text)
+                players[number]["sks"] = int(tds[5].text)
+                
+                
 
     return players
 

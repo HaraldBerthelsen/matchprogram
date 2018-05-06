@@ -19,7 +19,6 @@
         "11": "Arnór Smárason",
         "13": "Mads Fenger",
         "14": "Pa Dibba",
-        "15": "Marcus Degerlund",
         "16": "Leo Bengtsson",
         "17": "Dusan Jajic",
         "18": "Rebin Asaad",
@@ -27,6 +26,7 @@
 	"20": "Abdul-Halik Hudu",
         "21": "Oscar Krusnell",
         "22": "Muamer Tankovic",
+        "23": "Marcus Degerlund",
         "25": "Davor Blazevic",
         "26": "Erkan Zengin",
         "27": "Benny Lekström",
@@ -44,7 +44,11 @@
 	3791294,
         3795745,
 	3795764,
-	3795956
+	3795956,
+	3795791,
+	3795763,
+	3795772,
+	3795776
     ],
     "sc": [
 	3791294,
@@ -56,7 +60,7 @@
 	"90":"06",
 	"21":"09",
 	"17":"14",
-	"23":"15",
+	"15":"23",
 	"34":"16",
 	"26":"17",
 	"06":"21"

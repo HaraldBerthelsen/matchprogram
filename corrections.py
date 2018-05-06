@@ -3,6 +3,12 @@
 corrections = {}
 corrections[2018] = {}
 
+#Degerlund hade nr 15 och spelade hela matchen de tre cupmatcherna
+#Det är inte det som är felet, måste fixa i cup_mappningen TODO
+#corrections[2018][3791294] = [(["players","15","start"],1)]
+#corrections[2018][3791292] = [(["players","15","start"],1)]
+#corrections[2018][3791290] = [(["players","15","start"],1)]
+
 corrections[2018][3791294] = [
     (["players","09","sub_in"],69), 
     (["players","09","sub_out"],0)
