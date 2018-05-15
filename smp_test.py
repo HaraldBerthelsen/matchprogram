@@ -32,7 +32,7 @@ def main():
     season.loadJson("season_%d_info.json" % year)
     #Uppdatera från SF och spara til fil
     #season.loadMatchesFromSF()
-    #season.loadLatestMatchFromSF()
+    season.loadLatestMatchFromSF()
 
     season.loadMatchesFromJson()
     #Skriv ut statistik för senast spelade
