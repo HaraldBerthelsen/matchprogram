@@ -1,174 +1,174 @@
 {
-    "arena": "Tele2 Arena",
-    "spectators_away": "-",
-    "away_score": "3",
-    "referee": "Kristoffer Karlsson",
-    "finished": true,
     "spectators": "-",
-    "away_team": "GAIS",
+    "finished": true,
+    "spectators_away": "-",
     "home_score": "3",
+    "away_team": "GAIS",
+    "away_score": "3",
     "home_team": "Hammarby",
+    "arena": "Tele2 Arena",
+    "referee": "Kristoffer Karlsson",
     "players": {
-        "02": {
+        "09": {
             "start": 1,
-            "sub_out": 0,
             "sub_in": 0,
-            "red_card": 0,
             "yellow_card": 0,
-            "name": "Simon Sandberg",
-            "goals": 0
-        },
-        "08": {
-            "start": 1,
-            "sub_out": 61,
-            "sub_in": 0,
+            "sub_out": 57,
+            "name": "Sander Svendsen",
             "red_card": 0,
-            "yellow_card": 1,
-            "name": "Jeppe Andrup Andersen",
-            "goals": 0
+            "goals": 1
         },
         "28": {
             "start": 0,
-            "sub_out": 0,
             "sub_in": 0,
-            "red_card": 0,
             "yellow_card": 0,
+            "sub_out": 0,
             "name": "Gershon Koffie",
-            "goals": 0
-        },
-        "03": {
-            "start": 1,
-            "sub_out": 0,
-            "sub_in": 0,
             "red_card": 0,
-            "yellow_card": 1,
-            "name": "Vivaldo Borges dos Santos Neto",
-            "goals": 0
-        },
-        "17": {
-            "start": 0,
-            "sub_out": 0,
-            "sub_in": 0,
-            "red_card": 0,
-            "yellow_card": 0,
-            "name": "Dusan Jajic",
             "goals": 0
         },
         "07": {
             "start": 1,
-            "sub_out": 0,
             "sub_in": 0,
-            "red_card": 0,
             "yellow_card": 0,
+            "sub_out": 0,
             "name": "Imad Khalili",
-            "goals": 1
-        },
-        "04": {
-            "start": 1,
-            "sub_out": 0,
-            "sub_in": 0,
             "red_card": 0,
-            "yellow_card": 0,
-            "name": "Bj\u00f6rn Paulsen",
-            "goals": 0
+            "goals": 1
         },
         "16": {
             "start": 0,
-            "sub_out": 0,
             "sub_in": 0,
-            "red_card": 0,
             "yellow_card": 0,
+            "sub_out": 0,
             "name": "Leo Bengtsson",
+            "red_card": 0,
             "goals": 0
         },
-        "19": {
+        "03": {
             "start": 1,
-            "sub_out": 0,
             "sub_in": 0,
+            "yellow_card": 1,
+            "sub_out": 0,
+            "name": "Vivaldo Borges dos Santos Neto",
             "red_card": 0,
+            "goals": 0
+        },
+        "25": {
+            "start": 0,
+            "sub_in": 0,
             "yellow_card": 0,
-            "name": "Serge-Junior Martinsson Ngouali",
+            "sub_out": 0,
+            "name": "Davor Blazevic",
+            "red_card": 0,
             "goals": 0
         },
         "27": {
             "start": 1,
-            "sub_out": 0,
             "sub_in": 0,
-            "red_card": 0,
             "yellow_card": 0,
+            "sub_out": 0,
             "name": "Benny Lekstr\u00f6m",
-            "goals": 0
-        },
-        "05": {
-            "start": 1,
-            "sub_out": 76,
-            "sub_in": 0,
             "red_card": 0,
-            "yellow_card": 0,
-            "name": "David F\u00e4llman",
-            "goals": 0
-        },
-        "09": {
-            "start": 1,
-            "sub_out": 57,
-            "sub_in": 0,
-            "red_card": 0,
-            "yellow_card": 0,
-            "name": "Sander Svendsen",
-            "goals": 1
-        },
-        "10": {
-            "start": 0,
-            "sub_out": 0,
-            "sub_in": 61,
-            "red_card": 0,
-            "yellow_card": 0,
-            "name": "Kennedy Bakircioglu",
-            "goals": 0
-        },
-        "18": {
-            "start": 1,
-            "sub_out": 0,
-            "sub_in": 0,
-            "red_card": 0,
-            "yellow_card": 0,
-            "name": "Rebin Asaad",
             "goals": 0
         },
         "23": {
             "start": 1,
-            "sub_out": 0,
             "sub_in": 0,
-            "red_card": 0,
             "yellow_card": 1,
+            "sub_out": 0,
             "name": "Marcus Degerlund",
+            "red_card": 0,
             "goals": 0
         },
-        "06": {
-            "start": 0,
-            "sub_out": 0,
-            "sub_in": 76,
-            "red_card": 0,
+        "05": {
+            "start": 1,
+            "sub_in": 0,
             "yellow_card": 0,
-            "name": "Jiloan Hamad",
+            "sub_out": 76,
+            "name": "David F\u00e4llman",
+            "red_card": 0,
+            "goals": 0
+        },
+        "10": {
+            "start": 0,
+            "sub_in": 61,
+            "yellow_card": 0,
+            "sub_out": 0,
+            "name": "Kennedy Bakircioglu",
+            "red_card": 0,
+            "goals": 0
+        },
+        "18": {
+            "start": 1,
+            "sub_in": 0,
+            "yellow_card": 0,
+            "sub_out": 0,
+            "name": "Rebin Asaad",
+            "red_card": 0,
             "goals": 0
         },
         "14": {
             "start": 0,
-            "sub_out": 0,
             "sub_in": 57,
-            "red_card": 0,
             "yellow_card": 0,
+            "sub_out": 0,
             "name": "Pa Amat Dibba",
+            "red_card": 0,
             "goals": 1
         },
-        "25": {
-            "start": 0,
-            "sub_out": 0,
+        "08": {
+            "start": 1,
             "sub_in": 0,
+            "yellow_card": 1,
+            "sub_out": 61,
+            "name": "Jeppe Andrup Andersen",
             "red_card": 0,
+            "goals": 0
+        },
+        "19": {
+            "start": 1,
+            "sub_in": 0,
             "yellow_card": 0,
-            "name": "Davor Blazevic",
+            "sub_out": 0,
+            "name": "Serge-Junior Martinsson Ngouali",
+            "red_card": 0,
+            "goals": 0
+        },
+        "04": {
+            "start": 1,
+            "sub_in": 0,
+            "yellow_card": 0,
+            "sub_out": 0,
+            "name": "Bj\u00f6rn Paulsen",
+            "red_card": 0,
+            "goals": 0
+        },
+        "06": {
+            "start": 0,
+            "sub_in": 76,
+            "yellow_card": 0,
+            "sub_out": 0,
+            "name": "Jiloan Hamad",
+            "red_card": 0,
+            "goals": 0
+        },
+        "17": {
+            "start": 0,
+            "sub_in": 0,
+            "yellow_card": 0,
+            "sub_out": 0,
+            "name": "Dusan Jajic",
+            "red_card": 0,
+            "goals": 0
+        },
+        "02": {
+            "start": 1,
+            "sub_in": 0,
+            "yellow_card": 0,
+            "sub_out": 0,
+            "name": "Simon Sandberg",
+            "red_card": 0,
             "goals": 0
         }
     },
