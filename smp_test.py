@@ -32,7 +32,7 @@ def main():
     season.loadJson("season_%d_info.json" % year)
     #Uppdatera från SF och spara til fil
     #season.loadMatchesFromSF()
-    season.loadLatestMatchFromSF()
+    #season.loadLatestMatchFromSF()
 
     season.loadMatchesFromJson()
     #Skriv ut statistik för senast spelade
@@ -200,7 +200,8 @@ class Season(object):
         #msn_file = "2018/msn_hif_bp.txt"
         #msn_file = "2018/msn_hacken_bajen.txt"
         #msn_file = "2018/msn_dif_bajen.txt"
-        msn_file = "2018/msn_bajen_sundsvall.txt"
+        #msn_file = "2018/msn_bajen_sundsvall.txt"
+        msn_file = "2018/msn_bajen_mff.txt"
         msn_shots = {}
         with open(msn_file) as f:
             lines = f.readlines()
