@@ -1,37 +1,22 @@
 {
     "arena": "Tele2 Arena",
-    "away_score": "0",
-    "spectators": "20 630",
+    "away_score": "1",
+    "spectators": "29 266",
     "spectators_away": "-",
-    "date": "2018-04-16 19:00",
-    "home_score": "4",
-    "referee": "Stefan Johannesson",
+    "date": "2018-05-20 15:00",
+    "home_score": "0",
+    "referee": "Andreas Ekberg",
     "players": {
-        "04": {
+        "25": {
             "goals": 0,
             "red_card": 0,
-            "sks": 0,
-            "pas": 1,
             "yellow_card": 0,
-            "sko": 0,
-            "start": 1,
-            "name": "Bj\u00f6rn Paulsen",
-            "sub_in": 0,
-            "sub_out": 0
-        },
-        "14": {
-            "goals": 1,
-            "red_card": 0,
-            "sks": 0,
-            "pas": 0,
-            "yellow_card": 0,
-            "sko": 0,
             "start": 0,
-            "name": "Pa Amat Dibba",
-            "sub_in": 65,
+            "name": "Davor Blazevic",
+            "sub_in": 0,
             "sub_out": 0
         },
-        "08": {
+        "05": {
             "goals": 0,
             "red_card": 0,
             "sks": 0,
@@ -39,9 +24,21 @@
             "yellow_card": 0,
             "sko": 0,
             "start": 1,
-            "name": "Jeppe Andrup Andersen",
+            "name": "David F\u00e4llman",
             "sub_in": 0,
-            "sub_out": 65
+            "sub_out": 0
+        },
+        "01": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Johan Sellberg-Wiland",
+            "sub_in": 0,
+            "sub_out": 0
         },
         "11": {
             "goals": 0,
@@ -56,36 +53,45 @@
             "goals": 0,
             "red_card": 0,
             "sks": 0,
-            "pas": 1,
+            "pas": 0,
             "yellow_card": 0,
             "sko": 0,
-            "start": 1,
+            "start": 0,
             "name": "Vivaldo Borges dos Santos Neto",
-            "sub_in": 0,
+            "sub_in": 76,
             "sub_out": 0
         },
         "22": {
             "goals": 0,
             "red_card": 0,
             "sks": 0,
-            "pas": 1,
+            "pas": 0,
             "yellow_card": 0,
             "sko": 0,
             "start": 1,
             "name": "Muamer Tankovic",
             "sub_in": 0,
-            "sub_out": 0
+            "sub_out": 82
         },
-        "10": {
+        "02": {
             "goals": 0,
             "red_card": 0,
             "sks": 0,
             "pas": 0,
             "yellow_card": 0,
             "sko": 0,
+            "start": 1,
+            "name": "Simon Sandberg",
+            "sub_in": 0,
+            "sub_out": 76
+        },
+        "18": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
             "start": 0,
-            "name": "Kennedy Bakircioglu",
-            "sub_in": 65,
+            "name": "Rebin Asaad",
+            "sub_in": 0,
             "sub_out": 0
         },
         "19": {
@@ -98,18 +104,6 @@
             "start": 1,
             "name": "Serge-Junior Martinsson Ngouali",
             "sub_in": 0,
-            "sub_out": 0
-        },
-        "26": {
-            "goals": 0,
-            "red_card": 0,
-            "sks": 0,
-            "pas": 0,
-            "yellow_card": 0,
-            "sko": 1,
-            "start": 0,
-            "name": "Erkan Zengin",
-            "sub_in": 71,
             "sub_out": 0
         },
         "23": {
@@ -127,13 +121,13 @@
             "sks": 0,
             "pas": 0,
             "yellow_card": 0,
-            "sko": 1,
+            "sko": 0,
             "start": 1,
             "name": "Nikola Djurdjic",
             "sub_in": 0,
-            "sub_out": 65
+            "sub_out": 0
         },
-        "01": {
+        "14": {
             "goals": 0,
             "red_card": 0,
             "sks": 0,
@@ -141,42 +135,45 @@
             "yellow_card": 0,
             "sko": 0,
             "start": 1,
-            "name": "Johan Sellberg-Wiland",
+            "name": "Pa Amat Dibba",
             "sub_in": 0,
-            "sub_out": 0
+            "sub_out": 82
         },
         "09": {
             "goals": 0,
             "red_card": 0,
+            "sks": 0,
+            "pas": 0,
             "yellow_card": 0,
+            "sko": 0,
             "start": 0,
             "name": "Sander Svendsen",
-            "sub_in": 0,
+            "sub_in": 82,
             "sub_out": 0
         },
-        "05": {
+        "04": {
             "goals": 0,
             "red_card": 0,
             "sks": 0,
             "pas": 0,
             "yellow_card": 0,
-            "sko": 0,
+            "sko": 1,
             "start": 1,
-            "name": "David F\u00e4llman",
+            "name": "Bj\u00f6rn Paulsen",
             "sub_in": 0,
             "sub_out": 0
         },
         "06": {
-            "goals": 1,
+            "goals": 0,
             "red_card": 0,
             "sks": 0,
-            "pas": 1,
+            "pas": 0,
             "yellow_card": 0,
-            "sko": 0,
+            "sko": 1,
             "start": 1,
             "name": "Jiloan Hamad",
             "sub_in": 0,
-            "sub_out": 71
+            "sub_out": 0
         },
         "77": {
             "goals": 0,
@@ -190,29 +187,32 @@
             "sub_in": 0,
             "sub_out": 0
         },
-        "25": {
+        "13": {
             "goals": 0,
             "red_card": 0,
+            "sks": 0,
+            "pas": 0,
             "yellow_card": 0,
-            "start": 0,
-            "name": "Davor Blazevic",
+            "sko": 0,
+            "start": 1,
+            "name": "Mads Fenger Nielsen",
             "sub_in": 0,
             "sub_out": 0
         },
         "07": {
-            "goals": 2,
+            "goals": 0,
             "red_card": 0,
-            "sks": 1,
+            "sks": 0,
             "pas": 0,
             "yellow_card": 0,
-            "sko": 1,
-            "start": 1,
+            "sko": 0,
+            "start": 0,
             "name": "Imad Khalili",
-            "sub_in": 0,
+            "sub_in": 82,
             "sub_out": 0
         }
     },
     "home_team": "Hammarby",
-    "away_team": "IF Brommapojkarna",
+    "away_team": "AIK",
     "finished": true
 }

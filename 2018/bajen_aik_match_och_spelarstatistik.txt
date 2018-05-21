@@ -13,34 +13,36 @@ datum	motståndare        	res	åskådare	01 JW	02 SS	03 NB	04 BP	05 DF	06 JH	07
 29/4	Djurgården          	2-1	24 396 (-)	S	S	S	S	.	S	.	U	-	I	I	.	I1	.	.	-	S	.	.	S1	-	-	U	.	.	U	S
 5/5	GIF Sundsvall       	4-3	25 092 (-)	S	S	.	S	S	S	I	U	I	.	-	-	U3	.	.	.	S	.	.	S	-	-	.	.	I	U1	S
 13/5	Örebro              	2-1	12 352 (-)	S	U	.	S	S	S1	U	S	-	.	I	I	I	.	.	.	S	.	.	S	-	-	.	.	-	S1	U
+16/5	Malmö FF            	3-2	23 490 (-)	S	S	.	S	S	I	U	U	I	.	-	I	S1	.	.	.	S	.	.	S	-	-	.	.	-	U2	S
+20/5	AIK                 	0-1	29 266 (-)	S	U	I	S	S	S	I	.	I	.	-	S	U	.	.	-	S	.	.	U	-	-	.	.	.	S	S
 
 Spelarstatistik
 
 nr	spelare  	matcher/mål	assist	skott	min	gula	röda kort
-01	Wiland   	  8 / 0  	0	0	720	0	0
-02	Sandberg 	  6 / 0  	1	1	523	0	0
-03	Borges   	  6 / 0  	1	2	540	0	0
-04	Paulsen  	  8 / 1  	1	5	720	2	0
-05	Fällman  	  7 / 0  	0	2	603	1	0
-06	Hamad    	  8 / 6  	4	22	691	0	0
-07	Khalili  	  7 / 2  	0	0	416	0	0
-08	Andersen 	  8 / 0  	1	6	631	2	0
-09	Svendsen 	  4 / 0  	0	7	157	0	0
+01	Wiland   	 10 / 0  	0	0	900	0	0
+02	Sandberg 	  8 / 0  	2	1	689	0	0
+03	Borges   	  7 / 0  	1	2	554	0	0
+04	Paulsen  	 10 / 1  	1	7	900	2	0
+05	Fällman  	  9 / 0  	0	2	783	2	0
+06	Hamad    	 10 / 6  	4	25	790	0	0
+07	Khalili  	  9 / 2  	0	0	484	0	0
+08	Andersen 	  9 / 0  	1	6	702	3	0
+09	Svendsen 	  6 / 0  	0	8	195	0	0
 10	Kennedy  	  5 / 0  	0	2	76	0	0
 11	Smárason 	  4 / 0  	1	3	76	1	0
-13	Fenger   	  1 / 0  	0	0	44	1	0
-14	Dibba    	  7 / 6  	0	16	316	2	0
+13	Fenger   	  3 / 0  	0	0	153	1	0
+14	Dibba    	  9 / 7  	0	21	488	2	0
 16	Bengtsson	  0 / 0  	0	0	0	0	0
-17	Jajic    	  0 / 0  	0	0	0	0	0
+17	Jajic    	  0 / 0  	0	9	0	0	0
 18	Asaad    	  0 / 0  	0	0	0	0	0
-19	Junior   	  8 / 0  	0	3	720	0	0
+19	Junior   	 10 / 0  	1	3	900	0	0
 20	Hudu (Rooney)	  0 / 0  	0	0	0	0	0
 21	Krusnell 	  0 / 0  	0	0	0	0	0
-22	Tankovic 	  8 / 2  	2	13	686	0	0
+22	Tankovic 	 10 / 2  	3	16	858	0	0
 23	Degerlund	  1 / 0  	0	0	27	0	0
 25	Blazevic 	  0 / 0  	0	0	0	0	0
 26	Zengin   	  3 / 0  	0	2	86	0	0
 27	Lekström 	  0 / 0  	0	0	0	0	0
 28	Koffie   	  1 / 0  	0	0	13	0	0
-40	Djurdjic 	  7 / 4  	2	13	469	1	0
-77	Solheim  	  5 / 0  	0	5	406	0	0
+40	Djurdjic 	  9 / 6  	2	18	640	1	0
+77	Solheim  	  7 / 0  	0	7	586	0	0
