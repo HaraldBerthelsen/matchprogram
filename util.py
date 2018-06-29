@@ -1,11 +1,35 @@
+#-*- coding: utf-8 -*-
+
 import sys, re
-from urllib.request import urlopen
+
+try:
+    from urllib.request  import urlopen
+except ImportError:
+    from urllib2 import urlopen, Request
+    
+
 from bs4 import BeautifulSoup
 
 def loadFromSF(matchid,season):
     info = {}
-    url = "http://svenskfotboll.se/allsvenskan/information/?scr=result&fmid=%d" % matchid
-    page = urlopen(url)
+    #url = "http://svenskfotboll.se/allsvenskan/information/?scr=result&fmid=%d" % matchid
+    #HB url changed 180629 + need hdr to work?
+    #NO won't work anyway - website format changed..
+
+    
+    hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+       'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+       'Accept-Encoding': 'none',
+       'Accept-Language': 'en-US,en;q=0.8',
+       'Connection': 'keep-alive'}
+
+    
+    url = "https://www.svenskfotboll.se/matchfakta/?fmid=%d" % matchid
+    print(url)
+    #page = urlopen(url)
+    req = Request(url, headers=hdr)
+    page = urlopen(req)
     soup = BeautifulSoup(page, "lxml")
     
     game_info = soup.find("div", attrs={"class":"game-info-page"})
