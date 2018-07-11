@@ -49,7 +49,7 @@ class Season(object):
         self.info = {}
         self.matches = []
         
-    def loadMatchesFromSF(self):
+    def loadLatestMatchFromSF(self):
         nr = 1
         matchid = self.info["matchIds"][-1]
         match = Match(nr, matchid)
@@ -57,7 +57,7 @@ class Season(object):
         match.saveJson("%s/matchid_%d.json" % (self.year, matchid))
 
 
-    def loadLatestMatchFromSF(self):
+    def loadMatchesFromSF(self):
         nr = 1
         for matchid in self.info["matchIds"]:
             match = Match(nr, matchid)
@@ -76,13 +76,24 @@ class Season(object):
             nr += 1
 
     def saveJson(self, filename):
-        fh = open(filename, "w", encoding="utf-8")
+        try:
+            fh = open(filename, "w", encoding="utf-8")
+        except:
+            import io
+            fh = io.open(filename, "w", encoding="utf-8")
+            
         fh.write(json.dumps(self.info, default=jdefault, indent=4))
         fh.close()
 
 
     def loadJson(self, filename):
-        fh = open(filename, encoding="utf-8")
+        try:
+            fh = open(filename, encoding="utf-8")
+        except:
+            import io
+            fh = io.open(filename, encoding="utf-8")
+
+
         self.info = json.loads(fh.read())
         fh.close()
 
@@ -146,10 +157,13 @@ class Season(object):
             match.printMatchStatistics(self)
 
     def printMatchStatisticsHeader(self):
-        header_to_print = "datum\tmotståndare        \tres\tåskådare" 
+        header_to_print = u"datum\tmotståndare        \tres\tåskådare" 
         for player in sorted(self.info["squad"]):
             initials = self.getPrintInitials(player)
-            header_to_print += "\t%s %s" % (player,initials)
+            try:
+                header_to_print += "\t%s %s" % (player,initials)
+            except:
+                header_to_print += u"\t%s %s" % (player,initials)
 
         print("\nMatch- & spelarstatistik\n")
         print(header_to_print)
@@ -202,7 +216,8 @@ class Season(object):
         #msn_file = "2018/msn_dif_bajen.txt"
         #msn_file = "2018/msn_bajen_sundsvall.txt"
         #msn_file = "2018/msn_bajen_mff.txt"
-        msn_file = "2018/msn_bajen_aik.txt"
+        #msn_file = "2018/msn_bajen_aik.txt"
+        msn_file = "2018/msn_kalmar_bajen.txt"
         msn_shots = {}
         with open(msn_file) as f:
             lines = f.readlines()
@@ -274,13 +289,21 @@ class Match(object):
         
 
     def saveJson(self, filename):
-        fh = open(filename, "w", encoding="utf-8")
+        try:
+            fh = open(filename, "w", encoding="utf-8")
+        except:
+            import io
+            fh = io.open(filename, "w", encoding="utf-8")
         fh.write(json.dumps(self.info, default=jdefault, indent=4))
         fh.close()
 
 
     def loadJson(self, filename):
-        fh = open(filename, encoding="utf-8")
+        try:
+            fh = open(filename, encoding="utf-8")
+        except:
+            import io
+            fh = io.open(filename, encoding="utf-8")
         self.info = json.loads(fh.read())
         fh.close()
 
