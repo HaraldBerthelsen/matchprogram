@@ -18,6 +18,7 @@
         "10": "Kennedy Bakirgioglu",
         "11": "Arnór Smárason",
         "13": "Mads Fenger",
+        "1314": "Junes Barny",
         "14": "Pa Dibba",
         "16": "Leo Bengtsson",
         "17": "Dusan Jajic",
@@ -35,8 +36,7 @@
         "40": "Nicola Djurdjic"
     },
     "shortnames": {
-        "10": "Kennedy",
-        "20": "Hudu (Rooney)"
+        "10": "Kennedy"
     },
     "matchIds": [
 	3791290,
@@ -53,7 +53,8 @@
         3795851,
 	3795881,
 	3795770,
-	3795926
+	3795926,
+	3795765
     ],
     "sc": [
 	3791294,

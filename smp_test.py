@@ -160,6 +160,12 @@ class Season(object):
         header_to_print = u"datum\tmotståndare        \tres\tåskådare" 
         for player in sorted(self.info["squad"]):
             initials = self.getPrintInitials(player)
+
+            #special för att få det rätt med Barny/Dibba
+            if player == "1314":
+                player = "14"
+
+
             try:
                 header_to_print += "\t%s %s" % (player,initials)
             except:
@@ -195,6 +201,9 @@ class Season(object):
             causedfreekicks = stats.get("orf")
             yellow_cards = stats.get("yellow_card")
             red_cards = stats.get("red_card")
+
+
+
             print("%s\t%-9s\t%d (%d)\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,shots,shotsongoal,causedfreekicks,yellow_cards,red_cards))
 
     def printPlayerStatistics(self):
@@ -217,7 +226,8 @@ class Season(object):
         #msn_file = "2018/msn_bajen_sundsvall.txt"
         #msn_file = "2018/msn_bajen_mff.txt"
         #msn_file = "2018/msn_bajen_aik.txt"
-        msn_file = "2018/msn_kalmar_bajen.txt"
+        #msn_file = "2018/msn_kalmar_bajen.txt"
+        msn_file = "2018/msn_elfsborg_bajen.txt"
         msn_shots = {}
         with open(msn_file) as f:
             lines = f.readlines()
@@ -240,6 +250,19 @@ class Season(object):
             matches = stats.get("matches")
             goals = stats.get("goals")
 
+            #shotsongoal = stats.get("spm")
+            #causedfreekicks = stats.get("orf")
+            minutes_played = stats.get("minutes_played")
+            assists = stats.get("pas")
+            yellow_cards = stats.get("yellow_card")
+            red_cards = stats.get("red_card")
+
+
+            #special för att få det rätt med Barny/Dibba
+            if nr == "1314":
+                nr = "14"
+                
+            
             #använd msn för skott istf svenskfotboll
             #shots = stats.get("sko") + stats.get("spm")
             if nr in msn_shots:
@@ -247,12 +270,6 @@ class Season(object):
             else:
                 shots = 0
                 
-            #shotsongoal = stats.get("spm")
-            #causedfreekicks = stats.get("orf")
-            minutes_played = stats.get("minutes_played")
-            assists = stats.get("pas")
-            yellow_cards = stats.get("yellow_card")
-            red_cards = stats.get("red_card")
             #print("%s\t%-9s\t%d (%d)\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,shots,shotsongoal,causedfreekicks,yellow_cards,red_cards))
             print("%s\t%-9s\t%3d / %-3d\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,assists,shots,minutes_played,yellow_cards,red_cards))
 

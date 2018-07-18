@@ -1,10 +1,10 @@
 {
-    "arena": "Tele2 Arena",
-    "away_score": "2",
-    "spectators": "21464",
+    "arena": "Borås Arena",
+    "away_score": "0",
+    "spectators": "7682",
     "spectators_away": "-",
-    "date": "2018-07-09 19:00",
-    "home_score": "1",
+    "date": "2018-07-16 19:00",
+    "home_score": "0",
     "referee": "Bojan Pandzic",
     "players": {
         "25": {
@@ -23,7 +23,7 @@
             "pas": 0,
             "yellow_card": 0,
             "sko": 0,
-            "start": 0,
+            "start": 1,
             "name": "David F\u00e4llman",
             "sub_in": 0,
             "sub_out": 0
@@ -59,7 +59,7 @@
             "start": 1,
             "name": "Vivaldo Borges dos Santos Neto",
             "sub_in": 0,
-            "sub_out": 80
+            "sub_out": 0
         },
         "22": {
             "goals": 0,
@@ -136,17 +136,17 @@
             "sko": 0,
             "start": 0,
             "name": "Sander Svendsen",
-            "sub_in": 73,
+            "sub_in": 67,
             "sub_out": 0
         },
         "04": {
-            "goals": 1,
+            "goals": 0,
             "red_card": 0,
             "sks": 0,
             "pas": 0,
             "yellow_card": 0,
             "sko": 0,
-            "start": 1,
+            "start": 0,
             "name": "Bj\u00f6rn Paulsen",
             "sub_in": 0,
             "sub_out": 0
@@ -197,7 +197,7 @@
             "start": 1,
             "name": "Imad Khalili",
             "sub_in": 0,
-            "sub_out": 73
+            "sub_out": 67
         },
 	"21": {
             "goals": 0,
@@ -208,7 +208,7 @@
             "sko": 0,
             "start": 0,
             "name": "Oskar Krusnell",
-            "sub_in": 21,
+            "sub_in": 0,
             "sub_out": 0
         },
 
@@ -222,7 +222,20 @@
             "start": 1,
             "name": "Jeppe Andersen",
             "sub_in": 0,
-            "sub_out": 80
+            "sub_out": 87
+        },
+	
+	"1314": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 0,
+            "name": "Junes Barny",
+            "sub_in": 87,
+            "sub_out": 0
         },
 
 	"10": {
@@ -234,12 +247,12 @@
             "sko": 0,
             "start": 0,
             "name": "Kennedy Bakircioglu",
-            "sub_in": 80,
+            "sub_in": 0,
             "sub_out": 0
         }
 
     },
-    "home_team": "Hammarby",
-    "away_team": "Östersund",
+    "home_team": "IF Elfsborg",
+    "away_team": "Hammarby",
     "finished": true
 }
