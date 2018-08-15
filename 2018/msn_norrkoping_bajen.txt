@@ -1,0 +1,22 @@
+08	140	Jeppe Andersen	Hammarby IF	16	16	1 301	1	2	11	5
+21	141	Oscar Krusnell	Hammarby IF	1	0	10	0	0	0	0
+22	142	Muamer Tankovic	Hammarby IF	17	17	1 471	5	2	33	11
+06	143	Jiloan Hamad	Hammarby IF	17	16	1 367	7	5	43	16
+10	144	Kennedy Bakircioglu	Hammarby IF	7	0	88	0	0	4	1
+16	145	Leo Bengtsson	Hammarby IF	2	0	27	0	0	2	2
+25	146	Davor Blazevic	Hammarby IF	0	0	0	0	0	0	0
+13	147	Mads Fenger	Hammarby IF	9	7	649	0	1	1	0
+05	148	David Fällman	Hammarby IF	15	14	1 249	0	1	3	1
+07	149	Imad Khalili	Hammarby IF	13	10	793	2	0	15	6
+19	150	Serge Junior Martinsson-Ngouali	Hammarby IF	17	17	1 530	1	1	8	3
+04	151	Bjørn Paulsen	Hammarby IF	16	16	1 410	2	4	12	2
+02	152	Simon Sandberg	Hammarby IF	12	10	915	0	2	2	2
+77	153	Mats Solheim	Hammarby IF	11	9	810	0	1	9	2
+09	154	Sander Svendsen	Hammarby IF	13	3	423	0	0	16	7
+03	156	Vivaldo Borges dos Santos Neto	Hammarby IF	14	13	1 159	0	3	5	1
+40	157	Nikola Djurdjic	Hammarby IF	16	15	1 180	9	1	34	18
+18	158	Rebin Asaad	Hammarby IF	0	0	0	0	0	0	0
+20	159	Abdul Halik Hudu	Hammarby IF	0	0	0	0	0	0	0
+17	160	Dusan Jajic	Hammarby IF	0	0	0	0	0	0	0
+1314	161	Junes Barny	Hammarby IF	4	1	135	0	1	0	0
+93	162	Vladimir Rodic	Hammarby IF	1	0	31	0	0	0	0
