@@ -29,11 +29,11 @@ nr	spelare  	matcher/mål	assist	skott	min	gula	röda kort
 01	Wiland   	 17 / 0  	0	0	1530	0	0
 02	Sandberg 	 12 / 0  	2	2	898	0	0
 03	Borges   	 14 / 0  	1	5	1159	1	0
-04	Paulsen  	 16 / 2  	1	12	1410	2	0
+04	Paulsen  	 16 / 2  	1	12	1410	3	0
 05	Fällman  	 15 / 0  	0	3	1250	4	0
 06	Hamad    	 17 / 7  	4	43	1368	1	0
 07	Khalili  	 13 / 2  	0	15	791	0	0
-08	Andersen 	 16 / 1  	1	11	1297	4	0
+08	Andersen 	 16 / 1  	1	11	1297	5	0
 09	Svendsen 	 13 / 0  	0	16	427	0	0
 10	Kennedy  	  7 / 0  	0	4	91	0	0
 11	Smárason 	  4 / 0  	1	0	76	1	0
@@ -52,6 +52,6 @@ nr	spelare  	matcher/mål	assist	skott	min	gula	röda kort
 26	Zengin   	  3 / 0  	0	0	86	0	0
 27	Lekström 	  0 / 0  	0	0	0	0	0
 28	Koffie   	  1 / 0  	0	0	13	0	0
-40	Djurdjic 	 16 / 9  	2	34	1177	2	0
+40	Djurdjic 	 16 / 9  	2	34	1177	3	0
 77	Solheim  	 11 / 0  	0	9	811	1	0
 93	Rodic    	  1 / 0  	0	0	31	0	0
