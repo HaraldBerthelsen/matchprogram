@@ -16,6 +16,7 @@
         "08": "Jeppe Andersen",
         "09": "Sander Svendsen",
         "10": "Kennedy Bakirgioglu",
+        "1011": "Vladimir Rodic",
         "11": "Arnór Smárason",
         "13": "Mads Fenger",
         "1314": "Junes Barny",
@@ -33,8 +34,7 @@
         "27": "Benny Lekström",
         "28": "Gershon Koffie",
         "77": "Mats Solheim",
-        "40": "Nicola Djurdjic",
-        "93": "Vladimir Rodic"
+        "40": "Nicola Djurdjic"
     },
     "shortnames": {
         "10": "Kennedy"
@@ -59,7 +59,8 @@
 	3795971,
 	3795766,
 	3795941,
-	3795762
+	3795762,
+	3795911
     ],
     "sc": [
 	3791294,

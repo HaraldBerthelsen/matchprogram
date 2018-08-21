@@ -164,6 +164,9 @@ class Season(object):
             #special för att få det rätt med Barny/Dibba
             if player == "1314":
                 player = "14"
+            #special för att få det rätt med Rodic/Smarra
+            if player == "1011":
+                player = "11"
 
 
             try:
@@ -262,6 +265,9 @@ class Season(object):
             #special för att få det rätt med Barny/Dibba
             if nr == "1314":
                 nr = "14"
+            #special för att få det rätt med Rodic/Smarra
+            if nr == "1011":
+                nr = "11"
                 
             
             #använd msn för skott istf svenskfotboll

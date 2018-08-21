@@ -1,14 +1,11 @@
 {
-    "arena": "Östgötaporten",
-    "home_team": "IFK Norrköping",
-    "away_team": "Hammarby",
-    "finished": true,
-    "spectators": "15119",
-    "spectators_away": "-",
-    "date": "2018-08-13 19:00",
-    "home_score": "0",
+    "arena": "Tele2 Arena",
     "away_score": "0",
-    "referee": "Stefan Johannesson",
+    "spectators": "20803",
+    "spectators_away": "-",
+    "date": "2018-08-20 19:00",
+    "home_score": "2",
+    "referee": "Robert Daradic",
     "players": {
 
         "01": {
@@ -33,7 +30,7 @@
             "start": 1,
             "name": "Simon Sandberg",
             "sub_in": 0,
-            "sub_out": 0
+            "sub_out": 73
         },
         "03": {
             "goals": 0,
@@ -59,56 +56,32 @@
             "sub_in": 0,
             "sub_out": 0
         },
-        "05": {
-            "goals": 0,
-            "red_card": 0,
-            "sks": 0,
-            "pas": 0,
-            "yellow_card": 0,
-            "sko": 0,
-            "start": 1,
-            "name": "David F\u00e4llman",
-            "sub_in": 0,
-            "sub_out": 0
-        },
         "06": {
             "goals": 0,
             "red_card": 0,
             "sks": 0,
             "pas": 0,
-            "yellow_card": 0,
+            "yellow_card": 1,
             "sko": 0,
             "start": 1,
             "name": "Jiloan Hamad",
             "sub_in": 0,
-            "sub_out": 0
-        },
-        "07": {
-            "goals": 0,
-            "red_card": 0,
-            "sks": 0,
-            "pas": 0,
-            "yellow_card": 0,
-            "sko": 0,
-            "start": 1,
-            "name": "Imad Khalili",
-            "sub_in": 0,
-            "sub_out": 77
+            "sub_out": 81
         },
 	"08": {
             "goals": 0,
             "red_card": 0,
             "sks": 0,
             "pas": 0,
-            "yellow_card": 1,
+            "yellow_card": 0,
             "sko": 0,
-            "start": 1,
+            "start": 0,
             "name": "Jeppe Andersen",
             "sub_in": 0,
-            "sub_out": 68
+            "sub_out": 0
         },
 
-        "19": {
+ 	"1011": {
             "goals": 0,
             "red_card": 0,
             "sks": 0,
@@ -116,70 +89,12 @@
             "yellow_card": 0,
             "sko": 0,
             "start": 1,
-            "name": "Serge-Junior Martinsson Ngouali",
+            "name": "Vladimir Rodic",
             "sub_in": 0,
-            "sub_out": 0
-        },
-        "22": {
-            "goals": 0,
-            "red_card": 0,
-            "sks": 0,
-            "pas": 0,
-            "yellow_card": 0,
-            "sko": 0,
-            "start": 1,
-            "name": "Muamer Tankovic",
-            "sub_in": 0,
-            "sub_out": 0
-        },
-        "40": {
-            "goals": 0,
-            "red_card": 0,
-            "sks": 0,
-            "pas": 0,
-            "yellow_card": 1,
-            "sko": 0,
-            "start": 1,
-            "name": "Nikola Djurdjic",
-            "sub_in": 0,
-            "sub_out": 59
+            "sub_out": 73
         },
 
-	
-	"25": {
-            "goals": 0,
-            "red_card": 0,
-            "yellow_card": 0,
-            "start": 0,
-            "name": "Davor Blazevic",
-            "sub_in": 0,
-            "sub_out": 0
-        },
-        "09": {
-            "goals": 0,
-            "red_card": 0,
-            "sks": 0,
-            "pas": 0,
-            "yellow_card": 0,
-            "sko": 0,
-            "start": 0,
-            "name": "Sander Svendsen",
-            "sub_in": 77,
-            "sub_out": 0
-        },
-	"10": {
-            "goals": 0,
-            "red_card": 0,
-            "sks": 0,
-            "pas": 0,
-            "yellow_card": 0,
-            "sko": 0,
-            "start": 0,
-            "name": "Kennedy Bakircioglu",
-            "sub_in": 0,
-            "sub_out": 0
-        },
-        "13": {
+       "13": {
             "goals": 0,
             "red_card": 0,
             "sks": 0,
@@ -199,9 +114,105 @@
             "pas": 0,
             "yellow_card": 0,
             "sko": 0,
-            "start": 0,
+            "start": 1,
             "name": "Junes Barny",
-            "sub_in": 68,
+            "sub_in": 0,
+            "sub_out": 0
+        },
+
+        "19": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Serge-Junior Martinsson Ngouali",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "22": {
+            "goals": 2,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Muamer Tankovic",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "40": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Nikola Djurdjic",
+            "sub_in": 0,
+            "sub_out": 87
+        },
+
+	
+	"25": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 0,
+            "name": "Davor Blazevic",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "05": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "David F\u00e4llman",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "07": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 0,
+            "name": "Imad Khalili",
+            "sub_in": 73,
+            "sub_out": 0
+        },
+        "09": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 0,
+            "name": "Sander Svendsen",
+            "sub_in": 87,
+            "sub_out": 0
+        },
+	"10": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 0,
+            "name": "Kennedy Bakircioglu",
+            "sub_in": 0,
             "sub_out": 0
         },
 	"16": {
@@ -213,7 +224,7 @@
             "sko": 0,
             "start": 0,
             "name": "Leo Bengtsson",
-            "sub_in": 0,
+            "sub_in": 81,
             "sub_out": 0
         },
 	
@@ -228,22 +239,11 @@
             "name": "Mats Goberg Solheim",
             "sub_in": 0,
             "sub_out": 0
-        },
-
-        "1011": {
-	    "comment": "played with nr 93",
-            "goals": 0,
-            "red_card": 0,
-            "sks": 0,
-            "pas": 0,
-            "yellow_card": 0,
-            "sko": 0,
-            "start": 0,
-            "name": "Vladimir Rodic",
-            "sub_in": 59,
-            "sub_out": 0
         }
 
 
-    }
+    },
+    "home_team": "Hammarby",
+    "away_team": "Örebro",
+    "finished": true
 }
