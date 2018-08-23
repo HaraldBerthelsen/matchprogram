@@ -1,0 +1,141 @@
+{
+    "arena": "Tingvalla IP",
+    "away_score": "3",
+    "spectators": "2441",
+    "spectators_away": "-",
+    "date": "2018-08-23 18:00",
+    "home_score": "0",
+    "referee": "Glenn Nyberg",
+    "players": {
+        "25": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Davor Blazevic",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "03": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Vivaldo Borges dos Santos Neto",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "04": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Bj\u00f6rn Paulsen",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "05": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "David Fällman",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "07": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Imad Khalili",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "09": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Sander Svendsen",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "10": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Kennedy Bakircioglu",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "1011": {
+            "goals": 1,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Vladimir Rodic",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "1314": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Junes Barny",
+            "sub_in": 0,
+            "sub_out": 75
+        },
+        "16": {
+            "goals": 1,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Leo Bengtsson",
+            "sub_in": 0,
+            "sub_out": 75
+        },
+        "77": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 1,
+            "name": "Mats Goberg Solheim",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "06": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 0,
+            "name": "Jiloan Hamad",
+            "sub_in": 75,
+            "sub_out": 0
+        },
+        "21": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 0,
+            "name": "Oscar Krusnell",
+            "sub_in": 75,
+            "sub_out": 0
+        },
+	"20": {
+            "goals": 1,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 0,
+            "name": "Abdul Halik Hudu",
+            "sub_in": 75,
+            "sub_out": 0
+        }
+
+    },
+    "home_team": "Carlstad United BK",
+    "away_team": "Hammarby",
+    "finished": true
+}

@@ -118,9 +118,11 @@ class Season(object):
         
     def getPlayerStatistics(self, nr):
         ignoreCupGames = True
-        ps = PlayerStats(nr)        
+        ps = PlayerStats(nr)
+        cupmatches = self.info["sc"]
+        cupmatches.extend(self.info["sc2"])
         for match in self.matches:
-            if ignoreCupGames and match.matchid in self.info["sc"]:
+            if ignoreCupGames and match.matchid in cupmatches:
                 continue
             ps_match = match.getPlayerStats(nr)
             self.sumPlayerStats(ps, ps_match)

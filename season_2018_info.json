@@ -2,7 +2,8 @@
     "teams": {
         "Halmstad": "Halmstad BK",
         "IK Sirius FK": "IK Sirius",
-        "Hammarby": "Hammarby IF"
+        "Hammarby": "Hammarby IF",
+	"Carlstad United BK": "Carlstad U"
     },
     "year": 2018,
     "squad": {
@@ -60,7 +61,8 @@
 	3795766,
 	3795941,
 	3795762,
-	3795911
+	3795911,
+	4089754
     ],
     "sc": [
 	3791294,
@@ -76,7 +78,11 @@
 	"34":"16",
 	"26":"17",
 	"06":"21"
-    }
+    },
+    "sc2": [
+	4089754
+    ]
+    
     
 
 
