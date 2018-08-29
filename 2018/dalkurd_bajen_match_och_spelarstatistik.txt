@@ -22,19 +22,19 @@ datum	motståndare        	res	åskådare	01 JW	02 SS	03 NB	04 BP	05 DF	06 JH	07
 30/7	Trelleborgs FF      	3-1	5381   (-)	S	I	S	S	S	U	-	S	U	-	.	-	S	I	.	I	.	-	S1	.	-	U1	-	-	.	.	.	S1	-
 5/8	Trelleborgs FF      	1-0	21834  (-)	S	U	S	S	I	U	-	S	I	I	.	.	S	U	.	-	.	.	S	.	.	S1	.	-	.	.	.	S	-
 13/8	IFK Norrköping      	0-0	15119  (-)	S	S	S	S	S	S	U	U	I	-	I	.	-	I	.	-	.	.	S	.	.	S	.	-	.	.	.	U	-
-20/8	Örebro              	2-0	20803  (-)	S	U	S	S	S	U	I	-	I	-	U	.	-	S	.	I	.	.	S	.	.	S2	.	-	.	.	.	U	-
-23/8	Carlstad United BK  	3-0	2441   (-)	.	.	S	S	S	I	S	.	S	S	S1	.	.	U	.	U1	.	.	.	I1	I	.	.	S	.	.	.	.	S
-27/8	Dalkurd             	3-2	2685   (-)	S	U	S	S	S	U1	I	U	-	-	S	.	-	I1	.	-	.	.	S	.	.	U	.	-	.	.	.	S1	I
+20/8	Örebro              	2-0	20803  (-)	S	S	S	S	S	U	I	-	I	-	U	.	-	S	.	I	.	.	S	.	.	S2	.	-	.	.	.	U	-
+23/8	Carlstad United BK  	3-0	2441   (-)	.	.	U	S	S	I	S	.	S	S	U1	.	.	U	.	S1	.	.	.	I1	I	.	.	S	.	.	.	.	S
+27/8	Dalkurd             	3-2	2685   (-)	S	U	S	S	S	S1	I	U	-	-	S	.	-	I1	.	-	.	.	S	.	.	U	.	-	.	.	.	S1	I
 
 Spelarstatistik
 
 nr	spelare  	matcher/mål	assist	skott	min	gula	röda kort
 01	Wiland   	 19 / 0  	0	0	1710	0	0
-02	Sandberg 	 14 / 0  	2	2	1053	0	0
+02	Sandberg 	 14 / 0  	2	2	1070	0	0
 03	Borges   	 16 / 0  	3	7	1339	1	0
 04	Paulsen  	 18 / 2  	4	13	1590	3	0
 05	Fällman  	 17 / 0  	1	3	1430	4	0
-06	Hamad    	 19 / 8  	5	48	1530	2	0
+06	Hamad    	 19 / 8  	5	48	1539	2	0
 07	Khalili  	 15 / 2  	1	16	823	0	0
 08	Andersen 	 17 / 1  	2	11	1359	5	0
 09	Svendsen 	 14 / 0  	0	18	430	0	0
