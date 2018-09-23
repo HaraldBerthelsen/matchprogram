@@ -23,12 +23,12 @@
             "start": 1,
             "name": "Vivaldo Borges dos Santos Neto",
             "sub_in": 0,
-            "sub_out": 0
+            "sub_out": 83
         },
         "04": {
             "goals": 0,
             "red_card": 0,
-            "yellow_card": 0,
+            "yellow_card": 1,
             "start": 1,
             "name": "Bj\u00f6rn Paulsen",
             "sub_in": 0,
@@ -77,7 +77,7 @@
             "start": 1,
             "name": "Vladimir Rodic",
             "sub_in": 0,
-            "sub_out": 0
+            "sub_out": 69
         },
         "1314": {
             "goals": 0,
@@ -86,7 +86,7 @@
             "start": 1,
             "name": "Junes Barny",
             "sub_in": 0,
-            "sub_out": 75
+            "sub_out": 82
         },
         "16": {
             "goals": 1,
@@ -95,7 +95,7 @@
             "start": 1,
             "name": "Leo Bengtsson",
             "sub_in": 0,
-            "sub_out": 75
+            "sub_out": 0
         },
         "77": {
             "goals": 0,
@@ -112,7 +112,7 @@
             "yellow_card": 0,
             "start": 0,
             "name": "Jiloan Hamad",
-            "sub_in": 75,
+            "sub_in": 69,
             "sub_out": 0
         },
         "21": {
@@ -121,7 +121,7 @@
             "yellow_card": 0,
             "start": 0,
             "name": "Oscar Krusnell",
-            "sub_in": 75,
+            "sub_in": 83,
             "sub_out": 0
         },
 	"20": {
@@ -130,7 +130,7 @@
             "yellow_card": 0,
             "start": 0,
             "name": "Abdul Halik Hudu",
-            "sub_in": 75,
+            "sub_in": 82,
             "sub_out": 0
         }
 
