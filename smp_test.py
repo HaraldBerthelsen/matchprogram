@@ -233,8 +233,11 @@ class Season(object):
         #msn_file = "2018/msn_bajen_aik.txt"
         #msn_file = "2018/msn_kalmar_bajen.txt"
         #msn_file = "2018/msn_elfsborg_bajen.txt"
-        msn_file = "2018/msn_norrkoping_bajen.txt"
+        #msn_file = "2018/msn_norrkoping_bajen.txt"
+        #msn_file = "2018/msn_dalkurd_bajen.txt"
+        msn_file = "2018/msn_aik_bajen.txt"
         msn_shots = {}
+        msn_ass = {}
         with open(msn_file) as f:
             lines = f.readlines()
             for line in lines:
@@ -243,6 +246,8 @@ class Season(object):
                 nr = info[0]
                 shots = int(info[-2])
                 msn_shots[nr] = shots
+                ass = int(info[-3])
+                msn_ass[nr] = ass
         #print(msn_shots)
         
         print("\nSpelarstatistik\n")    
@@ -259,10 +264,22 @@ class Season(object):
             #shotsongoal = stats.get("spm")
             #causedfreekicks = stats.get("orf")
             minutes_played = stats.get("minutes_played")
-            assists = stats.get("pas")
             yellow_cards = stats.get("yellow_card")
             red_cards = stats.get("red_card")
 
+
+            
+            #använd msn för skott+assist istf svenskfotboll
+            #shots = stats.get("sko") + stats.get("spm")
+            #assists = stats.get("pas")
+            if nr in msn_shots:
+                shots = msn_shots[nr]
+            else:
+                shots = 0
+            if nr in msn_ass:
+                assists = msn_ass[nr]
+            else:
+                assists = 0
 
             #special för att få det rätt med Barny/Dibba
             if nr == "1314":
@@ -271,14 +288,8 @@ class Season(object):
             if nr == "1011":
                 nr = "11"
                 
-            
-            #använd msn för skott istf svenskfotboll
-            #shots = stats.get("sko") + stats.get("spm")
-            if nr in msn_shots:
-                shots = msn_shots[nr]
-            else:
-                shots = 0
-                
+
+    
             #print("%s\t%-9s\t%d (%d)\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,shots,shotsongoal,causedfreekicks,yellow_cards,red_cards))
             print("%s\t%-9s\t%3d / %-3d\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,assists,shots,minutes_played,yellow_cards,red_cards))
 
