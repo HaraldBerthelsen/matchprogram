@@ -235,7 +235,8 @@ class Season(object):
         #msn_file = "2018/msn_elfsborg_bajen.txt"
         #msn_file = "2018/msn_norrkoping_bajen.txt"
         #msn_file = "2018/msn_dalkurd_bajen.txt"
-        msn_file = "2018/msn_aik_bajen.txt"
+        #msn_file = "2018/msn_aik_bajen.txt"
+        msn_file = "2018/msn_bajen_elfsborg.txt"
         msn_shots = {}
         msn_ass = {}
         with open(msn_file) as f:

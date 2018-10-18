@@ -1,0 +1,64 @@
+
+Match- & spelarstatistik
+
+datum	motståndare        	res	åskådare	01 JW	02 SS	03 NB	04 BP	05 DF	06 JH	07 IK	08 JA	09 SS	10 KB	11 VR	11 AS	13 MF	14 JB	14 PD	16 LB	17 DJ	18 RA	19 J	20 AH	21 OK	22 MT	23 MD	25 DB	26 EZ	27 BL	28 GK	40 ND	77 MS
+18/2	Vasalund IF         	3-1	5 207  (-)	.	S	S	S	.	S2	.	.	S	I	.	.	.	.	I	I	S	U	U1	.	-	U	S	-	.	S	.	.	-
+25/2	GAIS                	3-3	-      (-)	.	S	S	S	U	I	S1	U	U1	I	.	.	.	.	I1	-	-	S	S	.	.	.	S	-	.	S	-	.	.
+4/3	IF Elfsborg         	1-2	-      (-)	.	.	S	S	.	U	U	U	I	I1	.	-	.	.	S	I	-	.	S	.	.	S	S	-	.	S	-	.	S
+1/4	IK Sirius FK        	3-1	30 220 (-)	S	S	S	S	S	S3	U	U	I	I	.	I	-	.	U	-	.	.	S	.	.	S	.	-	.	.	.	.	-
+10/4	IFK Göteborg        	2-1	15 467 (-)	S	S	S	S1	S	S1	U	U	-	I	.	I	.	.	I	.	.	.	S	.	.	S	-	-	.	.	.	U	-
+16/4	IF Brommapojkarna   	4-0	20 630 (-)	S	.	S	S	S	U1	S2	U	-	I	.	-	.	.	I1	.	.	.	S	.	.	S	-	-	I	.	.	U	S
+19/4	IFK Norrköping FK   	2-1	21 337 (-)	S	.	S	S	S	S	I	U	U	I	.	.	.	.	S1	.	.	-	S	.	.	U1	-	-	-	.	.	I	S
+22/4	BK Häcken           	2-2	4 410  (-)	S	S	S	S	U	U	U	S	I	-	.	.	.	.	-	.	.	.	S	.	.	S	I	-	I	.	.	S2	-
+29/4	Djurgården          	2-1	24 396 (-)	S	S	S	S	.	S	.	U	-	I	.	I	.	.	I1	.	.	-	S	.	.	S1	-	-	U	.	.	U	S
+5/5	GIF Sundsvall       	4-3	25 092 (-)	S	S	.	S	S	S	I	U	I	.	.	-	-	.	U3	.	.	.	S	.	.	S	-	-	.	.	I	U1	S
+13/5	Örebro              	2-1	12 352 (-)	S	U	.	S	S	S1	U	S	-	.	.	I	I	.	I	.	.	.	S	.	.	S	-	-	.	.	-	S1	U
+16/5	Malmö FF            	3-2	23 490 (-)	S	S	.	S	S	I	U	U	I	.	.	-	I	.	S1	.	.	.	S	.	.	S	-	-	.	.	-	U2	S
+20/5	AIK                 	0-1	29 266 (-)	S	U	I	S	S	S	I	.	I	.	.	-	S	.	U	.	.	-	S	.	.	U	-	-	.	.	.	S	S
+27/5	Kalmar FF           	1-1	9313   (-)	S	-	U	S	S	U	S	S1	I	.	.	-	S	.	I	.	.	-	S	.	.	S	-	-	.	.	.	U	I
+9/7	Östersund           	1-2	21464  (-)	S	-	U	S1	-	S	U	U	I	I	.	-	S	.	.	.	.	-	S	.	I	S	-	-	.	.	.	S	S
+16/7	IF Elfsborg         	0-0	7682   (-)	S	-	S	-	S	S	U	U	I	-	.	-	S	I	.	.	.	-	S	.	-	S	-	-	.	.	.	S	S
+23/7	Dalkurd             	4-1	19969  (-)	S	I	S	U	S	S1	-	S	U	-	.	-	U	.	.	I	.	-	S	.	-	S1	-	-	.	.	.	S2	I
+30/7	Trelleborgs FF      	3-1	5381   (-)	S	I	S	S	S	U	-	S	U	-	.	-	S	I	.	I	.	-	S1	.	-	U1	-	-	.	.	.	S1	-
+5/8	Trelleborgs FF      	1-0	21834  (-)	S	U	S	S	I	U	-	S	I	I	.	.	S	U	.	-	.	.	S	.	.	S1	.	-	.	.	.	S	-
+13/8	IFK Norrköping      	0-0	15119  (-)	S	S	S	S	S	S	U	U	I	-	I	.	-	I	.	-	.	.	S	.	.	S	.	-	.	.	.	U	-
+20/8	Örebro              	2-0	20803  (-)	S	S	S	S	S	U	I	-	I	-	U	.	-	S	.	I	.	.	S	.	.	S2	.	-	.	.	.	U	-
+23/8	Carlstad United BK  	3-0	2441   (-)	.	.	U	S	S	I	S	.	S	S	U1	.	.	U	.	S1	.	.	.	I1	I	.	.	S	.	.	.	.	S
+27/8	Dalkurd             	3-2	2685   (-)	S	U	S	S	S	S1	I	U	-	-	S	.	-	I1	.	-	.	.	S	.	.	U	.	-	.	.	.	S1	I
+2/9	Djurgården          	1-3	26937  (-)	S	S	S	S	S	S	-	U	I	-	S1	.	-	I	.	-	.	.	S	.	.	U	.	-	.	.	.	S	-
+17/9	IK Sirius FK        	1-1	6377   (-)	S	S	S	S	S	U	I	-	I	-	U1	.	I	S	.	-	.	.	S	.	.	U	.	-	.	.	.	S	-
+23/9	AIK Solna           	0-1	49034  (-)	S	U	S	S	S	S	-	S	I	-	S	.	I	-	.	-	.	.	S	.	.	U	.	-	.	.	.	S	-
+26/9	Elfsborg            	0-1	17896  (-)	S	U	-	S	S	I	U	S	S	-	U	.	S	-	.	I	.	.	S	.	.	S	.	-	.	.	.	-	I
+
+Spelarstatistik
+
+nr	spelare  	matcher/mål	assist	skott	min	gula	röda kort
+01	Wiland   	 23 / 0  	0	0	2070	0	0
+02	Sandberg 	 18 / 0  	2	7	1358	0	0
+03	Borges   	 19 / 0  	3	9	1609	3	0
+04	Paulsen  	 22 / 2  	4	22	1950	4	0
+05	Fällman  	 21 / 0  	1	5	1790	4	0
+06	Hamad    	 23 / 8  	5	50	1814	2	0
+07	Khalili  	 17 / 2  	0	0	890	0	0
+08	Andersen 	 20 / 1  	2	13	1601	6	0
+09	Svendsen 	 18 / 0  	0	20	583	0	0
+10	Kennedy  	  7 / 0  	0	4	91	0	0
+11	Rodic    	  7 / 2  	1	10	538	0	0
+11	Smárason 	  4 / 0  	0	0	76	1	0
+13	Fenger   	 12 / 0  	1	1	771	1	0
+14	Barny    	  8 / 1  	2	2	373	0	0
+14	Dibba    	 10 / 7  	0	0	640	3	0
+16	Bengtsson	  4 / 0  	0	3	42	0	0
+17	Jajic    	  0 / 0  	0	0	0	0	0
+18	Asaad    	  0 / 0  	0	0	0	0	0
+19	Junior   	 23 / 1  	1	13	2070	2	0
+20	Hudu     	  0 / 0  	0	0	0	0	0
+21	Krusnell 	  1 / 0  	0	0	69	0	0
+22	Tankovic 	 23 / 7  	2	43	1944	1	0
+23	Degerlund	  1 / 0  	0	0	27	0	0
+25	Blazevic 	  0 / 0  	0	0	0	0	0
+26	Zengin   	  3 / 0  	0	0	86	0	0
+27	Lekström 	  0 / 0  	0	0	0	0	0
+28	Koffie   	  1 / 0  	0	0	13	0	0
+40	Djurdjic 	 21 / 10 	2	51	1624	3	0
+77	Solheim  	 13 / 0  	1	9	889	1	0
