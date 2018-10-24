@@ -1,0 +1,249 @@
+{
+    "arena": "Grimsta IP",
+    "away_score": "4",
+    "spectators": "4744",
+    "spectators_away": "-",
+    "date": "2018-10-07 17:30",
+    "home_score": "2",
+    "referee": "Glenn Nyberg",
+    "players": {
+
+        "01": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Johan Sellberg-Wiland",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "02": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 0,
+            "name": "Simon Sandberg",
+            "sub_in": 70,
+            "sub_out": 0
+        },
+        "03": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Vivaldo Borges dos Santos Neto",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "04": {
+            "goals": 1,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Bj\u00f6rn Paulsen",
+            "sub_in": 0,
+            "sub_out": 70
+        },
+        "05": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "David F\u00e4llman",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "06": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Jiloan Hamad",
+            "sub_in": 0,
+            "sub_out": 61
+        },
+	"08": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Jeppe Andersen",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+
+ 	"1011": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 1,
+            "sko": 0,
+            "start": 0,
+            "name": "Vladimir Rodic",
+            "sub_in": 61,
+            "sub_out": 0
+        },
+
+       "13": {
+            "goals": 1,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Mads Fenger Nielsen",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+
+	"1314": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 0,
+            "name": "Junes Barny",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+
+        "19": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Serge-Junior Martinsson Ngouali",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "22": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 1,
+            "sko": 0,
+            "start": 1,
+            "name": "Muamer Tankovic",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "40": {
+            "goals": 1,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Nikola Djurdjic",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+
+	
+	"25": {
+            "goals": 0,
+            "red_card": 0,
+            "yellow_card": 0,
+            "start": 0,
+            "name": "Davor Blazevic",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+        "07": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 1,
+            "name": "Imad Khalili",
+            "sub_in": 0,
+            "sub_out": 61
+        },
+        "09": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 0,
+            "name": "Sander Svendsen",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+	"10": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 0,
+            "name": "Kennedy Bakircioglu",
+            "sub_in": 0,
+            "sub_out": 0
+        },
+	"16": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 1,
+            "sko": 0,
+            "start": 0,
+            "name": "Leo Bengtsson",
+            "sub_in": 61,
+            "sub_out": 0
+        },
+	
+        "77": {
+            "goals": 0,
+            "red_card": 0,
+            "sks": 0,
+            "pas": 0,
+            "yellow_card": 0,
+            "sko": 0,
+            "start": 0,
+            "name": "Mats Goberg Solheim",
+            "sub_in": 0,
+            "sub_out": 0
+        }
+
+
+    },
+    "home_team": "IF Brommapojkarna",
+    "away_team": "Hammarby",
+    "finished": true
+}
