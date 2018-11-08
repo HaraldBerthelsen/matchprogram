@@ -392,7 +392,7 @@ class Match(object):
         score_prints = []
         for score in scores:
             nr += 1
-            score_prints.append("%s %s %s" % (score[1], score[0], score[2]))
+            score_prints.append("%s %s (%s)" % (score[1], score[0], score[2]))
             if nr == 2:
                 lines.append(", ".join(score_prints))
                 nr = 0
