@@ -6,6 +6,11 @@
     "date": "2018-10-28 15:00",
     "home_score": "0",
     "referee": "Patrik Eriksson",
+
+    "halftime_score":"0-0",
+    "scores": [ ],
+    "positions": ["25", "02","04","13","03", "08","22","1314", "06","40","1011"],
+
     "players": {
 
         "01": {
@@ -103,7 +108,7 @@
             "start": 1,
             "name": "Vladimir Rodic",
             "sub_in": 0,
-            "sub_out": 59
+            "sub_out": 60
         },
 
        "13": {
@@ -224,7 +229,7 @@
             "sko": 0,
             "start": 0,
             "name": "Leo Bengtsson",
-            "sub_in": 59,
+            "sub_in": 60,
             "sub_out": 0
         },
 	

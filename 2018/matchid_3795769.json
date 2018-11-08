@@ -6,6 +6,11 @@
     "date": "2018-10-20 13:00",
     "home_score": "2",
     "referee": "Kristoffer Karlsson",
+
+    "halftime_score":"0-1",
+    "scores": [ ["Jiloan Hamad (str)","0-1","31"], ["Marcus Antonsson","1-1","47"], ["Markus Rosenberg","2-1","57"] ],
+    "positions": ["25", "04","13","05","02", "08","22","19", "1011","40","06"],
+
     "players": {
 
         "01": {
@@ -175,7 +180,7 @@
             "red_card": 0,
             "yellow_card": 0,
             "start": 1,
-            "name": "Davor Blazevic",
+            "name": "Davor Blaževic",
             "sub_in": 0,
             "sub_out": 0
         },

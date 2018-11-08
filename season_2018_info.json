@@ -1,6 +1,13 @@
 {
     "teams": {
 	"IFK Norrköping FK": "IFK Norrköping",
+	"Örebro": "Örebro SK",
+	"Häcken": "BK Häcken",
+	"Djurgården": "Djurgårdens IF",
+	"AIK": "AIK Solna",
+	"Elfsborg": "IF Elfsborg",
+	"Dalkurd": "Dalkurd FF",
+	"Östersund": "Östersunds FK",
         "Halmstad": "Halmstad BK",
         "IK Sirius FK": "IK Sirius",
         "Hammarby": "Hammarby IF",
@@ -37,12 +44,12 @@
         "21": "Oscar Krusnell",
         "22": "Muamer Tanković",
         "23": "Marcus Degerlund",
-        "25": "Davor Blazević",
+        "25": "Davor Blažević",
         "26": "Erkan Zengin",
         "27": "Benny Lekström",
         "28": "Gershon Koffie",
         "77": "Mats Solheim",
-        "40": "Nicola Djurdjić"
+        "40": "Nikola Djurdjić"
     },
     "shortnames": {
         "10": "Kennedy"
@@ -75,12 +82,12 @@
 	3795760,	
 	3795771,	
 	3795836,	
-	3795821,
-	
+	3795821,	
 	3795767,
-	3795769,
-	3795866,
-	3795761
+	3795769,	
+	3795866,	
+	3795761,
+	3795806
     ],
     "sc": [
 	3791294,
