@@ -6,6 +6,11 @@
     "date": "2018-10-01 19:00",
     "home_score": "3",
     "referee": "Bojan Pandzic",
+
+    "halftime_score":"1-0",
+    "scores": [ ["Bjørn Paulsen","1-0","26"], ["Jiloan Hamad (str)","2-0","72"], ["Kennedy Bakircioglu","3-0","79"] ],
+    "positions": ["01", "04","13","05","03", "08","22","19", "1011","40","06"],
+
     "players": {
 
         "01": {

@@ -6,6 +6,11 @@
     "date": "2018-05-13 17:30",
     "home_score": "1",
     "referee": "Mohammed Al-Hakim",
+
+    "halftime_score":"1-0",
+    "scores": [["Kennedy Igboananike","1-0","13"], ["Nicola Djurdjić","1-1","51"], ["Jiloan Hamad","1-2","78"]],
+    "positions": ["01", "02","04","05","77", "07","08","22","19","06", "40"],
+
     "players": {
         "13": {
             "goals": 0,

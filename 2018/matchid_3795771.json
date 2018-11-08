@@ -6,6 +6,11 @@
     "date": "2018-09-23 15:00",
     "home_score": "1",
     "referee": "Stefan Johannesson",
+
+    "halftime_score":"0-0",
+    "scores": [ ["Henok Goitom","1-0","76"] ],
+    "positions": ["01", "02","04","05","03", "1011","08","22","19","06", "40"],
+
     "players": {
 
         "01": {

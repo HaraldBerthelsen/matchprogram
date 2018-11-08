@@ -6,6 +6,11 @@
     "date": "2018-05-16 19:00",
     "home_score": "3",
     "referee": "Martin Str\u00f6mbergsson",
+
+    "halftime_score":"1-1",
+    "scores": [["Søren Rieks","0-1","19"], ["Nicola Djurdjić","1-1","36"], ["Mattias Svanberg","1-2","46"], ["Nicola Djurdjić", "2-2", "65"], ["Pa Dibba", "3-2", "70"] ],
+    "positions": ["01", "02","05","04","77", "08","22","19", "07","40","14"],
+
     "players": {
         "13": {
             "goals": 0,

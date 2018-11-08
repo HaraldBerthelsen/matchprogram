@@ -6,6 +6,11 @@
     "date": "2018-05-27 15:00",
     "home_score": "1",
     "referee": "Robert Daradic",
+
+    "halftime_score":"0-0",
+    "scores": [["Romario (str)","1-0","54"], ["Jeppe Andersen","1-1","65"] ],
+    "positions": ["01", "13","04","05","03", "08","22","19", "07","40","06"],
+
     "players": {
         "25": {
             "goals": 0,

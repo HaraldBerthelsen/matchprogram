@@ -37,10 +37,13 @@ def main():
     season.loadMatchesFromJson()
     #Skriv ut statistik för senast spelade
     #season.printLastPlayedMatchStatistics()
-    #Eller skriv ut för alla spelade
-    season.printMatchStatistics()
-    season.printPlayerStatistics()
 
+    #Eller skriv ut för alla spelade
+    #season.printMatchStatistics()
+    #season.printPlayerStatistics()
+
+    #Eller skriv ut i format för årskrönikan
+    season.printYearbookFormat()
 
 class Season(object):
 
@@ -74,6 +77,7 @@ class Season(object):
             match = corrections.correct(self.year, matchid, match)
             self.matches.append(match)
             nr += 1
+            #print(matchid)
 
     def saveJson(self, filename):
         try:
@@ -297,8 +301,15 @@ class Season(object):
             #print("%s\t%-9s\t%d (%d)\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,shots,shotsongoal,causedfreekicks,yellow_cards,red_cards))
             print("%s\t%-9s\t%3d / %-3d\t%d\t%d\t%d\t%d\t%d" % (nr,shortname,matches,goals,assists,shots,minutes_played,yellow_cards,red_cards))
 
-    
-        
+    def printYearbookFormat(self):
+
+        for match in self.matches:
+            #Om matchfilen har kompletterats
+            if "positions" in match.info:
+                match.printYearbookFormat(self)
+                print("\n\n")
+
+                
 class Match(object):
     def __init__(self, nr, matchid):
         self.nr = nr
@@ -354,7 +365,113 @@ class Match(object):
         else:
             return {}
 
+
+    def printYearbookFormat(self, season):
+        date = self.info["date"]
+        spectators = self.info["spectators"]
+        spectators_away = self.info["spectators_away"]
+        home_team = self.info["home_team"]
+        away_team = self.info["away_team"]
+        home_score = self.info["home_score"]
+        away_score = self.info["away_score"]
+        halftime_score = self.info["halftime_score"]
+        players = self.info["players"]
+        scores = self.info["scores"]
+
+        if home_team in season.info["teams"]:
+            home_team = season.info["teams"][home_team]
+        if away_team in season.info["teams"]:
+            away_team = season.info["teams"][away_team]
         
+        lines = []
+        #Line: Teams, score, halftime score
+        lines.append("%s-%s %s-%s (%s)" % (home_team, away_team, home_score, away_score, halftime_score))
+
+        #Lines: Goal scored, player, time (2 per line)
+        nr = 0
+        score_prints = []
+        for score in scores:
+            nr += 1
+            score_prints.append("%s %s %s" % (score[1], score[0], score[2]))
+            if nr == 2:
+                lines.append(", ".join(score_prints))
+                nr = 0
+                score_prints = []
+        if len(score_prints) > 0:
+            lines.append(", ".join(score_prints))
+
+        #Line: Publik
+        lines.append("Publik: %s" % spectators)
+
+        #Line: Squad, substitutes
+        squad = []
+
+        subs_in = self.findSubsIn(season)
+
+        #According to list of positions
+        for playernr in self.info["positions"]:
+            if playernr in players:
+                player = players[playernr] 
+                if player["start"]:
+                    name = season.info["squad"][playernr]
+                    #player["name"]
+                    if player["sub_out"]:
+                        (sub_in, subs_in) = self.getSubIn(subs_in, player["sub_out"], playernr, season)
+                        squad.append("%s (%s, %s)" % (name, sub_in, player["sub_out"]))
+                    else:
+                        squad.append("%s" % (name))
+
+
+        #"halftime_score":"2-0",
+        #"scores": [["Jiloan Hamad","1-0","45"],["Jiloan Hamad","2-0","50"],["Sam Lundholm","2-1","74"],["Jiloan Hamad","3-1","90+1"]],
+        #"positions": ["01", "02","05","04","03", "19","08","06", "07","22","14"],
+
+
+                    
+        lines.append("Laget: %s" % ", ".join(squad))
+        print("\n".join(lines))
+
+    def findSubsIn(self, season):
+        subs = []
+        for playernr in self.info["players"]:
+            player = self.info["players"][playernr]
+            if player["sub_in"]:
+                name = season.info["squad"][playernr]
+                subs.append((player["sub_in"], playernr, name))
+        return subs
+
+    def getSubIn(self, subs_in, time, number, season):
+        for (sub_in_time, sub_in_number, sub_in_name) in subs_in:
+            if sub_in_time == time and self.onlySubAtTime(time, subs_in):
+                #print("only sub at time %s" % time)
+                subs_in.remove((sub_in_time, sub_in_number, sub_in_name))
+                return (sub_in_name, subs_in)
+            elif sub_in_time == time and self.samePosition(number, sub_in_number, season):
+                #print("same position %s %s" % (number, sub_in_number))
+                subs_in.remove((sub_in_time, sub_in_number, sub_in_name))
+                return (sub_in_name, subs_in)
+        print("%s %s\t%s" % (time, number, subs_in))
+        raise Exception("PROBLEM WITH SUBS")
+
+    def onlySubAtTime(self, time, subs_in):
+        #print("onlySubAtTime; %s %s" % (time, subs_in))
+        count = 0
+        for (sub_in_time, sub_in_number, sub_in_name) in subs_in:
+            if time == sub_in_time:
+                #print("%s == %s %s" % (time, sub_in_time, count))
+                if count > 0:
+                    return False
+                else:
+                    count += 1
+        return True
+    
+    def samePosition(self, nr1, nr2, season):
+        for pos in season.info["positions"]:
+            if nr1 in season.info["positions"][pos] and nr2 in season.info["positions"][pos]:
+                return True
+        return False
+
+    
     def printMatchStatistics(self, season):
         date = self.info["date"]
         spectators = self.info["spectators"]

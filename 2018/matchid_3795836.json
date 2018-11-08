@@ -6,6 +6,11 @@
     "date": "2018-09-26 19:00",
     "home_score": "0",
     "referee": "Kristoffer Karlsson",
+
+    "halftime_score":"0-1",
+    "scores": [ ["Fredrik Holst","0-1","30"] ],
+    "positions": ["01", "04","05","13", "07","08","19","02", "22","09","1011"],
+
     "players": {
 
         "01": {

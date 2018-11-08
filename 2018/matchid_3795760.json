@@ -6,6 +6,11 @@
     "date": "2018-09-17 19:00",
     "home_score": "1",
     "referee": "Martin Strömbergsson",
+
+    "halftime_score":"1-0",
+    "scores": [ ["Philip Haglund","1-0","16"], ["Vladimir Rodić","1-1","79"] ],
+    "positions": ["01", "02","04","05","03", "19","22","1314", "1011","40","06"],
+
     "players": {
 
         "01": {

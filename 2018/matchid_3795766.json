@@ -6,6 +6,11 @@
     "date": "2018-07-30 19:00",
     "home_score": "1",
     "referee": "Johan Krantz",
+
+    "halftime_score":"0-2",
+    "scores": [ ["Junior","0-1","28"], ["Nikola Djurdjić","0-2","30"], ["Deniz Hümmet","1-2","55"], ["Muamer Tanković","1-3","72"] ],
+    "positions": ["01", "13","04","05","03", "08","22","19", "09","40","06"],
+
     "players": {
         "25": {
             "goals": 0,

@@ -6,6 +6,11 @@
     "date": "2018-08-20 19:00",
     "home_score": "2",
     "referee": "Robert Daradic",
+
+    "halftime_score":"1-0",
+    "scores": [ ["Muamer Tanković","1-0","04"], ["Muamer Tanković","2-0","80"] ],
+    "positions": ["01", "02","04","05","03", "19","22","1314", "1011","40","06"],
+
     "players": {
 
         "01": {

@@ -6,6 +6,11 @@
     "date": "2018-07-23 19:00",
     "home_score": "4",
     "referee": "Robert Daradic",
+
+    "halftime_score":"4-0",
+    "scores": [ ["Nicola Djurdjić","1-0","13"], ["Muamer Tanković","2-0","17"], ["Nikola Djurdjić","3-0","36"], ["Jiloan Hamad","4-0","43"], ["Mohamed Buya Turay","4-1","84"] ],
+    "positions": ["01", "04","13","05","03", "09","19","22","08","06", "40"],
+
     "players": {
         "25": {
             "goals": 0,

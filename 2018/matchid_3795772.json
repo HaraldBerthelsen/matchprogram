@@ -6,6 +6,11 @@
     "date": "2018-04-29 15:00",
     "home_score": "1",
     "referee": "Martin Str\u00f6mbergsson",
+
+    "halftime_score":"0-1",
+    "scores": [["Muamer Tanković","1-0","2"],["Kevin Walker (str)","1-1","78"],["Pa Dibba","1-2","91"]],
+    "positions": ["01", "77","04","02","03", "08","22","19", "26","40","06"],
+
     "players": {
         "18": {
             "goals": 0,

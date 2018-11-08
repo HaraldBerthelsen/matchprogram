@@ -6,6 +6,11 @@
     "date": "2018-08-05 15:00",
     "home_score": "1",
     "referee": "Mohammed Al-Hakim",
+
+    "halftime_score":"0-0",
+    "scores": [ ["Muamer Tanković","1-0","60"] ],
+    "positions": ["01", "02","04","13","03", "08","22","19", "1314","40","06"],
+
     "players": {
 
         "01": {

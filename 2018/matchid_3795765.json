@@ -6,6 +6,11 @@
     "date": "2018-07-16 19:00",
     "home_score": "0",
     "referee": "Bojan Pandzic",
+
+    "halftime_score":"0-0",
+    "scores": [],
+    "positions": ["01", "77","13","05","03", "07","08","22","19","06", "40"],
+
     "players": {
         "25": {
             "goals": 0,
