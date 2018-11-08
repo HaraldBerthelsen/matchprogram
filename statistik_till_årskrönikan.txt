@@ -1,4 +1,4 @@
-Hammarby IF-IK Sirius 3-1 (2-0)
+Hammarby IF-IK Sirius 3-1 (1-0)
 1-0 Jiloan Hamad (45), 2-0 Jiloan Hamad (50)
 2-1 Sam Lundholm (74), 3-1 Jiloan Hamad (90+1)
 Publik: 30 220
@@ -40,7 +40,7 @@ Laget: Johan Wiland, Simon Sandberg, Bjørn Paulsen, David Fällman (Marcus Dege
 
 Djurgårdens IF-Hammarby IF 1-2 (0-1)
 1-0 Muamer Tanković (2), 1-1 Kevin Walker (str) (78)
-1-2 Pa Dibba (91)
+1-2 Pa Dibba (90+1)
 Publik: 24 396
 Laget: Johan Wiland, Mats Solheim, Bjørn Paulsen, Simon Sandberg, Neto Borges, Jeppe Andersen (Kennedy Bakircioglu, 82), Muamer Tanković, Junior, Erkan Zengin (Arnór Smárason, 57), Nikola Djurdjić (Pa Dibba, 66), Jiloan Hamad
 
@@ -132,7 +132,7 @@ Laget: Johan Wiland, Simon Sandberg, Bjørn Paulsen, David Fällman, Neto Borges
 
 
 Hammarby IF-Örebro SK 2-0 (1-0)
-1-0 Muamer Tanković (04), 2-0 Muamer Tanković (80)
+1-0 Muamer Tanković (4), 2-0 Muamer Tanković (80)
 Publik: 20803
 Laget: Johan Wiland, Simon Sandberg, Bjørn Paulsen, David Fällman, Neto Borges, Junior, Muamer Tanković, Junes Barny, Vladimir Rodić (Imad Khalili, 73), Nikola Djurdjić (Sander Svendsen, 87), Jiloan Hamad (Leo Bengtsson, 81)
 
@@ -141,7 +141,7 @@ Laget: Johan Wiland, Simon Sandberg, Bjørn Paulsen, David Fällman, Neto Borges
 Dalkurd FF-Hammarby IF 2-3 (1-2)
 0-1 Jiloan Hamad (str) (22), 1-1 Alexander De John (36)
 1-2 Nikola Djurdjić (45+1), 1-3 Junes Barny (85)
-2-3 Alexander De John (91)
+2-3 Alexander De John (90+1)
 Publik: 2685
 Laget: Johan Wiland, Simon Sandberg (Mats Solheim, 83), Neto Borges, Bjørn Paulsen, David Fällman, Junior, Muamer Tanković (Imad Khalili, 75), Jeppe Andersen (Junes Barny, 62), Vladimir Rodić, Nikola Djurdjić, Jiloan Hamad
 
@@ -185,7 +185,7 @@ Laget: Johan Wiland, Bjørn Paulsen, Mads Fenger, David Fällman, Neto Borges, J
 
 
 IF Brommapojkarna-Hammarby IF 2-4 (1-1)
-1-0 Jack Lahne (17), 1-1 Bjørn Paulsen (47)
+1-0 Jack Lahne (17), 1-1 Bjørn Paulsen (45+2)
 2-1 Erik Figueroa (54), 2-2 självmål (66)
 2-3 Mads Fenger (80), 2-4 Nikola Djurdjić (86)
 Publik: 4744
