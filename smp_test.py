@@ -24,7 +24,7 @@ import util, corrections
 
 
 
-def main():
+def main(mode=None):
     year = 2018
     #TEST TODO rätt trupp!
     #year = 2017
@@ -35,15 +35,20 @@ def main():
     #season.loadLatestMatchFromSF()
 
     season.loadMatchesFromJson()
-    #Skriv ut statistik för senast spelade
-    #season.printLastPlayedMatchStatistics()
 
-    #Eller skriv ut för alla spelade
-    #season.printMatchStatistics()
-    #season.printPlayerStatistics()
 
-    #Eller skriv ut i format för årskrönikan
-    season.printYearbookFormat()
+    if mode == "yearbook":
+        #skriv ut i format för årskrönikan
+        season.printYearbookFormat()
+
+    elif mode == "last":
+        #Skriv ut statistik för senast spelade
+        season.printLastPlayedMatchStatistics()
+
+    else:
+        #Eller skriv ut för alla spelade
+        season.printMatchStatistics()
+        season.printPlayerStatistics()
 
 class Season(object):
 
@@ -156,6 +161,11 @@ class Season(object):
         return s1
             
     
+
+    def printLastPlayedMatchStatistics(self):
+        self.printMatchStatisticsHeader()
+        match = self.matches[-1]
+        match.printMatchStatistics(self)
 
     def printMatchStatistics(self):
         self.printMatchStatisticsHeader()
@@ -629,5 +639,10 @@ def jdefault(o):
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1:
+        mode = sys.argv[1]
+    else:
+        mode = None
+
+    main(mode)
 
