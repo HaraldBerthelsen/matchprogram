@@ -1,0 +1,10 @@
+Datum	Tid	Lag	Liga/typ	Arena	Resultat	02. Filippa Graneld	03. Julia Ekholm	04. Fanny Johansson	05. Elin Bergkvist	06. Felicia Saving	07. Cathrine Dahlström	08. Ellen Gibson	09. Astrid Larsson	10. Emma Jansson	11. Alma Nygren	13. Katja Höyer	14. Lawlaw Nazeri	15. Merlinda Shabanaj	16. Emilia Larsson	17. Lotta Ökvist	18. Hanna Lundkvist	19. Klara Folkesson	20. Jonna Andersson	21. Louise Lillbäck	22. Jonna Ståhl	23. Alice Ruda	24. Britta Gynning
+
+26/1 	11:45 	HJK - Hammarby 	Träningsmatch 	Talihalli 	1 - 3
+02/2 	13:00 	Hammarby - Eskilstuna United 	Träningsmatch 	Hammarby IP 	1 - 2
+09/2 	17:30 	Ljusdal - Hammarby 	Svenska Cupen 	Gavlevallen 	2 - 3
+17/2 	13:00 	Hammarby - AIK 	Svenska Cupen 	Hammarby IP 	0 - 3
+23/2 	11:15 	F17-landslaget - Hammarby 	Träningsmatch 	Vinnarhallen, Bosön 	0 - 3
+02/3 	13:00 	Hammarby - Sätra SK 	Träningsmatch 	Hammarby IP 	3 - 0
+10/3 	14:00 	Piteå - Hammarby 	Svenska Cupen 	Övertryckshallen 	7 - 0
+16/3 	11:30 	Brommapojkarna - Hammarby 	Träningsmatch 	Grimsta IP 	1 - 2
