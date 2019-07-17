@@ -1,0 +1,371 @@
+#Kopierad tabell från elitettan.se
+#Enklast att använda en sån här istället för att hämta html och parsa?
+
+#Läs två rader i taget:
+#rad 1: omgång, datum, tid, hemmalag, res
+#rad 2: bortalag
+
+1 13 apr 13:00 Kvarnsvedens IK 1 - 1
+Asarums IF FK
+1 13 apr 14:00 Hammarby IF FF 4 - 0
+IF Brommapojkarna
+1 13 apr 15:00 Umeå IK 2 - 0
+IK Uppsala Fotboll
+1 13 apr 16:00 Sundsvalls DFF 0 - 3
+AIK
+1 13 apr 16:00 Morön BK 3 - 2
+IFK Kalmar
+1 14 apr 12:00 Mallbackens IF 1 - 2
+Borgeby FK
+1 14 apr 13:30 Lidköpings FK 1 - 1
+Assi IF
+2 17 apr 19:00 Asarums IF FK 1 - 0
+Morön BK
+2 18 apr 19:00 IF Brommapojkarna 1 - 2
+Sundsvalls DFF
+2 19 apr 15:00 IFK Kalmar 1 - 2
+Lidköpings FK
+2 20 apr 15:00 IK Uppsala Fotboll 2 - 0
+Kvarnsvedens IK
+2 22 apr 13:00 Assi IF 1 - 1
+Mallbackens IF
+2 22 apr 13:00 AIK 1 - 1
+Hammarby IF FF
+2 22 apr 14:00 Borgeby FK 0 - 4
+Umeå IK
+3 27 apr 13:00 Mallbackens IF 0 - 1
+Umeå IK
+3 27 apr 15:00 Lidköpings FK 2 - 8
+AIK
+3 27 apr 15:00 IK Uppsala Fotboll 1 - 2
+Hammarby IF FF
+3 27 apr 16:00 IFK Kalmar 1 - 1
+IF Brommapojkarna
+3 27 apr 22:00 Morön BK 4 - 1
+Borgeby FK
+3 28 apr 13:00 Kvarnsvedens IK 2 - 2
+Assi IF
+3 28 apr 13:00 Asarums IF FK 1 - 1
+Sundsvalls DFF
+4 4 maj 13:00 IF Brommapojkarna 2 - 2
+Lidköpings FK
+4 4 maj 14:00 Hammarby IF FF 1 - 0
+Mallbackens IF
+4 4 maj 14:00 Borgeby FK 0 - 1
+Asarums IF FK
+4 4 maj 16:00 Sundsvalls DFF 2 - 5
+Morön BK
+4 4 maj 17:00 Assi IF 2 - 2
+IFK Kalmar
+4 4 maj 18:00 AIK 2 - 2
+IK Uppsala Fotboll
+4 5 maj 13:00 Umeå IK 2 - 1
+Kvarnsvedens IK
+5 11 maj 15:00 Morön BK 1 - 2
+IK Uppsala Fotboll
+5 11 maj 15:00 Mallbackens IF 0 - 0
+IF Brommapojkarna
+5 11 maj 15:00 Kvarnsvedens IK 6 - 2
+Lidköpings FK
+5 11 maj 16:00 IFK Kalmar 4 - 2
+AIK
+5 11 maj 18:00 Asarums IF FK 0 - 4
+Umeå IK
+5 12 maj 12:00 Borgeby FK 5 - 1
+Sundsvalls DFF
+5 12 maj 14:00 Assi IF 1 - 3
+Hammarby IF FF
+6 18 maj 13:00 AIK 1 - 0
+IF Brommapojkarna
+6 18 maj 14:00 Umeå IK 1 - 0
+IFK Kalmar
+6 18 maj 15:00 Sundsvalls DFF 0 - 4
+Kvarnsvedens IK
+6 19 maj 13:00 Morön BK 1 - 3
+Mallbackens IF
+6 19 maj 14:00 Hammarby IF FF 4 - 2
+Borgeby FK
+6 19 maj 15:00 Lidköpings FK 3 - 3
+Asarums IF FK
+6 19 maj 15:00 IK Uppsala Fotboll 1 - 1
+Assi IF
+7 25 maj 13:00 Borgeby FK 1 - 3
+AIK
+7 25 maj 13:00 IF Brommapojkarna 3 - 2
+Morön BK
+7 25 maj 15:00 Mallbackens IF 2 - 3
+Lidköpings FK
+7 25 maj 15:00 Kvarnsvedens IK 3 - 4
+IFK Kalmar
+7 25 maj 16:00 Assi IF 1 - 1
+Umeå IK
+7 26 maj 14:00 Hammarby IF FF 5 - 0
+Sundsvalls DFF
+7 26 maj 15:30 Asarums IF FK 0 - 6
+IK Uppsala Fotboll
+8 29 maj 19:00 Morön BK 1 - 2
+Umeå IK
+8 29 maj 19:00 Lidköpings FK 1 - 0
+Hammarby IF FF
+8 30 maj 13:00 Sundsvalls DFF 0 - 3
+Mallbackens IF
+8 30 maj 13:00 IF Brommapojkarna 1 - 2
+Assi IF
+8 30 maj 14:00 IK Uppsala Fotboll 2 - 0
+Borgeby FK
+8 30 maj 16:00 AIK 1 - 1
+Kvarnsvedens IK
+8 30 maj 19:00 IFK Kalmar 3 - 0
+Asarums IF FK
+9 2 jun 12:30 Assi IF 3 - 3
+Borgeby FK
+9 2 jun 13:00 Morön BK 1 - 2
+Lidköpings FK
+9 2 jun 13:00 Asarums IF FK 2 - 1
+Mallbackens IF
+9 2 jun 13:30 Umeå IK 1 - 2
+AIK
+9 2 jun 14:00 Hammarby IF FF 4 - 0
+IFK Kalmar
+9 2 jun 15:00 Sundsvalls DFF 1 - 3
+IK Uppsala Fotboll
+9 2 jun 15:00 Kvarnsvedens IK 2 - 2
+IF Brommapojkarna
+10 6 jun 12:00 Asarums IF FK 1 - 3
+Assi IF
+10 6 jun 14:00 Lidköpings FK 1 - 0
+Sundsvalls DFF
+10 6 jun 14:00 Hammarby IF FF 3 - 2
+Umeå IK
+10 6 jun 15:00 Mallbackens IF 3 - 0
+Kvarnsvedens IK
+10 6 jun 15:00 Borgeby FK 1 - 2
+IFK Kalmar
+10 6 jun 16:00 AIK 4 - 2
+Morön BK
+10 8 jun 13:00 Sundsvalls DFF 1 - 3
+Assi IF
+11 9 jun 12:00 Borgeby FK 0 - 4
+Kvarnsvedens IK
+11 9 jun 13:00 IFK Kalmar 3 - 0
+Mallbackens IF
+11 9 jun 13:30 Umeå IK 3 - 1
+IF Brommapojkarna
+11 9 jun 14:00 Morön BK 3 - 2
+Hammarby IF FF
+11 9 jun 15:00 IK Uppsala Fotboll 2 - 1
+Lidköpings FK
+11 9 jun 16:00 AIK 2 - 0
+Asarums IF FK
+11 15 jun 14:00 IFK Kalmar 4 - 0
+Sundsvalls DFF
+12 15 jun 15:00 Mallbackens IF 0 - 3
+IK Uppsala Fotboll
+12 16 jun 12:00 Umeå IK 3 - 0
+Lidköpings FK
+12 16 jun 13:00 Kvarnsvedens IK 1 - 1
+Morön BK
+12 16 jun 14:00 IF Brommapojkarna 2 - 1
+Borgeby FK
+12 16 jun 14:00 Assi IF 1 - 1
+AIK
+12 16 jun 16:00 Hammarby IF FF 4 - 1
+Asarums IF FK
+12 19 jun 18:00 Kvarnsvedens IK 2 - 0
+Hammarby IF FF
+13 20 jun 19:00 Sundsvalls DFF 0 - 3
+Umeå IK
+13 20 jun 19:30 Assi IF 3 - 1
+Morön BK
+13 20 jun 19:30 AIK 6 - 0
+Mallbackens IF
+13 23 jun 13:00 Asarums IF FK 3 - 1
+IF Brommapojkarna
+13 23 jun 15:00 Lidköpings FK 4 - 3
+Borgeby FK
+13 23 jun 15:00 IK Uppsala Fotboll 2 - 1
+IFK Kalmar
+13 29 jun 14:00 Hammarby IF FF 6 - 0
+Lidköpings FK
+14 29 jun 15:00 Umeå IK 2 - 1
+Asarums IF FK
+14 29 jun 15:00 IFK Kalmar 2 - 2
+IK Uppsala Fotboll
+14 29 jun 15:00 IF Brommapojkarna 3 - 1
+Kvarnsvedens IK
+14 30 jun 12:30 Borgeby FK 3 - 2
+Assi IF
+14 30 jun 13:30 Morön BK 0 - 3
+AIK
+14 30 jun 14:00 Mallbackens IF 5 - 0
+Sundsvalls DFF
+14 3 jul 18:30 IF Brommapojkarna 1 - 1
+IK Uppsala Fotboll
+15 6 jul 15:00 Kvarnsvedens IK 4 - 2
+Mallbackens IF
+15 6 jul 15:00 Asarums IF FK 1 - 1
+Borgeby FK
+15 6 jul 15:00 Lidköpings FK 2 - 3
+IFK Kalmar
+15 6 jul 15:00 AIK 7 - 0
+Sundsvalls DFF
+15 7 jul 14:00 IK Uppsala Fotboll 0 - 1
+Morön BK
+15 7 jul 14:00 Assi IF 1 - 0
+IF Brommapojkarna
+15 7 jul 14:00 Umeå IK 1 - 1
+Hammarby IF FF
+16 2 aug 19:30 Morön BK -
+Assi IF
+16 3 aug 15:00 Sundsvalls DFF -
+Hammarby IF FF
+16 3 aug 15:00 Mallbackens IF -
+AIK
+16 3 aug 15:00 Lidköpings FK -
+Kvarnsvedens IK
+16 3 aug 15:00 Borgeby FK -
+IK Uppsala Fotboll
+16 4 aug 14:00 IF Brommapojkarna -
+Umeå IK
+16 6 aug 18:00 Asarums IF FK -
+IFK Kalmar
+17 9 aug 19:00 Umeå IK -
+Morön BK
+17 10 aug 14:00 AIK -
+Lidköpings FK
+17 10 aug 15:00 IK Uppsala Fotboll -
+IF Brommapojkarna
+17 10 aug 15:00 IFK Kalmar -
+Borgeby FK
+17 10 aug 16:00 Kvarnsvedens IK -
+Sundsvalls DFF
+17 11 aug 13:00 Mallbackens IF -
+Asarums IF FK
+17 11 aug 15:00 Hammarby IF FF -
+Assi IF
+18 17 aug 13:00 Kvarnsvedens IK -
+Umeå IK
+18 17 aug 15:00 Sundsvalls DFF -
+IFK Kalmar
+18 17 aug 15:00 Lidköpings FK -
+Mallbackens IF
+18 18 aug 14:00 Morön BK -
+IF Brommapojkarna
+18 18 aug 14:00 Assi IF -
+IK Uppsala Fotboll
+18 18 aug 15:00 Borgeby FK -
+Hammarby IF FF
+18 18 aug 15:30 Asarums IF FK -
+AIK
+19 23 aug 16:30 Lidköpings FK -
+Umeå IK
+19 24 aug 14:00 Hammarby IF FF -
+Kvarnsvedens IK
+19 24 aug 15:00 IK Uppsala Fotboll -
+Sundsvalls DFF
+19 25 aug 12:00 IFK Kalmar -
+Assi IF
+19 25 aug 12:00 Mallbackens IF -
+Morön BK
+19 25 aug 14:00 AIK -
+Borgeby FK
+19 25 aug 16:00 IF Brommapojkarna -
+Asarums IF FK
+20 7 sep 13:00 IF Brommapojkarna -
+AIK
+20 7 sep 15:00 Kvarnsvedens IK -
+IK Uppsala Fotboll
+20 7 sep 15:00 Assi IF -
+Asarums IF FK
+20 7 sep 16:00 IFK Kalmar -
+Hammarby IF FF
+20 8 sep 13:00 Umeå IK -
+Mallbackens IF
+20 8 sep 14:00 Sundsvalls DFF -
+Lidköpings FK
+20 8 sep 14:00 Borgeby FK -
+Morön BK
+21 14 sep 15:00 Mallbackens IF -
+IFK Kalmar
+21 14 sep 15:00 Lidköpings FK -
+IF Brommapojkarna
+21 14 sep 15:00 IK Uppsala Fotboll -
+AIK
+21 15 sep 13:00 Sundsvalls DFF -
+Borgeby FK
+21 15 sep 13:00 Morön BK -
+Kvarnsvedens IK
+21 15 sep 15:30 Asarums IF FK -
+Hammarby IF FF
+21 15 sep 16:30 Umeå IK -
+Assi IF
+22 21 sep 13:00 IFK Kalmar -
+Kvarnsvedens IK
+22 21 sep 14:00 AIK -
+Umeå IK
+22 21 sep 15:00 IF Brommapojkarna -
+Mallbackens IF
+22 21 sep 15:00 Borgeby FK -
+Lidköpings FK
+22 22 sep 14:00 Assi IF -
+Sundsvalls DFF
+22 22 sep 16:00 Hammarby IF FF -
+Morön BK
+22 22 sep 17:00 IK Uppsala Fotboll -
+Asarums IF FK
+23 27 sep 19:00 Umeå IK -
+Sundsvalls DFF
+23 28 sep 15:00 Mallbackens IF -
+Hammarby IF FF
+23 28 sep 15:00 Lidköpings FK -
+IK Uppsala Fotboll
+23 28 sep 16:00 Morön BK -
+Asarums IF FK
+23 28 sep 16:00 IF Brommapojkarna -
+IFK Kalmar
+23 29 sep 12:00 Kvarnsvedens IK -
+Borgeby FK
+23 29 sep 14:00 AIK -
+Assi IF
+24 12 okt 13:00 IK Uppsala Fotboll -
+Umeå IK
+24 12 okt 13:00 Borgeby FK -
+Mallbackens IF
+24 12 okt 13:00 Asarums IF FK -
+Kvarnsvedens IK
+24 12 okt 14:00 Hammarby IF FF -
+AIK
+24 12 okt 15:00 Sundsvalls DFF -
+IF Brommapojkarna
+24 13 okt 13:00 IFK Kalmar -
+Morön BK
+24 13 okt 13:00 Assi IF -
+Lidköpings FK
+25 19 okt 12:30 IF Brommapojkarna -
+Hammarby IF FF
+25 19 okt 15:00 IK Uppsala Fotboll -
+Mallbackens IF
+25 19 okt 16:00 AIK -
+IFK Kalmar
+25 20 okt 12:00 Umeå IK -
+Borgeby FK
+25 20 okt 13:00 Lidköpings FK -
+Morön BK
+25 20 okt 13:30 Sundsvalls DFF -
+Asarums IF FK
+25 20 okt 16:30 Assi IF -
+Kvarnsvedens IK
+26 27 okt 13:00 Morön BK -
+Sundsvalls DFF
+26 27 okt 13:00 Mallbackens IF -
+Assi IF
+26 27 okt 13:00 Kvarnsvedens IK -
+AIK
+26 27 okt 13:00 IFK Kalmar -
+Umeå IK
+26 27 okt 13:00 Hammarby IF FF -
+IK Uppsala Fotboll
+26 27 okt 13:00 Borgeby FK -
+IF Brommapojkarna
+26 27 okt 13:00 Asarums IF FK -
+Lidköpings FK
