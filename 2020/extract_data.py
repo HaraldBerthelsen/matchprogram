@@ -250,6 +250,8 @@ def update_info(player):
     
 def print_player_stats_by_number():
     for nr in sorted(players_by_number.keys()):
+        #nr	spelare	matcher/mål	assist	skott	speltid minuter	gula kort	röda kort
+        #1	Johan Wiland	7/0	0	0	568	0	0
         print(nr)
     
 
