@@ -216,21 +216,43 @@ for match_info in match_info_list:
 
         
 
-for match_info in match_info_list:
+def print_game_stats():
+    for match_info in match_info_list:
 
-    if "referee" in match_info:
-        referee = match_info["referee"]
-    else:
-        referee = "-"
+        if "referee" in match_info:
+            referee = match_info["referee"]
+        else:
+            referee = "-"
 
 
-    played_time = 90
-    if "first_half_extra_time" in match_info:
-        played_time += match_info["first_half_extra_time"]
-    if "second_half_extra_time" in match_info:
-        played_time += match_info["second_half_extra_time"]
+        played_time = 90
+        if "first_half_extra_time" in match_info:
+            played_time += match_info["first_half_extra_time"]
+        if "second_half_extra_time" in match_info:
+            played_time += match_info["second_half_extra_time"]
 
-        
+
+
+        print("%s\t%s\t%s\t%20s\t%s\t%s\t%20s\t%20s\t%s\t%s\t%s" % (match_info["id"], match_info["round"], match_info["home/away"], match_info["opponent"], match_info["date"], match_info["time"], match_info["arena"], referee, match_info["hif_score"], match_info["other_score"], played_time))
+
+
+players_by_number = {}
+def print_player_stats():
+     for match_info in match_info_list:
+         for player in match_info["squad"]:
+             update_info(player)
+
+     print_player_stats_by_number()
+
+
+def update_info(player):
+    pass
     
-    print("%s\t%s\t%s\t%20s\t%s\t%s\t%20s\t%20s\t%s\t%s\t%s" % (match_info["id"], match_info["round"], match_info["home/away"], match_info["opponent"], match_info["date"], match_info["time"], match_info["arena"], referee, match_info["hif_score"], match_info["other_score"], played_time))
+def print_player_stats_by_number():
+    for nr in sorted(players_by_number.keys()):
+        print(nr)
     
+
+
+print_game_stats()
+print_player_stats()
