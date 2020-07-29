@@ -240,7 +240,60 @@ for match_info in match_info_list:
 
 
 
+def print_formations():
+     for match_info in match_info_list:
+         if match_info["home/away"] == "H":
+             print("Hammarby - %s" % match_info["opponent"])
+         else:
+             print("%s - Hammarby" % match_info["opponent"])
+         
+         formation = match_info["formation"].split("-")
+         ps = match_info["squad"][:11] 
+         print(match_info["formation"])
+         #print(len(ps))
+         keeper = ps[0]
+         print("%s %s" % (keeper["number"], keeper["name"]))
+         print("--")
+         nDef = int(formation[0])
+         i1 = nDef+1
+         defenders = ps[1:i1]
+         for defender in defenders:
+             print("%s %s" % (defender["number"], defender["name"]))
+         print("--")
+         
+         if len(formation) == 4:
+             nMfs1 = int(formation[1])
+             i2a = i1+nMfs1
+             mfs1 = ps[i1:i2a]
+             for mf1 in mfs1:
+                 print("%s %s" % (mf1["number"], mf1["name"]))
 
+             print("--")
+             nMfs = int(formation[2])
+             i2 = i2a+nMfs
+             mfs = ps[i2a:i2]
+             for mf in mfs:
+                 print("%s %s" % (mf["number"], mf["name"]))
+         else:
+             nMfs = int(formation[1])
+             i2 = i1+nMfs
+             mfs = ps[i1:i2]
+             for mf in mfs:
+                 print("%s %s" % (mf["number"], mf["name"]))
+
+         print("--")
+         #nFws = int(formation[-1])
+         #print(nFws)
+         fws = ps[i2:]
+         for fw in fws:
+             print("%s %s" % (fw["number"], fw["name"]))
+ 
+         print("")
+                 
+
+
+         
+             
         
 players = {}
 def print_game_stats():
@@ -392,6 +445,6 @@ def print_player_stats_by_number():
         print("%s\t%30s\t%s/%s\t%s\t%s\t%s\t%s\t%s" % (nr, players[nr]["name"], players[nr]["nMatches"], players[nr]["nGoals"], players[nr]["nAssists"], players[nr]["nShots"], players[nr]["timePlayed"], players[nr]["nYellow"], players[nr]["nRed"]))
     
 
-
+#print_formations()
 print_game_stats()
 print_player_stats()
