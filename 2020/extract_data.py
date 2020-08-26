@@ -1,6 +1,7 @@
 import sys, os, re
 from bs4 import BeautifulSoup
 
+#http --download https://www.allsvenskan.se/matcher/match?id=6178 -o 6178.html
 
 with open("matcher.html") as fh:
     html_doc = fh.read()
@@ -16,7 +17,8 @@ def convert_date(date):
     #"söndag 14 juni" -> "14/6"
     months = {
         "juni":6,
-        "juli":7
+        "juli":7,
+        "augusti":8
     }
     (_,day,month_name) = date.split(" ")
     return "%s/%s" % (day, months[month_name])
@@ -134,6 +136,7 @@ for match_info in match_info_list:
         match_info["squad"] = squad
         starting = True
         for player in players:
+            #"Ersättare" är en td som skiljer grupperna åt
             if "Ersättare" in player.text:
                 starting = False
             if "data-page-url" in player.attrs and "hammarby" in player["data-page-url"]:
@@ -141,6 +144,12 @@ for match_info in match_info_list:
                     hif_players.append(player)
                 else:
                     hif_subs.append(player)
+                    #sys.stderr.write("%s\n" % player)
+            elif "Mayckel Lahdo" in player.text:
+                #ML har ingen data-page-url i 6220.html (dif)
+                hif_subs.append(player)
+                sys.stderr.write("%s\n" % player)
+                
 
         i = 0
         while i+1 < len(hif_players):
@@ -228,7 +237,7 @@ for match_info in match_info_list:
 
             squad.append(p)
             
-            #print("%s" % (p))
+            sys.stderr.write("%s\n" % (p))
             i+=2
             
         #sys.exit()
