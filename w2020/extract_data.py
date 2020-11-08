@@ -61,7 +61,7 @@ def printSeason(season, squad):
             if nr not in match["match_players"]:
                 to_print.append("-")
             else:
-                to_print.append("%s%s%s" % (match["match_players"][nr]["sub"], match["match_players"][nr]["goal"], match["match_players"][nr]["yellow"]))
+                to_print.append("%s%s%s" % (match["match_players"][nr]["sub"], match["match_players"][nr]["goals"], match["match_players"][nr]["yellow"]))
 
         print("\t".join(to_print))
                             
@@ -171,16 +171,17 @@ def getPlayerInfo(player, sub=False):
         yellow = "G"
         #print("yellow")
 
-    goal = ""
-    if player.find("use", attrs={"xlink:href": "#icon-football"}):
-        goal = 1
+    goals = ""
+    goalicons = len(player.find_all("use", attrs={"xlink:href": "#icon-football"}))
+    if goalicons > 0:
+        goals = goalicons
         #print("goal")
 
         
     info = {
         "name": name,
         "sub": sub,
-        "goal": goal,
+        "goals": goals,
         "yellow": yellow
     }
 
