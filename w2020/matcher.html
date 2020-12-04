@@ -21,7 +21,7 @@
 	
 		<!-- Application Insights -->
 		<script type="text/javascript">
-		var sdkInstance = "appInsightsSDK"; window[sdkInstance] = "appInsights"; var aiName = window[sdkInstance], aisdk = window[aiName] || function (e) { function n(e) { t[e] = function () { var n = arguments; t.queue.push(function () { t[e].apply(t, n) }) } } var t = { config: e }; t.initialize = !0; var i = document, a = window; setTimeout(function () { var n = i.createElement("script"); n.src = e.url || "/ui/dist/js/ai.2-modified.min.js?v=2.1.22.0", i.getElementsByTagName("script")[0].parentNode.appendChild(n) }); try { t.cookie = i.cookie } catch (e) { } t.queue = [], t.version = 2; for (var r = ["Event", "PageView", "Exception", "Trace", "DependencyData", "Metric", "PageViewPerformance"]; r.length;)n("track" + r.pop()); n("startTrackPage"), n("stopTrackPage"); var s = "Track" + r[0]; if (n("start" + s), n("stop" + s), n("addTelemetryInitializer"), n("setAuthenticatedUserContext"), n("clearAuthenticatedUserContext"), n("flush"), t.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }, !(!0 === e.disableExceptionTracking || e.extensionConfig && e.extensionConfig.ApplicationInsightsAnalytics && !0 === e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)) { n("_" + (r = "onerror")); var o = a[r]; a[r] = function (e, n, i, a, s) { var c = o && o(e, n, i, a, s); return !0 !== c && t["_" + r]({ message: e, url: n, lineNumber: i, columnNumber: a, error: s }), c }, e.autoExceptionInstrumented = !0 } return t }(
+		var sdkInstance = "appInsightsSDK"; window[sdkInstance] = "appInsights"; var aiName = window[sdkInstance], aisdk = window[aiName] || function (e) { function n(e) { t[e] = function () { var n = arguments; t.queue.push(function () { t[e].apply(t, n) }) } } var t = { config: e }; t.initialize = !0; var i = document, a = window; setTimeout(function () { var n = i.createElement("script"); n.src = e.url || "/ui/dist/js/ai.2-modified.min.js?v=2.1.28.0", i.getElementsByTagName("script")[0].parentNode.appendChild(n) }); try { t.cookie = i.cookie } catch (e) { } t.queue = [], t.version = 2; for (var r = ["Event", "PageView", "Exception", "Trace", "DependencyData", "Metric", "PageViewPerformance"]; r.length;)n("track" + r.pop()); n("startTrackPage"), n("stopTrackPage"); var s = "Track" + r[0]; if (n("start" + s), n("stop" + s), n("addTelemetryInitializer"), n("setAuthenticatedUserContext"), n("clearAuthenticatedUserContext"), n("flush"), t.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }, !(!0 === e.disableExceptionTracking || e.extensionConfig && e.extensionConfig.ApplicationInsightsAnalytics && !0 === e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)) { n("_" + (r = "onerror")); var o = a[r]; a[r] = function (e, n, i, a, s) { var c = o && o(e, n, i, a, s); return !0 !== c && t["_" + r]({ message: e, url: n, lineNumber: i, columnNumber: a, error: s }), c }, e.autoExceptionInstrumented = !0 } return t }(
 			{
 				instrumentationKey: "51de0662-793d-464d-9dad-0736368586ca"
 			}
@@ -46,7 +46,7 @@
 
 	<title>Spelprogram - Svensk fotboll</title>
 
-	<link href="/ui/dist/css/main.min.css?v=2.1.22.0" rel="stylesheet" />
+	<link href="/ui/dist/css/main.min.css?v=2.1.28.0" rel="stylesheet" />
 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" sizes="180x180" href="/ui/dist/assets/fav-icons/apple-touch-icon.png">
@@ -75,7 +75,7 @@
 					<div class="mast-header__section-text-wrapper">
 						<div class="mast-header__section-text-wrapper-inner">
 							<a class="logo" href="/">
-								<img class="logo__img" src="/ui/dist/assets/img/logo.svg" alt="Svenska Fotbollf&#246;rbundet logotyp, till startsidan">
+									<img class="logo__img" src="/ui/dist/assets/img/logo.svg" alt="Svenska Fotbollf&#246;rbundet logotyp, till startsidan">
 							</a>
 							<button class="mast-header__section-button" aria-label="&#214;ppna och st&#228;ng sektioner" aria-controls="mast-header-panel-sections" aria-expanded="false" data-js-mast-header-panel-toggle>
 								<span class="mast-header__section-name">Klubblag och landslag</span>
@@ -1115,6 +1115,13 @@
 							</li>
 							<li class="mast-nav__menu-item">
 								<a class="mast-nav__menu-link mast-nav__menu-link--small mast-nav__menu-link--strong" href="/serier-cuper/tavlingsdokument/"  data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '2', 'label': 'T&#228;vlingsdokument' }">T&#228;vlingsdokument</a>
+									<button class="mast-nav__menu-expander mast-nav__menu-expander--light" data-js-mast-nav-expand aria-controls="menu-17899" aria-expanded="false"></button>
+									<ul class="mast-nav__sub-menu mast-nav__sub-menu--indented" id="menu-17899">
+												<li class="mast-nav__menu-item">
+			<a class="mast-nav__menu-link mast-nav__menu-link--small" href="/serier-cuper/tavlingsdokument/seriesammansattningar/"  data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '2', 'label': 'Seriesammans&#228;ttningar inf&#246;r 2021' }">Seriesammans&#228;ttningar inf&#246;r 2021</a>
+		</li>
+
+									</ul>
 							</li>
 					</ul>
 			</li>
@@ -1246,11 +1253,6 @@
 
 				</div>
 
-					<div class="fluid-columns__item">
-						<a class="button button--block button--light-outlined pop" href="#current-match">
-							G&#229; till aktuellt datum
-						</a>						
-					</div>
 				</div>
 		</div>
 		<div class="section">
@@ -1270,7 +1272,7 @@
 					
 
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-moron-bk-elitettan/4420303" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-moron-bk-elitettan/4420303" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1304,7 +1306,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-mallbackens-if-sunne-elitettan/4420301" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-mallbackens-if-sunne-elitettan/4420301" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1338,7 +1340,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-sandvikens-if-elitettan/4420304" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-sandvikens-if-elitettan/4420304" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1372,7 +1374,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-aik-elitettan/4420299" >
+		<a class="match-list__link" href="/matchfakta/hammarby-aik-elitettan/4420299" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1406,7 +1408,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-lidkopings-fk-elitettan/4420300" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-lidkopings-fk-elitettan/4420300" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1440,7 +1442,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-alingsas-fc-united-elitettan/4420302" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-alingsas-fc-united-elitettan/4420302" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1474,7 +1476,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-if-brommapojkarna-elitettan/4420305" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-if-brommapojkarna-elitettan/4420305" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1508,7 +1510,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-moron-bk-elitettan/4420311" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-moron-bk-elitettan/4420311" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1542,7 +1544,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-ifk-kalmar-elitettan/4420306" >
+		<a class="match-list__link" href="/matchfakta/hammarby-ifk-kalmar-elitettan/4420306" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1576,7 +1578,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-bollstanas-sk-elitettan/4420307" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-bollstanas-sk-elitettan/4420307" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1610,7 +1612,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-sunnana-sk-elitettan/4420312" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-sunnana-sk-elitettan/4420312" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1644,7 +1646,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-lidkopings-fk-elitettan/4420310" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-lidkopings-fk-elitettan/4420310" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1678,7 +1680,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-aik-elitettan/4420308" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-aik-elitettan/4420308" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1712,7 +1714,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-kvarnsvedens-ik-elitettan/4420309" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-kvarnsvedens-ik-elitettan/4420309" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1746,7 +1748,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-alvsjo-aik-ff-elitettan/4420319" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-alvsjo-aik-ff-elitettan/4420319" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1780,7 +1782,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-sandvikens-if-elitettan/4420315" >
+		<a class="match-list__link" href="/matchfakta/aik-sandvikens-if-elitettan/4420315" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1814,7 +1816,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-hammarby-elitettan/4420318" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-hammarby-elitettan/4420318" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1848,7 +1850,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-jitex-molndal-bk-elitettan/4420314" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-jitex-molndal-bk-elitettan/4420314" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1882,7 +1884,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-bollstanas-sk-elitettan/4420316" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-bollstanas-sk-elitettan/4420316" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1916,7 +1918,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-alingsas-fc-united-elitettan/4420317" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-alingsas-fc-united-elitettan/4420317" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -1950,7 +1952,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-if-brommapojkarna-elitettan/4420313" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-if-brommapojkarna-elitettan/4420313" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2000,7 +2002,7 @@
 					
 
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-ifk-kalmar-elitettan/4420293" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-ifk-kalmar-elitettan/4420293" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2034,7 +2036,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-sandvikens-if-elitettan/4420296" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-sandvikens-if-elitettan/4420296" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2068,7 +2070,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-sunnana-sk-elitettan/4420297" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-sunnana-sk-elitettan/4420297" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2102,7 +2104,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-jitex-molndal-bk-elitettan/4420294" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-jitex-molndal-bk-elitettan/4420294" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2136,7 +2138,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-hammarby-elitettan/4420295" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-hammarby-elitettan/4420295" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2170,7 +2172,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-kvarnsvedens-ik-elitettan/4420298" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-kvarnsvedens-ik-elitettan/4420298" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2204,7 +2206,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-alvsjo-aik-ff-elitettan/4420292" >
+		<a class="match-list__link" href="/matchfakta/aik-alvsjo-aik-ff-elitettan/4420292" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2238,7 +2240,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-lidkopings-fk-elitettan/4420320" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-lidkopings-fk-elitettan/4420320" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2272,7 +2274,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-hammarby-elitettan/4420321" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-hammarby-elitettan/4420321" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2306,7 +2308,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-ifk-kalmar-elitettan/4420324" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-ifk-kalmar-elitettan/4420324" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2340,7 +2342,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-kvarnsvedens-ik-elitettan/4420326" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-kvarnsvedens-ik-elitettan/4420326" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2374,7 +2376,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-sunnana-sk-elitettan/4420322" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-sunnana-sk-elitettan/4420322" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2408,7 +2410,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-aik-elitettan/4420323" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-aik-elitettan/4420323" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2442,7 +2444,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-mallbackens-if-sunne-elitettan/4420325" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-mallbackens-if-sunne-elitettan/4420325" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2476,7 +2478,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-sandvikens-if-elitettan/4420327" >
+		<a class="match-list__link" href="/matchfakta/hammarby-sandvikens-if-elitettan/4420327" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2510,7 +2512,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-bollstanas-sk-elitettan/4420332" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-bollstanas-sk-elitettan/4420332" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2544,7 +2546,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-if-brommapojkarna-elitettan/4420328" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-if-brommapojkarna-elitettan/4420328" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2578,7 +2580,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-jitex-molndal-bk-elitettan/4420330" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-jitex-molndal-bk-elitettan/4420330" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2612,7 +2614,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-alingsas-fc-united-elitettan/4420329" >
+		<a class="match-list__link" href="/matchfakta/aik-alingsas-fc-united-elitettan/4420329" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2646,7 +2648,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-alvsjo-aik-ff-elitettan/4420333" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-alvsjo-aik-ff-elitettan/4420333" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2680,7 +2682,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-moron-bk-elitettan/4420331" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-moron-bk-elitettan/4420331" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2714,7 +2716,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-sandvikens-if-elitettan/4420238" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-sandvikens-if-elitettan/4420238" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2748,7 +2750,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-bollstanas-sk-elitettan/4420241" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-bollstanas-sk-elitettan/4420241" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2782,7 +2784,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-hammarby-elitettan/4420237" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-hammarby-elitettan/4420237" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2816,7 +2818,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-alingsas-fc-united-elitettan/4420240" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-alingsas-fc-united-elitettan/4420240" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2850,7 +2852,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-ifk-kalmar-elitettan/4420242" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-ifk-kalmar-elitettan/4420242" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2884,7 +2886,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-mallbackens-if-sunne-elitettan/4420236" >
+		<a class="match-list__link" href="/matchfakta/aik-mallbackens-if-sunne-elitettan/4420236" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2918,7 +2920,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-lidkopings-fk-elitettan/4420239" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-lidkopings-fk-elitettan/4420239" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2952,7 +2954,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-kvarnsvedens-ik-elitettan/4420277" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-kvarnsvedens-ik-elitettan/4420277" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -2986,7 +2988,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-if-brommapojkarna-elitettan/4420271" >
+		<a class="match-list__link" href="/matchfakta/hammarby-if-brommapojkarna-elitettan/4420271" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3020,7 +3022,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-alvsjo-aik-ff-elitettan/4420274" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-alvsjo-aik-ff-elitettan/4420274" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3054,7 +3056,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-jitex-molndal-bk-elitettan/4420275" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-jitex-molndal-bk-elitettan/4420275" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3088,7 +3090,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-sandvikens-if-elitettan/4420273" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-sandvikens-if-elitettan/4420273" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3122,7 +3124,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-ifk-kalmar-elitettan/4420276" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-ifk-kalmar-elitettan/4420276" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3156,7 +3158,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-sunnana-sk-elitettan/4420272" >
+		<a class="match-list__link" href="/matchfakta/aik-sunnana-sk-elitettan/4420272" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3190,7 +3192,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-lidkopings-fk-elitettan/4420279" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-lidkopings-fk-elitettan/4420279" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3240,7 +3242,7 @@
 					
 
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-moron-bk-elitettan/4420280" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-moron-bk-elitettan/4420280" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3274,7 +3276,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-hammarby-elitettan/4420281" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-hammarby-elitettan/4420281" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3308,7 +3310,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-jitex-molndal-bk-elitettan/4420282" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-jitex-molndal-bk-elitettan/4420282" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3342,7 +3344,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-ifk-kalmar-elitettan/4420283" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-ifk-kalmar-elitettan/4420283" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3376,7 +3378,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-aik-elitettan/4420278" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-aik-elitettan/4420278" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3410,7 +3412,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-alingsas-fc-united-elitettan/4420284" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-alingsas-fc-united-elitettan/4420284" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3444,7 +3446,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-jitex-molndal-bk-elitettan/4420335" >
+		<a class="match-list__link" href="/matchfakta/aik-jitex-molndal-bk-elitettan/4420335" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3478,7 +3480,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-hammarby-elitettan/4420334" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-hammarby-elitettan/4420334" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3512,7 +3514,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-if-brommapojkarna-elitettan/4420336" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-if-brommapojkarna-elitettan/4420336" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3546,7 +3548,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-alingsas-fc-united-elitettan/4420339" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-alingsas-fc-united-elitettan/4420339" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3580,7 +3582,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-moron-bk-elitettan/4420340" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-moron-bk-elitettan/4420340" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3614,7 +3616,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-sunnana-sk-elitettan/4420338" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-sunnana-sk-elitettan/4420338" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3648,7 +3650,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-mallbackens-if-sunne-elitettan/4420337" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-mallbackens-if-sunne-elitettan/4420337" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3682,7 +3684,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-bollstanas-sk-elitettan/4420342" >
+		<a class="match-list__link" href="/matchfakta/hammarby-bollstanas-sk-elitettan/4420342" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3716,7 +3718,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-kvarnsvedens-ik-elitettan/4420347" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-kvarnsvedens-ik-elitettan/4420347" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3750,7 +3752,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-aik-elitettan/4420341" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-aik-elitettan/4420341" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3784,7 +3786,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-mallbackens-if-sunne-elitettan/4420344" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-mallbackens-if-sunne-elitettan/4420344" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3818,7 +3820,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-ifk-kalmar-elitettan/4420345" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-ifk-kalmar-elitettan/4420345" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3852,7 +3854,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-alvsjo-aik-ff-elitettan/4420346" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-alvsjo-aik-ff-elitettan/4420346" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3886,7 +3888,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-lidkopings-fk-elitettan/4420343" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-lidkopings-fk-elitettan/4420343" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3920,7 +3922,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-moron-bk-elitettan/4420349" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-moron-bk-elitettan/4420349" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3954,7 +3956,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-sunnana-sk-elitettan/4420353" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-sunnana-sk-elitettan/4420353" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -3988,7 +3990,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-sandvikens-if-elitettan/4420351" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-sandvikens-if-elitettan/4420351" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4022,7 +4024,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-jitex-molndal-bk-elitettan/4420354" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-jitex-molndal-bk-elitettan/4420354" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4056,7 +4058,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-hammarby-elitettan/4420350" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-hammarby-elitettan/4420350" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4090,7 +4092,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-bollstanas-sk-elitettan/4420352" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-bollstanas-sk-elitettan/4420352" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4124,7 +4126,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-ifk-kalmar-elitettan/4420348" >
+		<a class="match-list__link" href="/matchfakta/aik-ifk-kalmar-elitettan/4420348" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4158,7 +4160,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-alingsas-fc-united-elitettan/4420265" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-alingsas-fc-united-elitettan/4420265" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4192,7 +4194,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-aik-elitettan/4420266" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-aik-elitettan/4420266" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4226,7 +4228,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-bollstanas-sk-elitettan/4420264" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-bollstanas-sk-elitettan/4420264" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4260,7 +4262,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-mallbackens-if-sunne-elitettan/4420267" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-mallbackens-if-sunne-elitettan/4420267" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4294,7 +4296,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-lidkopings-fk-elitettan/4420268" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-lidkopings-fk-elitettan/4420268" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4328,7 +4330,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-sandvikens-if-elitettan/4420270" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-sandvikens-if-elitettan/4420270" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4362,7 +4364,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-hammarby-elitettan/4420269" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-hammarby-elitettan/4420269" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4396,7 +4398,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-kvarnsvedens-ik-elitettan/4420360" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-kvarnsvedens-ik-elitettan/4420360" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4430,7 +4432,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-alvsjo-aik-ff-elitettan/4420356" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-alvsjo-aik-ff-elitettan/4420356" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4464,7 +4466,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-lidkopings-fk-elitettan/4420358" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-lidkopings-fk-elitettan/4420358" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4498,7 +4500,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-if-brommapojkarna-elitettan/4420359" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-if-brommapojkarna-elitettan/4420359" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4532,7 +4534,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-alingsas-fc-united-elitettan/4420355" >
+		<a class="match-list__link" href="/matchfakta/hammarby-alingsas-fc-united-elitettan/4420355" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4566,7 +4568,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-mallbackens-if-sunne-elitettan/4420357" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-mallbackens-if-sunne-elitettan/4420357" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4600,7 +4602,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-aik-elitettan/4420361" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-aik-elitettan/4420361" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4650,7 +4652,7 @@
 					
 
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-jitex-molndal-bk-elitettan/4420366" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-jitex-molndal-bk-elitettan/4420366" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4684,7 +4686,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-kvarnsvedens-ik-elitettan/4420362" >
+		<a class="match-list__link" href="/matchfakta/aik-kvarnsvedens-ik-elitettan/4420362" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4718,7 +4720,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-hammarby-elitettan/4420367" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-hammarby-elitettan/4420367" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4752,7 +4754,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-ifk-kalmar-elitettan/4420364" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-ifk-kalmar-elitettan/4420364" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4786,7 +4788,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-sandvikens-if-elitettan/4420365" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-sandvikens-if-elitettan/4420365" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4820,7 +4822,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-moron-bk-elitettan/4420368" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-moron-bk-elitettan/4420368" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4854,7 +4856,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-alvsjo-aik-ff-elitettan/4420363" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-alvsjo-aik-ff-elitettan/4420363" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4888,7 +4890,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-mallbackens-if-sunne-elitettan/4420370" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-mallbackens-if-sunne-elitettan/4420370" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4922,7 +4924,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-bollstanas-sk-elitettan/4420375" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-bollstanas-sk-elitettan/4420375" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4956,7 +4958,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-sunnana-sk-elitettan/4420369" >
+		<a class="match-list__link" href="/matchfakta/hammarby-sunnana-sk-elitettan/4420369" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -4990,7 +4992,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-lidkopings-fk-elitettan/4420371" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-lidkopings-fk-elitettan/4420371" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5024,7 +5026,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-aik-elitettan/4420374" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-aik-elitettan/4420374" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5058,7 +5060,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-alingsas-fc-united-elitettan/4420373" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-alingsas-fc-united-elitettan/4420373" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5092,7 +5094,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-if-brommapojkarna-elitettan/4420372" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-if-brommapojkarna-elitettan/4420372" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5126,7 +5128,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-if-brommapojkarna-elitettan/4420287" >
+		<a class="match-list__link" href="/matchfakta/aik-if-brommapojkarna-elitettan/4420287" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5160,7 +5162,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-bollstanas-sk-elitettan/4420291" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-bollstanas-sk-elitettan/4420291" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5194,7 +5196,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-mallbackens-if-sunne-elitettan/4420285" >
+		<a class="match-list__link" href="/matchfakta/hammarby-mallbackens-if-sunne-elitettan/4420285" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5228,7 +5230,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-moron-bk-elitettan/4420286" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-moron-bk-elitettan/4420286" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5262,7 +5264,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-sunnana-sk-elitettan/4420288" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-sunnana-sk-elitettan/4420288" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5296,7 +5298,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-alingsas-fc-united-elitettan/4420289" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-alingsas-fc-united-elitettan/4420289" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5330,7 +5332,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-alvsjo-aik-ff-elitettan/4420290" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-alvsjo-aik-ff-elitettan/4420290" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5364,7 +5366,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-alvsjo-aik-ff-elitettan/4420381" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-alvsjo-aik-ff-elitettan/4420381" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5398,7 +5400,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-hammarby-elitettan/4420376" >
+		<a class="match-list__link" href="/matchfakta/aik-hammarby-elitettan/4420376" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5432,7 +5434,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-ifk-kalmar-elitettan/4420378" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-ifk-kalmar-elitettan/4420378" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5466,7 +5468,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-kvarnsvedens-ik-elitettan/4420379" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-kvarnsvedens-ik-elitettan/4420379" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5500,7 +5502,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-jitex-molndal-bk-elitettan/4420380" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-jitex-molndal-bk-elitettan/4420380" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5534,7 +5536,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-moron-bk-elitettan/4420377" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-moron-bk-elitettan/4420377" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5568,7 +5570,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-mallbackens-if-sunne-elitettan/4420382" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-mallbackens-if-sunne-elitettan/4420382" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5618,7 +5620,7 @@
 					
 
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-aik-elitettan/4420385" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-aik-elitettan/4420385" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5652,7 +5654,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-sunnana-sk-elitettan/4420384" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-sunnana-sk-elitettan/4420384" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5686,7 +5688,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-lidkopings-fk-elitettan/4420389" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-lidkopings-fk-elitettan/4420389" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5720,7 +5722,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-kvarnsvedens-ik-elitettan/4420383" >
+		<a class="match-list__link" href="/matchfakta/hammarby-kvarnsvedens-ik-elitettan/4420383" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5754,7 +5756,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-if-brommapojkarna-elitettan/4420386" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-if-brommapojkarna-elitettan/4420386" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5788,7 +5790,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-bollstanas-sk-elitettan/4420387" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-bollstanas-sk-elitettan/4420387" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5822,7 +5824,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-sandvikens-if-elitettan/4420388" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-sandvikens-if-elitettan/4420388" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5856,7 +5858,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-bollstanas-sk-elitettan/4420394" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-bollstanas-sk-elitettan/4420394" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5890,7 +5892,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-aik-elitettan/4420396" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-aik-elitettan/4420396" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5924,7 +5926,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-lidkopings-fk-elitettan/4420390" >
+		<a class="match-list__link" href="/matchfakta/hammarby-lidkopings-fk-elitettan/4420390" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5958,7 +5960,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-mallbackens-if-sunne-elitettan/4420393" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-mallbackens-if-sunne-elitettan/4420393" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -5992,7 +5994,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-ifk-kalmar-elitettan/4420391" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-ifk-kalmar-elitettan/4420391" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6026,7 +6028,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-jitex-molndal-bk-elitettan/4420392" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-jitex-molndal-bk-elitettan/4420392" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6060,7 +6062,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-alingsas-fc-united-elitettan/4420395" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-alingsas-fc-united-elitettan/4420395" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6094,7 +6096,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-jitex-molndal-bk-elitettan/4420243" >
+		<a class="match-list__link" href="/matchfakta/hammarby-jitex-molndal-bk-elitettan/4420243" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6128,7 +6130,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-aik-elitettan/4420244" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-aik-elitettan/4420244" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6162,7 +6164,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-sunnana-sk-elitettan/4420245" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-sunnana-sk-elitettan/4420245" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6196,7 +6198,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-kvarnsvedens-ik-elitettan/4420246" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-kvarnsvedens-ik-elitettan/4420246" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6230,7 +6232,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-alvsjo-aik-ff-elitettan/4420247" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-alvsjo-aik-ff-elitettan/4420247" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6264,7 +6266,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-moron-bk-elitettan/4420248" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-moron-bk-elitettan/4420248" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6298,7 +6300,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-if-brommapojkarna-elitettan/4420249" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-if-brommapojkarna-elitettan/4420249" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6332,7 +6334,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-sunnana-sk-elitettan/4420400" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-sunnana-sk-elitettan/4420400" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6366,7 +6368,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-moron-bk-elitettan/4420398" >
+		<a class="match-list__link" href="/matchfakta/aik-moron-bk-elitettan/4420398" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6400,7 +6402,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-sandvikens-if-elitettan/4420397" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-sandvikens-if-elitettan/4420397" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6434,7 +6436,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-alvsjo-aik-ff-elitettan/4420402" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-alvsjo-aik-ff-elitettan/4420402" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6468,7 +6470,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-hammarby-elitettan/4420403" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-hammarby-elitettan/4420403" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6502,7 +6504,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-if-brommapojkarna-elitettan/4420399" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-if-brommapojkarna-elitettan/4420399" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6536,7 +6538,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-kvarnsvedens-ik-elitettan/4420401" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-kvarnsvedens-ik-elitettan/4420401" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6570,7 +6572,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-ifk-kalmar-elitettan/4420254" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-ifk-kalmar-elitettan/4420254" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6604,7 +6606,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-bollstanas-sk-elitettan/4420250" >
+		<a class="match-list__link" href="/matchfakta/aik-bollstanas-sk-elitettan/4420250" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6638,7 +6640,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-sandvikens-if-elitettan/4420251" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-sandvikens-if-elitettan/4420251" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6672,7 +6674,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-mallbackens-if-sunne-elitettan/4420256" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-mallbackens-if-sunne-elitettan/4420256" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6706,7 +6708,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-lidkopings-fk-elitettan/4420255" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-lidkopings-fk-elitettan/4420255" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6740,7 +6742,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-hammarby-elitettan/4420253" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-hammarby-elitettan/4420253" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6774,7 +6776,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-alingsas-fc-united-elitettan/4420252" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-alingsas-fc-united-elitettan/4420252" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6808,7 +6810,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/moron-bk-bollstanas-sk-elitettan/4420407" >
+		<a class="match-list__link" href="/matchfakta/moron-bk-bollstanas-sk-elitettan/4420407" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6842,7 +6844,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/if-brommapojkarna-sandvikens-if-elitettan/4420408" >
+		<a class="match-list__link" href="/matchfakta/if-brommapojkarna-sandvikens-if-elitettan/4420408" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6876,7 +6878,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alvsjo-aik-ff-hammarby-elitettan/4420410" >
+		<a class="match-list__link" href="/matchfakta/alvsjo-aik-ff-hammarby-elitettan/4420410" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6910,7 +6912,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-alingsas-fc-united-elitettan/4420404" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-alingsas-fc-united-elitettan/4420404" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6944,7 +6946,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/aik-lidkopings-fk-elitettan/4420405" >
+		<a class="match-list__link" href="/matchfakta/aik-lidkopings-fk-elitettan/4420405" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -6978,7 +6980,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-kvarnsvedens-ik-elitettan/4420406" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-kvarnsvedens-ik-elitettan/4420406" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7028,7 +7030,7 @@
 					
 
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sunnana-sk-jitex-molndal-bk-elitettan/4420409" >
+		<a class="match-list__link" href="/matchfakta/sunnana-sk-jitex-molndal-bk-elitettan/4420409" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7062,7 +7064,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-moron-bk-elitettan/4420411" >
+		<a class="match-list__link" href="/matchfakta/hammarby-moron-bk-elitettan/4420411" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7096,7 +7098,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-if-brommapojkarna-elitettan/4420413" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-if-brommapojkarna-elitettan/4420413" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7130,7 +7132,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/kvarnsvedens-ik-alvsjo-aik-ff-elitettan/4420412" >
+		<a class="match-list__link" href="/matchfakta/kvarnsvedens-ik-alvsjo-aik-ff-elitettan/4420412" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7164,7 +7166,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/jitex-molndal-bk-ifk-kalmar-elitettan/4420416" >
+		<a class="match-list__link" href="/matchfakta/jitex-molndal-bk-ifk-kalmar-elitettan/4420416" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7198,7 +7200,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-aik-elitettan/4420414" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-aik-elitettan/4420414" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7232,7 +7234,7 @@
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/livescore/#?date=2020-11-08&amp;game=4420417" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-sunnana-sk-elitettan/4420417" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7242,6 +7244,7 @@
 
 						<span class="match-list__team-name">Sandvikens IF</span>
 					</span>
+						<span class="match-list__score">2</span>
 				</div>
 				<div class="match-list__away">
 					<span class="match-list__team">
@@ -7251,6 +7254,7 @@
 
 						<span class="match-list__team-name">Sunnan&#229; SK</span>
 					</span>
+						<span class="match-list__score">0</span>
 				</div>
 			</div>
 			<div class="match-list__info">
@@ -7258,12 +7262,13 @@
 					<time class="match-list__date" datetime="2020-11-08T13:00:00.0000000">13:00, 8 nov 2020</time>
 
 						<span class="match-list__location">Jernvallen A-plan</span>
+						<span class="match-list__audience">Publik:      50</span>
 				</div>
 			</div>
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/livescore/#?date=2020-11-08&amp;game=4420415" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-mallbackens-if-sunne-elitettan/4420415" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7273,6 +7278,7 @@
 
 						<span class="match-list__team-name">Alings&#229;s FC United</span>
 					</span>
+						<span class="match-list__score">1</span>
 				</div>
 				<div class="match-list__away">
 					<span class="match-list__team">
@@ -7282,6 +7288,7 @@
 
 						<span class="match-list__team-name">Mallbackens IF Sunne</span>
 					</span>
+						<span class="match-list__score">1</span>
 				</div>
 			</div>
 			<div class="match-list__info">
@@ -7289,12 +7296,13 @@
 					<time class="match-list__date" datetime="2020-11-08T15:00:00.0000000">15:00, 8 nov 2020</time>
 
 						<span class="match-list__location">Gerdskenvallen A-plan</span>
+						<span class="match-list__audience">Publik:      50</span>
 				</div>
 			</div>
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/hammarby-alvsjo-aik-ff-elitettan/4420257" id=current-match>
+		<a class="match-list__link" href="/matchfakta/hammarby-alvsjo-aik-ff-elitettan/4420257" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7304,6 +7312,7 @@
 
 						<span class="match-list__team-name">Hammarby</span>
 					</span>
+						<span class="match-list__score">5</span>
 				</div>
 				<div class="match-list__away">
 					<span class="match-list__team">
@@ -7313,6 +7322,7 @@
 
 						<span class="match-list__team-name">&#196;lvsj&#246; AIK FF</span>
 					</span>
+						<span class="match-list__score">2</span>
 				</div>
 			</div>
 			<div class="match-list__info">
@@ -7320,12 +7330,13 @@
 					<time class="match-list__date" datetime="2020-11-14T15:00:00.0000000">15:00, 14 nov 2020</time>
 
 						<span class="match-list__location">Hammarby IP 1</span>
+						<span class="match-list__audience">Publik:      50</span>
 				</div>
 			</div>
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/ifk-kalmar-kvarnsvedens-ik-elitettan/4420258" >
+		<a class="match-list__link" href="/matchfakta/ifk-kalmar-kvarnsvedens-ik-elitettan/4420258" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7335,6 +7346,7 @@
 
 						<span class="match-list__team-name">IFK Kalmar</span>
 					</span>
+						<span class="match-list__score">3</span>
 				</div>
 				<div class="match-list__away">
 					<span class="match-list__team">
@@ -7344,6 +7356,7 @@
 
 						<span class="match-list__team-name">Kvarnsvedens IK</span>
 					</span>
+						<span class="match-list__score">1</span>
 				</div>
 			</div>
 			<div class="match-list__info">
@@ -7351,12 +7364,13 @@
 					<time class="match-list__date" datetime="2020-11-14T15:00:00.0000000">15:00, 14 nov 2020</time>
 
 						<span class="match-list__location">Gr&#246;ndals IP</span>
+						<span class="match-list__audience">Publik:      50</span>
 				</div>
 			</div>
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/mallbackens-if-sunne-jitex-molndal-bk-elitettan/4420259" >
+		<a class="match-list__link" href="/matchfakta/mallbackens-if-sunne-jitex-molndal-bk-elitettan/4420259" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7366,6 +7380,7 @@
 
 						<span class="match-list__team-name">Mallbackens IF Sunne</span>
 					</span>
+						<span class="match-list__score">1</span>
 				</div>
 				<div class="match-list__away">
 					<span class="match-list__team">
@@ -7375,6 +7390,7 @@
 
 						<span class="match-list__team-name">Jitex M&#246;lndal BK</span>
 					</span>
+						<span class="match-list__score">3</span>
 				</div>
 			</div>
 			<div class="match-list__info">
@@ -7382,12 +7398,13 @@
 					<time class="match-list__date" datetime="2020-11-14T15:00:00.0000000">15:00, 14 nov 2020</time>
 
 						<span class="match-list__location">Fryxellska skolan</span>
+						<span class="match-list__audience">Publik:      49</span>
 				</div>
 			</div>
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/lidkopings-fk-aik-elitettan/4420260" >
+		<a class="match-list__link" href="/matchfakta/lidkopings-fk-aik-elitettan/4420260" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7397,6 +7414,7 @@
 
 						<span class="match-list__team-name">Lidk&#246;pings FK</span>
 					</span>
+						<span class="match-list__score">0</span>
 				</div>
 				<div class="match-list__away">
 					<span class="match-list__team">
@@ -7406,19 +7424,21 @@
 
 						<span class="match-list__team-name">AIK</span>
 					</span>
+						<span class="match-list__score">2</span>
 				</div>
 			</div>
 			<div class="match-list__info">
 				<div class="match-list__place">
 					<time class="match-list__date" datetime="2020-11-14T15:00:00.0000000">15:00, 14 nov 2020</time>
 
-						<span class="match-list__location">Framn&#228;s IP A-plan</span>
+						<span class="match-list__location">R&#229;davallen Dinaplanen konstgr&#228;s</span>
+						<span class="match-list__audience">Publik:      50</span>
 				</div>
 			</div>
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/bollstanas-sk-if-brommapojkarna-elitettan/4420261" >
+		<a class="match-list__link" href="/matchfakta/bollstanas-sk-if-brommapojkarna-elitettan/4420261" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7428,6 +7448,7 @@
 
 						<span class="match-list__team-name">Bollstan&#228;s SK</span>
 					</span>
+						<span class="match-list__score">1</span>
 				</div>
 				<div class="match-list__away">
 					<span class="match-list__team">
@@ -7437,6 +7458,7 @@
 
 						<span class="match-list__team-name">IF Brommapojkarna</span>
 					</span>
+						<span class="match-list__score">1</span>
 				</div>
 			</div>
 			<div class="match-list__info">
@@ -7444,12 +7466,13 @@
 					<time class="match-list__date" datetime="2020-11-14T15:00:00.0000000">15:00, 14 nov 2020</time>
 
 						<span class="match-list__location">Bollstan&#228;s IP 1</span>
+						<span class="match-list__audience">Publik:      50</span>
 				</div>
 			</div>
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/alingsas-fc-united-sunnana-sk-elitettan/4420262" >
+		<a class="match-list__link" href="/matchfakta/alingsas-fc-united-sunnana-sk-elitettan/4420262" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7459,6 +7482,7 @@
 
 						<span class="match-list__team-name">Alings&#229;s FC United</span>
 					</span>
+						<span class="match-list__score">1</span>
 				</div>
 				<div class="match-list__away">
 					<span class="match-list__team">
@@ -7468,6 +7492,7 @@
 
 						<span class="match-list__team-name">Sunnan&#229; SK</span>
 					</span>
+						<span class="match-list__score">0</span>
 				</div>
 			</div>
 			<div class="match-list__info">
@@ -7475,12 +7500,13 @@
 					<time class="match-list__date" datetime="2020-11-14T15:00:00.0000000">15:00, 14 nov 2020</time>
 
 						<span class="match-list__location">Gerdskenvallen A-plan</span>
+						<span class="match-list__audience">Publik:      70</span>
 				</div>
 			</div>
 		</a>
 	</li>
 	<li class="match-list__match ">
-		<a class="match-list__link" href="https://www.svenskfotboll.se/matchfakta/sandvikens-if-moron-bk-elitettan/4420263" >
+		<a class="match-list__link" href="/matchfakta/sandvikens-if-moron-bk-elitettan/4420263" >
 			<div class="match-list__result">
 				<div class="match-list__home">
 					<span class="match-list__team">
@@ -7490,6 +7516,7 @@
 
 						<span class="match-list__team-name">Sandvikens IF</span>
 					</span>
+						<span class="match-list__score">0</span>
 				</div>
 				<div class="match-list__away">
 					<span class="match-list__team">
@@ -7499,6 +7526,7 @@
 
 						<span class="match-list__team-name">Mor&#246;n BK</span>
 					</span>
+						<span class="match-list__score">2</span>
 				</div>
 			</div>
 			<div class="match-list__info">
@@ -7506,6 +7534,7 @@
 					<time class="match-list__date" datetime="2020-11-14T15:00:00.0000000">15:00, 14 nov 2020</time>
 
 						<span class="match-list__location">Jernvallen A-plan</span>
+						<span class="match-list__audience">Publik:      100</span>
 				</div>
 			</div>
 		</a>
@@ -7530,28 +7559,28 @@
 		<div class="section">
 			<div class="container__secondary-item">
 	<nav class="sidebar-nav ">
-		<ul class="sidebar-nav__items">
+			<h2 class="sidebar-nav__headline headline">Elitettan 2020</h2>
+		<ul class="sidebar-nav__items sidebar-nav__items--single-column">
 					<li class="sidebar-nav__item">
-						<a href="/serier-cuper/tabell-och-resultat/elitettan-2020/82419"  class="sidebar-nav__link sidebar-nav__link--normal" data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'Tabell och resultat' }">Tabell och resultat</a>
+						<a href="/serier-cuper/tabell-och-resultat/elitettan-2020/82419"  class="sidebar-nav__link " data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'Tabell och resultat' }">Tabell och resultat</a>
 					</li>
 					<li class="sidebar-nav__item">
 						<a href="/serier-cuper/spelprogram/elitettan-2020/82419"  class="sidebar-nav__link sidebar-nav__link--active" data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'Spelprogram' }">Spelprogram</a>
 					</li>
 					<li class="sidebar-nav__item">
-						<a href="/serier-cuper/spelarstatistik/elitettan-2020/82419"  class="sidebar-nav__link sidebar-nav__link--normal" data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'Spelarstatistik' }">Spelarstatistik</a>
+						<a href="/serier-cuper/spelarstatistik/elitettan-2020/82419"  class="sidebar-nav__link " data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'Spelarstatistik' }">Spelarstatistik</a>
 					</li>
 					<li class="sidebar-nav__item">
-						<a href="/serier-cuper/lagstatistik/elitettan-2020/82419"  class="sidebar-nav__link sidebar-nav__link--normal" data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'Lagstatistik' }">Lagstatistik</a>
+						<a href="/serier-cuper/lagstatistik/elitettan-2020/82419"  class="sidebar-nav__link " data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'Lagstatistik' }">Lagstatistik</a>
 					</li>
 					<li class="sidebar-nav__item">
-						<a href="/serier-cuper/avstangda/elitettan-2020/82419"  class="sidebar-nav__link sidebar-nav__link--normal" data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'Avst&#228;ngda' }">Avst&#228;ngda</a>
+						<a href="/serier-cuper/avstangda/elitettan-2020/82419"  class="sidebar-nav__link " data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'Avst&#228;ngda' }">Avst&#228;ngda</a>
 					</li>
 					<li class="sidebar-nav__item">
-						<a href="/serier-cuper/tavling/"  class="sidebar-nav__link sidebar-nav__link--normal" data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'V&#228;lj t&#228;vling' }">V&#228;lj t&#228;vling</a>
+						<a href="/serier-cuper/tavling/"  class="sidebar-nav__link " data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '3', 'label': 'V&#228;lj t&#228;vling' }">V&#228;lj t&#228;vling</a>
 					</li>
 		</ul>
 	</nav>
-
 
 
 			</div>
@@ -7803,11 +7832,21 @@
 
 
 	<div class="dimmer" data-js-dimmer></div>
+	<div class="modal" data-js-modal>
+		<button class="modal__close-icon" data-js-modal-close-button="">
+			<span class="visually-hidden" aria-hidden="true">Stäng sökruta</span>
+			<svg class="icon icon--block">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+			<span class="modal__close-text">Stäng</span>
+		</button>
+		<div class="modal__content" id="modalContent" data-js-modal-content></div>
+	</div>
 
 		<script defer src="/ui/dist/js/mzr.min.js"></script>
-    	<script defer src="/ui/dist/js/analytics.min.js?v=2.1.22.0"></script>
-    	<script defer src="/ui/dist/js/apps.min.js?v=2.1.22.0"></script>
-    	<script defer src="/ui/dist/js/main.min.js?v=2.1.22.0"></script>
+    	<script defer src="/ui/dist/js/analytics.min.js?v=2.1.28.0"></script>
+    	<script defer src="/ui/dist/js/apps.min.js?v=2.1.28.0"></script>
+    	<script defer src="/ui/dist/js/main.min.js?v=2.1.28.0"></script>
 
 	<link rel="preload" as="font" href="/ui/dist/assets/fonts/stag-sans/StagSans-Book-Web.woff" type="font/woff" crossorigin>
 	<link rel="preload" as="font" href="/ui/dist/assets/fonts/stag-sans/StagSans-BookItalic-Web.woff" type="font/woff" crossorigin>

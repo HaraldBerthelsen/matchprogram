@@ -15,10 +15,11 @@ def main():
 
     for game in games:
 
-        try:
-            match_info = getMatchInfo(game)
-        except:
-            break
+        #try:
+        match_info = getMatchInfo(game)
+        #except:
+        #    print("ERROR: game %s" % game["href"])
+        #    break
         season.append(match_info)
         #printMatchPlayerInfo(match_info["match_players"])
 
@@ -27,8 +28,11 @@ def main():
         #stop after first game for dev
         #break
 
-    printSeason(season, squad)
+    #printSeason(season, squad)
+    printSeasonFormatted(season, squad)
+    printPlayerStats(season)
 
+    
 def updateSquadInfo(squad, match_info):
     for nr in match_info:
         if nr not in squad:
@@ -60,10 +64,52 @@ def printSeason(season, squad):
         for nr in sorted(squad.keys()):
             if nr not in match["match_players"]:
                 to_print.append("-")
+            elif match["match_players"][nr]["sub"] in ["I", "U"]:
+                #to_print.append("%s(%s)%s%s" % (match_players[nr]["sub"], match_players[nr]["sub_time"], match_players[nr]["goal"], match_players[nr]["yellow"]))
+                to_print.append("%s(%s)%s%s" % (match["match_players"][nr]["sub"], match["match_players"][nr]["sub_time"], match["match_players"][nr]["goals"], match["match_players"][nr]["yellow"]))
             else:
                 to_print.append("%s%s%s" % (match["match_players"][nr]["sub"], match["match_players"][nr]["goals"], match["match_players"][nr]["yellow"]))
 
         print("\t".join(to_print))
+                            
+
+def initials(fullname):
+    ini = []
+    names = fullname.split(" ")
+    for name in names:
+        ini.append(name[0])
+    return "".join(ini)
+        
+def printSeasonFormatted(season, squad):
+
+    print("%-20s\t%-20s\t%-25s\t%s\t%-10s" % ("Motståndare", "Tid", "Plats", "HIF", "Inte HIF"), end='\t')
+    header = []
+    for nr in sorted(squad.keys()):
+        printnr = nr.split("-")[0]
+        #Initials
+        #header.append("%s %s" % (printnr, initials(squad[nr]["name"])))
+        #Full name
+        header.append("%s %s" % (printnr, squad[nr]["name"]))
+    print("\t".join(header))
+    
+    for match in season:
+        
+        print("%-20s\t%-20s\t%-25s\t%s\t%-10s" % (match["opponent"], match["time"], match["location"], match["hif_score"], match["other_score"]), end='\t')
+
+        to_print = []
+        for nr in sorted(squad.keys()):
+            printSubTime = False
+
+            if nr not in match["match_players"]:
+                to_print.append("-")
+                
+            elif printSubTime and match["match_players"][nr]["sub"] in ["I", "U"]:
+                to_print.append("%s(%s)%s%s%s" % (match["match_players"][nr]["sub"], match["match_players"][nr]["sub_time"], match["match_players"][nr]["goals"], match["match_players"][nr]["yellow"], match["match_players"][nr]["red"]))
+            else:
+                to_print.append("%s%s%s%s" % (match["match_players"][nr]["sub"], match["match_players"][nr]["goals"], match["match_players"][nr]["yellow"], match["match_players"][nr]["red"]))
+
+        print("\t".join(to_print))
+
                             
 
 
@@ -141,7 +187,8 @@ def getMatchInfo(game):
         "other_score": other_score,
         "match_players": match_players
     }
-            
+
+    #print(match_info)
     return match_info
     
 
@@ -149,6 +196,17 @@ def getPlayerInfo(player, sub=False):
     number = int(player.find("span", class_="formation-list-player__number").text.strip())
     name = player.find("a", class_="formation-list-player__link").text.strip()
 
+    name = re.sub("\s+\(.+\)\s*$", "", name)
+    
+    if number == 26 and name == "Emma Westin":
+        number = 21
+    if number == 3 and name == "Ida Egegård":
+        number = 4
+    if number == 4 and name == "Moa Ekmyr Garpenbeck":
+        number = 5
+
+
+    
     #print("%s %s" % (number, name))
     #print("starting")
     if sub:
@@ -156,20 +214,33 @@ def getPlayerInfo(player, sub=False):
     else:
         sub = "S"
 
+    sub_time = 0
     if player.find("use", attrs={"xlink:href": "#icon-substitution-out"}):
         sub = "U"
-        out_time = player.find("span", class_="formation-list-player__substitution-text").text.strip()
+        sub_expr = player.find("span", class_="formation-list-player__substitution-text").text.strip()
+        if "+" in sub_expr:
+            sub_time = 89
+        else:
+            sub_time = int(sub_expr)
         #print("ut: %s" % out)
 
     if player.find("use", attrs={"xlink:href": "#icon-substitution-in"}):
         sub = "I"
-        in_time = player.find("span", class_="formation-list-player__substitution-text").text.strip()
+        sub_expr = player.find("span", class_="formation-list-player__substitution-text").text.strip()
+        if "+" in sub_expr:
+            sub_time = 89
+        else:
+            sub_time = int(sub_expr)
         #print("ut: %s" % inn)
 
     yellow = ""
     if player.find("use", attrs={"xlink:href": "#icon-card-yellow"}):
         yellow = "G"
         #print("yellow")
+
+    red = ""
+    if player.find("use", attrs={"xlink:href": "#icon-card-red"}):
+        red = "R"
 
     goals = ""
     goalicons = len(player.find_all("use", attrs={"xlink:href": "#icon-football"}))
@@ -181,18 +252,91 @@ def getPlayerInfo(player, sub=False):
     info = {
         "name": name,
         "sub": sub,
+        "sub_time": sub_time,
         "goals": goals,
+        "red": red,
         "yellow": yellow
     }
 
-    return (number, info)
+    return ("%02d-%s" % (number, name), info)
 
 
 def printMatchPlayerInfo(match_players):
     for nr in match_players:
-        print("%s\t%s\t%s%s%s" % (nr, match_players[nr]["name"], match_players[nr]["sub"], match_players[nr]["goal"], match_players[nr]["yellow"])) 
+        
+        print("%s\t%s" % (nr, match_players[nr]["sub"]))
+
+        printnr = nr.split("-")[0]
+        
+        if match_players[nr]["sub"] in ["I", "U"]:
+            print("%s\t%s\t%s(%s)%s%s" % (printnr, match_players[nr]["name"], match_players[nr]["sub"], match_players[nr]["sub_time"], match_players[nr]["goal"], match_players[nr]["yellow"]))
+        else:
+            print("%s\t%s\t%s%s%s" % (printnr, match_players[nr]["name"], match_players[nr]["sub"], match_players[nr]["goal"], match_players[nr]["yellow"])) 
 
 
 
+
+def printPlayerStats(season):
+     for match_info in season:
+         #print(match_info)
+         for nr in match_info["match_players"]:
+             #update_info(player, match_info["total_time"])
+             player = match_info["match_players"][nr]
+             update_info(player, nr)
+         #print(players[25])
+
+     print_player_stats_by_number()
+
+players = {}
+def update_info(player, nr, match_time=90):
+    #nr = player["number"]
+    #if nr == 25:
+    #    print(player)
+    if nr in players:
+        p = players[nr]
+    else:
+        #if type(p) == type(""):
+        #first appearance if this player        
+        p = {
+            "name": player["name"],
+            "nMatches": 0,
+            "nGoals": 0,
+            "nAssists": 0,
+            "nShots": 0,
+            "nYellow": 0,
+            "nRed": 0,
+            "timePlayed": 0
+        }
+        
+    if player["sub"] in ["S", "I", "U"]:
+            p["nMatches"] += 1 
+    if "goals" in player and player["goals"] != "":
+            p["nGoals"] += int(player["goals"])
+    if "yellow" in player and player["yellow"] != "":
+            p["nYellow"] += 1
+    if "red" in player and player["red"] != "":
+            p["nRed"] += 1
+
+    if player["sub"] == "I":
+        p["timePlayed"] += match_time-player["sub_time"]
+    if player["sub"] == "U":
+        p["timePlayed"] += match_time-(match_time-player["sub_time"])
+    if player["sub"] == "S":
+        p["timePlayed"] += match_time
+            
+    players[nr] = p
+
+            
+def print_player_stats_by_number():
+    #print("nr                              namn	spel/mål assist	skott speltid gula kort röda kort")
+    print("nr                              namn	spel/mål speltid gula kort röda kort")
+    for nr in sorted(players):
+        printnr = nr.split("-")[0]        
+        #1	Johan Wiland	7/0	0	0	568	0	0
+        #print("%s\t%30s\t%s/%s\t%s\t%s\t%s\t%s\t%s" % (printnr, players[nr]["name"], players[nr]["nMatches"], players[nr]["nGoals"], players[nr]["nAssists"], players[nr]["nShots"], players[nr]["timePlayed"], players[nr]["nYellow"], players[nr]["nRed"]))
+        print("%s\t%30s\t%s/%s\t%s\t%s\t%s" % (printnr, players[nr]["name"], players[nr]["nMatches"], players[nr]["nGoals"], players[nr]["timePlayed"], players[nr]["nYellow"], players[nr]["nRed"]))
+
+
+        
 if __name__ == "__main__":
     main()

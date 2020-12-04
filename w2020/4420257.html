@@ -21,7 +21,7 @@
 	
 		<!-- Application Insights -->
 		<script type="text/javascript">
-		var sdkInstance = "appInsightsSDK"; window[sdkInstance] = "appInsights"; var aiName = window[sdkInstance], aisdk = window[aiName] || function (e) { function n(e) { t[e] = function () { var n = arguments; t.queue.push(function () { t[e].apply(t, n) }) } } var t = { config: e }; t.initialize = !0; var i = document, a = window; setTimeout(function () { var n = i.createElement("script"); n.src = e.url || "/ui/dist/js/ai.2-modified.min.js?v=2.1.22.0", i.getElementsByTagName("script")[0].parentNode.appendChild(n) }); try { t.cookie = i.cookie } catch (e) { } t.queue = [], t.version = 2; for (var r = ["Event", "PageView", "Exception", "Trace", "DependencyData", "Metric", "PageViewPerformance"]; r.length;)n("track" + r.pop()); n("startTrackPage"), n("stopTrackPage"); var s = "Track" + r[0]; if (n("start" + s), n("stop" + s), n("addTelemetryInitializer"), n("setAuthenticatedUserContext"), n("clearAuthenticatedUserContext"), n("flush"), t.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }, !(!0 === e.disableExceptionTracking || e.extensionConfig && e.extensionConfig.ApplicationInsightsAnalytics && !0 === e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)) { n("_" + (r = "onerror")); var o = a[r]; a[r] = function (e, n, i, a, s) { var c = o && o(e, n, i, a, s); return !0 !== c && t["_" + r]({ message: e, url: n, lineNumber: i, columnNumber: a, error: s }), c }, e.autoExceptionInstrumented = !0 } return t }(
+		var sdkInstance = "appInsightsSDK"; window[sdkInstance] = "appInsights"; var aiName = window[sdkInstance], aisdk = window[aiName] || function (e) { function n(e) { t[e] = function () { var n = arguments; t.queue.push(function () { t[e].apply(t, n) }) } } var t = { config: e }; t.initialize = !0; var i = document, a = window; setTimeout(function () { var n = i.createElement("script"); n.src = e.url || "/ui/dist/js/ai.2-modified.min.js?v=2.1.28.0", i.getElementsByTagName("script")[0].parentNode.appendChild(n) }); try { t.cookie = i.cookie } catch (e) { } t.queue = [], t.version = 2; for (var r = ["Event", "PageView", "Exception", "Trace", "DependencyData", "Metric", "PageViewPerformance"]; r.length;)n("track" + r.pop()); n("startTrackPage"), n("stopTrackPage"); var s = "Track" + r[0]; if (n("start" + s), n("stop" + s), n("addTelemetryInitializer"), n("setAuthenticatedUserContext"), n("clearAuthenticatedUserContext"), n("flush"), t.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }, !(!0 === e.disableExceptionTracking || e.extensionConfig && e.extensionConfig.ApplicationInsightsAnalytics && !0 === e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)) { n("_" + (r = "onerror")); var o = a[r]; a[r] = function (e, n, i, a, s) { var c = o && o(e, n, i, a, s); return !0 !== c && t["_" + r]({ message: e, url: n, lineNumber: i, columnNumber: a, error: s }), c }, e.autoExceptionInstrumented = !0 } return t }(
 			{
 				instrumentationKey: "51de0662-793d-464d-9dad-0736368586ca"
 			}
@@ -49,7 +49,7 @@
 
 	<title>Hammarby - &#196;lvsj&#246; AIK FF - Matchfakta - Svensk fotboll</title>
 
-	<link href="/ui/dist/css/main.min.css?v=2.1.22.0" rel="stylesheet" />
+	<link href="/ui/dist/css/main.min.css?v=2.1.28.0" rel="stylesheet" />
 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" sizes="180x180" href="/ui/dist/assets/fav-icons/apple-touch-icon.png">
@@ -78,7 +78,7 @@
 					<div class="mast-header__section-text-wrapper">
 						<div class="mast-header__section-text-wrapper-inner">
 							<a class="logo" href="/">
-								<img class="logo__img" src="/ui/dist/assets/img/logo.svg" alt="Svenska Fotbollf&#246;rbundet logotyp, till startsidan">
+									<img class="logo__img" src="/ui/dist/assets/img/logo.svg" alt="Svenska Fotbollf&#246;rbundet logotyp, till startsidan">
 							</a>
 							<button class="mast-header__section-button" aria-label="&#214;ppna och st&#228;ng sektioner" aria-controls="mast-header-panel-sections" aria-expanded="false" data-js-mast-header-panel-toggle>
 								<span class="mast-header__section-name">Klubblag och landslag</span>
@@ -1089,6 +1089,13 @@
 							</li>
 							<li class="mast-nav__menu-item">
 								<a class="mast-nav__menu-link mast-nav__menu-link--small mast-nav__menu-link--strong" href="/serier-cuper/tavlingsdokument/"  data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '2', 'label': 'T&#228;vlingsdokument' }">T&#228;vlingsdokument</a>
+									<button class="mast-nav__menu-expander mast-nav__menu-expander--light" data-js-mast-nav-expand aria-controls="menu-17899" aria-expanded="false"></button>
+									<ul class="mast-nav__sub-menu mast-nav__sub-menu--indented" id="menu-17899">
+												<li class="mast-nav__menu-item">
+			<a class="mast-nav__menu-link mast-nav__menu-link--small" href="/serier-cuper/tavlingsdokument/seriesammansattningar/"  data-js-gtm-click="{ 'event': 'menuLinkClick', 'level': '2', 'label': 'Seriesammans&#228;ttningar inf&#246;r 2021' }">Seriesammans&#228;ttningar inf&#246;r 2021</a>
+		</li>
+
+									</ul>
 							</li>
 					</ul>
 			</li>
@@ -1175,7 +1182,7 @@
 								<a class="match-hero__team-link" href="https://www.svenskfotboll.se/lagsida/hammarby/253894"><span class="match-hero__name">Hammarby</span></a>
 						</div>
 						<div class="match-hero__column match-hero__column--center">
-							<span class="match-hero__results">-</span>
+							<span class="match-hero__results">5 - 2</span>
 						</div>
 						<div class="match-hero__column">
 							<div class="match-hero__logo-container">
@@ -1230,8 +1237,32 @@
 		<div class="container">
 			<div class="container__inner container__inner--full-width-phone">
 				<ul class="tab-group__items" role="tablist">
-																					<li class="tab-group__item">
-							<button id="info-tab" class="tab-group__button tab-group__button--active" role="tab" aria-controls="info-panel" aria-selected="false" data-js-gtm-click="{ 'event': 'tabClick', 'label': 'Info' }">
+						<li class="tab-group__item">
+							<button id="events-tab" class="tab-group__button tab-group__button--active" role="tab" aria-controls="events-panel" aria-selected="false" data-js-gtm-click="{ 'event': 'tabClick', 'label': 'H&#228;ndelser' }">
+								<span class="icon-text">
+									<span class="icon-text__icon">
+										<svg class="icon icon--middle">
+											<use xlink:href="#icon-whistle"></use>
+										</svg>
+									</span>
+									<span class="icon-text__text">H&#228;ndelser</span>
+								</span>
+							</button>
+						</li>
+																<li class="tab-group__item">
+							<button id="team-tab" class="tab-group__button" role="tab" aria-controls="team-panel" aria-selected="true" data-js-gtm-click="{ 'event': 'tabClick', 'label': 'Lag' }">
+								<span class="icon-text">
+									<span class="icon-text__icon">
+										<svg class="icon icon--middle">
+											<use xlink:href="#icon-shirt"></use>
+										</svg>
+									</span>
+									<span class="icon-text__text">Lag</span>
+								</span>
+							</button>
+						</li>
+											<li class="tab-group__item">
+							<button id="info-tab" class="tab-group__button" role="tab" aria-controls="info-panel" aria-selected="false" data-js-gtm-click="{ 'event': 'tabClick', 'label': 'Info' }">
 								<span class="icon-text">
 									<span class="icon-text__icon">
 										<svg class="icon icon--middle">
@@ -1249,7 +1280,879 @@
 
 
 	<div class="tab-group__content">
-									<div id="info-panel" class="tab-group__panel tab-group__panel--active" role="tabpanel" aria-labelledby="info-tab" aria-hidden="true">
+			<div id="events-panel" class="tab-group__panel tab-group__panel--active" role="tabpanel" aria-labelledby="events-tab" aria-hidden="true">
+				<div class="match-events">
+	<div class="section">
+		<div class="container">
+			<div class="container__inner">
+				<ul class="match-events__items">
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">13&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-football"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/emma-jansson/070a4863-17db-4456-bf89-ed08f8e59ee3" class="match-event__info-main-link">1 - 0 Emma Jansson</a>
+																			<div class="match-event__info-secondary">Nickm&#229;l</div>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">20&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-football"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/emilia-larsson/34b8262f-daeb-4497-861a-2c9bea798e67" class="match-event__info-main-link">2 - 0 Emilia Larsson</a>
+																			<div class="match-event__info-secondary">Nickm&#229;l</div>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">21&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-football"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/emma-jansson/070a4863-17db-4456-bf89-ed08f8e59ee3" class="match-event__info-main-link">3 - 0 Emma Jansson</a>
+																			<div class="match-event__info-secondary"></div>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event match-event--right">
+								<time class="match-event__time" datetime="2020-11-14">30&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/maria-poli/c1a0ea0c-27d7-45e6-9fd0-f0c00a8edb20" class="match-event__info-main-link">In: Maria Poli</a>
+																			<a href="/spelarfakta/magda-le-therisien/d4ab20a2-0c9c-41fd-9f04-55b468f68a89" class="match-event__info-secondary-link">Ut: Magda Le Therisien</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event match-event--right">
+								<time class="match-event__time" datetime="2020-11-14">41&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-football"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/linda-nieminen/f52e74fb-b427-4d0e-ba78-b5d363957d74" class="match-event__info-main-link">3 - 1 Linda Nieminen</a>
+																			<div class="match-event__info-secondary">Nickm&#229;l</div>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event match-event--right">
+								<time class="match-event__time" datetime="2020-11-14">45&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/naomi-okhiria/dccf6800-1d91-4a23-b312-efdd350214dc" class="match-event__info-main-link">In: Naomi Okhiria</a>
+																			<a href="/spelarfakta/victoria-heikfolk/6f2ef585-b469-4154-a633-06b338b3593c" class="match-event__info-secondary-link">Ut: Victoria Heikfolk</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">48&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-football"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/emilia-larsson/34b8262f-daeb-4497-861a-2c9bea798e67" class="match-event__info-main-link">4 - 1 Emilia Larsson</a>
+																			<div class="match-event__info-secondary"></div>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">59&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/helen-eke/7ecf31aa-eab4-43a9-9c52-70d030f81ae9" class="match-event__info-main-link">In: Hel&#233;n Eke</a>
+																			<a href="/spelarfakta/june-pedersen/1397f6df-d246-4651-9c9b-17bc4575fbf2" class="match-event__info-secondary-link">Ut: June Pedersen</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">63&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/klara-andrup/b11e0e3f-1ae9-4dd3-a103-a30889af3f3e" class="match-event__info-main-link">In: Klara Andrup</a>
+																			<a href="/spelarfakta/emilia-larsson/34b8262f-daeb-4497-861a-2c9bea798e67" class="match-event__info-secondary-link">Ut: Emilia Larsson</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">63&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/frida-thornqvist/99c26f6e-ea95-4270-94af-ba365e4fc94f" class="match-event__info-main-link">In: Frida Th&#246;rnqvist</a>
+																			<a href="/spelarfakta/dajan-hashemi-ghermezi/acc3e847-fd17-49e0-8017-029152d2bfd5" class="match-event__info-secondary-link">Ut: Dajan Hashemi-Ghermezi</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">63&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/ellen-wangerheim/aea97c8f-ca1d-447e-85f7-287658234cb2" class="match-event__info-main-link">In: Ellen Wangerheim</a>
+																			<a href="/spelarfakta/emma-westin/fe8c34e8-3923-4e75-a72f-a16c76fc8518" class="match-event__info-secondary-link">Ut: Emma Westin</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event match-event--right">
+								<time class="match-event__time" datetime="2020-11-14">63&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/klara-ovefelt/6a891423-71c2-4a91-b7b4-c0f5288bd9be" class="match-event__info-main-link">In: Klara Ovefelt</a>
+																			<a href="/spelarfakta/amanda-frank/ffdc2f17-c98d-4332-9fc8-ff551be91679" class="match-event__info-secondary-link">Ut: Amanda Frank</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event match-event--right">
+								<time class="match-event__time" datetime="2020-11-14">63&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/nadja-fernstrom/95367372-a3f1-4a06-8208-1e5d6be9a4ca" class="match-event__info-main-link">In: Nadja Fernstr&#246;m</a>
+																			<a href="/spelarfakta/ylva-rodriguez-tidevall/b1b511e5-dc93-44ff-9a13-ff9dfd89b0f9" class="match-event__info-secondary-link">Ut: Ylva Rodriguez Tidevall</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event match-event--right">
+								<time class="match-event__time" datetime="2020-11-14">79&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/hanna-fix/db4ccdbc-3144-4c18-bc58-4e4e6aff52fe" class="match-event__info-main-link">In: Hanna Fix</a>
+																			<a href="/spelarfakta/jennie-hallstrom/e1868bf4-5a7e-4cab-b6f1-f2f998450435" class="match-event__info-secondary-link">Ut: Jennie H&#228;llstr&#246;m</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">87&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-substitution"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/moa-ekmyr-garpenbeck/7cdca2db-fbb3-4f53-a033-ca047fa45fcb" class="match-event__info-main-link">In: Moa Ekmyr Garpenbeck</a>
+																			<a href="/spelarfakta/hanna-lundkvist/16dd61f3-06de-4f80-a8fa-a25b21f2d586" class="match-event__info-secondary-link">Ut: Hanna Lundkvist</a>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event ">
+								<time class="match-event__time" datetime="2020-11-14">90+1&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-football"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/frida-thornqvist/99c26f6e-ea95-4270-94af-ba365e4fc94f" class="match-event__info-main-link">5 - 1 Frida Th&#246;rnqvist</a>
+																			<div class="match-event__info-secondary">Nickm&#229;l</div>
+																	</div>
+							</div>
+						</li>
+						<li class="match-events__item">
+							<div class="match-event match-event--right">
+								<time class="match-event__time" datetime="2020-11-14">90+11&#39;</time>
+								<div class="match-event__icon">
+									<svg class="icon icon--block">
+										<use xlink:href="#icon-football"></use>
+									</svg>
+								</div>
+								<div class="match-event__info">
+										<a href="/spelarfakta/klara-ovefelt/6a891423-71c2-4a91-b7b4-c0f5288bd9be" class="match-event__info-main-link">5 - 2 Klara Ovefelt</a>
+																			<div class="match-event__info-secondary"></div>
+																	</div>
+							</div>
+						</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="container__inner">
+			</div>
+		</div>
+	</div>
+</div>
+
+			</div>
+							<div id="team-panel" class="tab-group__panel" role="tabpanel" aria-labelledby="team-tab" aria-hidden="false">
+				<div class="match-formation">
+	<div class="section">
+		<div class="container">
+			<div class="container__inner">
+				<div class="match-formation__teams">
+					<div class="match-formation__team">
+						<section class="formation-list">
+							<header class="formation-list__header formation-list__header--pull-right">
+								<div class="formation-list__logo-wrapper">
+									<figure class="team-logo">
+										<img class="team-logo__img lazyload" data-src="https://staticcdn.svenskfotboll.se/img/teams/6412.png" alt="Hammarby emblem" />
+									</figure>
+								</div>
+								<h3 class="formation-list__team">Hammarby</h3>
+							</header>
+								<div class="formation-list__section-headline formation-list__section-headline--pull-right">Formation:  4-2-3-1</div>
+								<ul class="formation-list__items">
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">20</span>
+			<a href="/spelarfakta/jonna-andersson/95a5d203-9517-4ec4-87a5-cfd6eeb9fe53" class="formation-list-player__link">
+				Jonna Andersson (MV)
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">6</span>
+			<a href="/spelarfakta/felicia-saving/97bf438d-4879-4d19-b69e-8d85b2b7e5e3" class="formation-list-player__link">
+				Felicia Saving 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">7</span>
+			<a href="/spelarfakta/hanna-lundkvist/16dd61f3-06de-4f80-a8fa-a25b21f2d586" class="formation-list-player__link">
+				Hanna Lundkvist 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">87</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">8</span>
+			<a href="/spelarfakta/ellen-gibson/7f231001-1e32-4717-a247-eb11400c033d" class="formation-list-player__link">
+				Ellen Gibson 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">9</span>
+			<a href="/spelarfakta/dajan-hashemi-ghermezi/acc3e847-fd17-49e0-8017-029152d2bfd5" class="formation-list-player__link">
+				Dajan Hashemi-Ghermezi 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">10</span>
+			<a href="/spelarfakta/emma-jansson/070a4863-17db-4456-bf89-ed08f8e59ee3" class="formation-list-player__link">
+				Emma Jansson 
+			</a>
+		<span class="formation-list-player__events">
+		<svg class="icon icon--inline">
+			<use xlink:href="#icon-football"></use>
+		</svg>
+		<svg class="icon icon--inline">
+			<use xlink:href="#icon-football"></use>
+		</svg>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">15</span>
+			<a href="/spelarfakta/elsa-karlsson/9aca9318-1e55-43f5-be89-620161a1b0b2" class="formation-list-player__link">
+				Elsa Karlsson 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">16</span>
+			<a href="/spelarfakta/emilia-larsson/34b8262f-daeb-4497-861a-2c9bea798e67" class="formation-list-player__link">
+				Emilia Larsson 
+			</a>
+		<span class="formation-list-player__events">
+		<svg class="icon icon--inline">
+			<use xlink:href="#icon-football"></use>
+		</svg>
+		<svg class="icon icon--inline">
+			<use xlink:href="#icon-football"></use>
+		</svg>
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">18</span>
+			<a href="/spelarfakta/alice-carlsson/e65d65ac-a1c9-44ec-8583-aa5fa9038e5d" class="formation-list-player__link">
+				Alice Carlsson (K)
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">21</span>
+			<a href="/spelarfakta/emma-westin/fe8c34e8-3923-4e75-a72f-a16c76fc8518" class="formation-list-player__link">
+				Emma Westin 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">23</span>
+			<a href="/spelarfakta/june-pedersen/1397f6df-d246-4651-9c9b-17bc4575fbf2" class="formation-list-player__link">
+				June Pedersen 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">59</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+								</ul>
+															<h4 class="formation-list__section-headline formation-list__section-headline--pull-right">Ers&#228;ttare</h4>
+								<ul class="formation-list__items">
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">5</span>
+			<a href="/spelarfakta/moa-ekmyr-garpenbeck/7cdca2db-fbb3-4f53-a033-ca047fa45fcb" class="formation-list-player__link">
+				Moa Ekmyr Garpenbeck 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">87</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">11</span>
+			<a href="/spelarfakta/ellen-wangerheim/aea97c8f-ca1d-447e-85f7-287658234cb2" class="formation-list-player__link">
+				Ellen Wangerheim 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">13</span>
+			<a href="/spelarfakta/klara-andrup/b11e0e3f-1ae9-4dd3-a103-a30889af3f3e" class="formation-list-player__link">
+				Klara Andrup 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">19</span>
+			<a href="/spelarfakta/frida-thornqvist/99c26f6e-ea95-4270-94af-ba365e4fc94f" class="formation-list-player__link">
+				Frida Th&#246;rnqvist 
+			</a>
+		<span class="formation-list-player__events">
+		<svg class="icon icon--inline">
+			<use xlink:href="#icon-football"></use>
+		</svg>
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">24</span>
+			<a href="/spelarfakta/nelly-arvidsson/a56fdbe4-27a1-4ce2-becc-5379b3326991" class="formation-list-player__link">
+				Nelly Arvidsson 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">25</span>
+			<a href="/spelarfakta/ida-egegard/2e13e246-b87e-4271-b60b-ce25292631df" class="formation-list-player__link">
+				Ida Egeg&#229;rd 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player formation-list-player--pull-right">
+		<span class="formation-list-player__number">27</span>
+			<a href="/spelarfakta/helen-eke/7ecf31aa-eab4-43a9-9c52-70d030f81ae9" class="formation-list-player__link">
+				Hel&#233;n Eke 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">59</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+								</ul>
+						</section>
+					</div>
+					<div class="match-formation__team">
+						<section class="formation-list">
+							<header class="formation-list__header">
+								<div class="formation-list__logo-wrapper">
+									<figure class="team-logo">
+										<img class="team-logo__img lazyload" data-src="https://staticcdn.svenskfotboll.se/img/teams/7708.png" alt="&#196;lvsj&#246; AIK FF emblem" />
+									</figure>
+								</div>
+								<h3 class="formation-list__team">&#196;lvsj&#246; AIK FF</h3>
+							</header>
+								<div class="formation-list__section-headline">Formation:  4-4-2</div>
+								<ul class="formation-list__items">
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">2</span>
+			<a href="/spelarfakta/moa-liwendahl/d0bbccf4-d5e3-4685-a796-9c5b9bf95247" class="formation-list-player__link">
+				Moa Liwendahl 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">3</span>
+			<a href="/spelarfakta/linnea-rimeika/4d540659-df2e-424c-b165-7940c6fcb249" class="formation-list-player__link">
+				Linn&#233;a Rimeika 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">4</span>
+			<a href="/spelarfakta/linda-nieminen/f52e74fb-b427-4d0e-ba78-b5d363957d74" class="formation-list-player__link">
+				Linda Nieminen 
+			</a>
+		<span class="formation-list-player__events">
+		<svg class="icon icon--inline">
+			<use xlink:href="#icon-football"></use>
+		</svg>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">7</span>
+			<a href="/spelarfakta/ylva-rodriguez-tidevall/b1b511e5-dc93-44ff-9a13-ff9dfd89b0f9" class="formation-list-player__link">
+				Ylva Rodriguez Tidevall 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">13</span>
+			<a href="/spelarfakta/zabrina-koont/d3d93678-2bcf-4dcf-abbf-4c3e58f66692" class="formation-list-player__link">
+				Zabrina Koont 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">14</span>
+			<a href="/spelarfakta/amanda-frank/ffdc2f17-c98d-4332-9fc8-ff551be91679" class="formation-list-player__link">
+				Amanda Frank 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">15</span>
+			<a href="/spelarfakta/magda-le-therisien/d4ab20a2-0c9c-41fd-9f04-55b468f68a89" class="formation-list-player__link">
+				Magda Le Therisien 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">30</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">17</span>
+			<a href="/spelarfakta/victoria-heikfolk/6f2ef585-b469-4154-a633-06b338b3593c" class="formation-list-player__link">
+				Victoria Heikfolk 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">45</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">18</span>
+			<a href="/spelarfakta/alice-ahlberg/61026497-0670-4b5d-8b0a-2974736774d0" class="formation-list-player__link">
+				Alice Ahlberg (K)
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">19</span>
+			<a href="/spelarfakta/jennie-hallstrom/e1868bf4-5a7e-4cab-b6f1-f2f998450435" class="formation-list-player__link">
+				Jennie H&#228;llstr&#246;m 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-out"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">79</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">30</span>
+			<a href="/spelarfakta/isabelle-granlund/ba6cd119-a92d-452d-87a7-f37b451b5732" class="formation-list-player__link">
+				Isabelle Granlund 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+								</ul>
+															<h4 class="formation-list__section-headline">Ers&#228;ttare</h4>
+								<ul class="formation-list__items">
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">1</span>
+			<a href="/spelarfakta/elsa-netz/b67134d1-559a-4342-ad7f-262c79c9dabd" class="formation-list-player__link">
+				Elsa Netz 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">6</span>
+			<a href="/spelarfakta/hanna-fix/db4ccdbc-3144-4c18-bc58-4e4e6aff52fe" class="formation-list-player__link">
+				Hanna Fix 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">79</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">8</span>
+			<a href="/spelarfakta/maria-poli/c1a0ea0c-27d7-45e6-9fd0-f0c00a8edb20" class="formation-list-player__link">
+				Maria Poli 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">30</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">11</span>
+			<a href="/spelarfakta/naomi-okhiria/dccf6800-1d91-4a23-b312-efdd350214dc" class="formation-list-player__link">
+				Naomi Okhiria 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">45</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">16</span>
+			<a href="/spelarfakta/wilma-anna-maria-jansson/32f89039-bac2-4d08-be1b-ef8004b30343" class="formation-list-player__link">
+				Wilma Anna Maria Jansson 
+			</a>
+		<span class="formation-list-player__events">
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">21</span>
+			<a href="/spelarfakta/nadja-fernstrom/95367372-a3f1-4a06-8208-1e5d6be9a4ca" class="formation-list-player__link">
+				Nadja Fernstr&#246;m 
+			</a>
+		<span class="formation-list-player__events">
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+<li class="formation-list__item">
+	<div class="formation-list-player">
+		<span class="formation-list-player__number">24</span>
+			<a href="/spelarfakta/klara-ovefelt/6a891423-71c2-4a91-b7b4-c0f5288bd9be" class="formation-list-player__link">
+				Klara Ovefelt 
+			</a>
+		<span class="formation-list-player__events">
+		<svg class="icon icon--inline">
+			<use xlink:href="#icon-football"></use>
+		</svg>
+					<div class="formation-list-player__substitution-wrapper">
+								<svg class="icon icon--inline">
+			<use xlink:href="#icon-substitution-in"></use>
+		</svg>
+
+						<span class="formation-list-player__substitution-text">63</span>
+					</div>
+		</span>
+	</div>
+</li>
+
+								</ul>
+						</section>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="container__inner">
+				<ul class="button-link-group">
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+			</div>
+					<div id="info-panel" class="tab-group__panel" role="tabpanel" aria-labelledby="info-tab" aria-hidden="true">
 				<div class="match-stats">
 	<div class="match-stats__section match-stats__section--latest">
 		<div class="match-stats__inner">
@@ -1269,7 +2172,26 @@
 				</div>
 				<ul class="latest-matches__items pop">
 	<li class="match-result match-result__win">
-		<a class="match-result__link" href="/livescore/#?date=2020-11-07&amp;game=4420411">
+		<a class="match-result__link" href="/matchfakta/hammarby-alvsjo-aik-ff-elitettan/4420257">
+			<span class="match-result__name">&#196;lvsj&#246; AIK FF</span>
+			<span class="match-result__away-team-tag">(h)</span>
+			<div class="match-result__teams">
+				<figure class="team-logo team-logo--sm match-result__team-logo">
+					<img class="team-logo__img lazyloaded" data-src="https://staticcdn.svenskfotboll.se/img/teamssm/6412.png"
+						 alt="Hammarby emblem"
+						 src="https://staticcdn.svenskfotboll.se/img/teamssm/6412.png">
+				</figure>
+				<span class="match-result__score">5 - 2</span>
+				<figure class="team-logo team-logo--sm match-result__team-logo">
+					<img class="team-logo__img lazyloaded" data-src="https://staticcdn.svenskfotboll.se/img/teamssm/7708.png"
+						 alt="&#196;lvsj&#246; AIK FF emblem"
+						 src="https://staticcdn.svenskfotboll.se/img/teamssm/7708.png">
+				</figure>
+			</div>
+		</a>
+	</li>
+	<li class="match-result match-result__win">
+		<a class="match-result__link" href="/matchfakta/hammarby-moron-bk-elitettan/4420411">
 			<span class="match-result__name">Mor&#246;n BK</span>
 			<span class="match-result__away-team-tag">(h)</span>
 			<div class="match-result__teams">
@@ -1344,25 +2266,6 @@
 			</div>
 		</a>
 	</li>
-	<li class="match-result match-result__win">
-		<a class="match-result__link" href="/matchfakta/hammarby-jitex-molndal-bk-elitettan/4420243">
-			<span class="match-result__name">Jitex M&#246;lndal BK</span>
-			<span class="match-result__away-team-tag">(h)</span>
-			<div class="match-result__teams">
-				<figure class="team-logo team-logo--sm match-result__team-logo">
-					<img class="team-logo__img lazyloaded" data-src="https://staticcdn.svenskfotboll.se/img/teamssm/6412.png"
-						 alt="Hammarby emblem"
-						 src="https://staticcdn.svenskfotboll.se/img/teamssm/6412.png">
-				</figure>
-				<span class="match-result__score">3 - 0</span>
-				<figure class="team-logo team-logo--sm match-result__team-logo">
-					<img class="team-logo__img lazyloaded" data-src="https://staticcdn.svenskfotboll.se/img/teamssm/7516.png"
-						 alt="Jitex M&#246;lndal BK emblem"
-						 src="https://staticcdn.svenskfotboll.se/img/teamssm/7516.png">
-				</figure>
-			</div>
-		</a>
-	</li>
 				</ul>
 			</div>
 					<div class="latest-matches__team">
@@ -1376,8 +2279,27 @@
 					<span class="latest-matches__team-name">&#196;lvsj&#246; AIK FF</span>
 				</div>
 				<ul class="latest-matches__items pop">
+	<li class="match-result match-result__loss">
+		<a class="match-result__link" href="/matchfakta/hammarby-alvsjo-aik-ff-elitettan/4420257">
+			<span class="match-result__name">Hammarby</span>
+			<span class="match-result__away-team-tag">(b)</span>
+			<div class="match-result__teams">
+				<figure class="team-logo team-logo--sm match-result__team-logo">
+					<img class="team-logo__img lazyloaded" data-src="https://staticcdn.svenskfotboll.se/img/teamssm/6412.png"
+						 alt="Hammarby emblem"
+						 src="https://staticcdn.svenskfotboll.se/img/teamssm/6412.png">
+				</figure>
+				<span class="match-result__score">5 - 2</span>
+				<figure class="team-logo team-logo--sm match-result__team-logo">
+					<img class="team-logo__img lazyloaded" data-src="https://staticcdn.svenskfotboll.se/img/teamssm/7708.png"
+						 alt="&#196;lvsj&#246; AIK FF emblem"
+						 src="https://staticcdn.svenskfotboll.se/img/teamssm/7708.png">
+				</figure>
+			</div>
+		</a>
+	</li>
 	<li class="match-result match-result__win">
-		<a class="match-result__link" href="/livescore/#?date=2020-11-07&amp;game=4420412">
+		<a class="match-result__link" href="/matchfakta/kvarnsvedens-ik-alvsjo-aik-ff-elitettan/4420412">
 			<span class="match-result__name">Kvarnsvedens IK</span>
 			<span class="match-result__away-team-tag">(b)</span>
 			<div class="match-result__teams">
@@ -1452,25 +2374,6 @@
 			</div>
 		</a>
 	</li>
-	<li class="match-result match-result__loss">
-		<a class="match-result__link" href="/matchfakta/bollstanas-sk-alvsjo-aik-ff-elitettan/4420247">
-			<span class="match-result__name">Bollstan&#228;s SK</span>
-			<span class="match-result__away-team-tag">(b)</span>
-			<div class="match-result__teams">
-				<figure class="team-logo team-logo--sm match-result__team-logo">
-					<img class="team-logo__img lazyloaded" data-src="https://staticcdn.svenskfotboll.se/img/teamssm/11544.png"
-						 alt="Bollstan&#228;s SK emblem"
-						 src="https://staticcdn.svenskfotboll.se/img/teamssm/11544.png">
-				</figure>
-				<span class="match-result__score">1 - 0</span>
-				<figure class="team-logo team-logo--sm match-result__team-logo">
-					<img class="team-logo__img lazyloaded" data-src="https://staticcdn.svenskfotboll.se/img/teamssm/7708.png"
-						 alt="&#196;lvsj&#246; AIK FF emblem"
-						 src="https://staticcdn.svenskfotboll.se/img/teamssm/7708.png">
-				</figure>
-			</div>
-		</a>
-	</li>
 				</ul>
 			</div>
 	</div>
@@ -1525,7 +2428,18 @@
 								</dd>
 							</dl>
 						</div>
-																<div class="icon-text-row">
+											<div class="icon-text-row">
+							<div class="icon-text-row__icon">
+								<svg class="icon icon--block">
+									<use xlink:href="#icon-spectators-color"></use>
+								</svg>
+							</div>
+							<dl class="icon-text-row__content">
+								<dt class="icon-text-row__title">Publiksiffra</dt>
+								<dd class="icon-text-row__value">50</dd>
+							</dl>
+						</div>
+											<div class="icon-text-row">
 							<div class="icon-text-row__icon">
 								<svg class="icon icon--block">
 									<use xlink:href="#icon-whistle-color"></use>
@@ -1790,11 +2704,21 @@
 
 
 	<div class="dimmer" data-js-dimmer></div>
+	<div class="modal" data-js-modal>
+		<button class="modal__close-icon" data-js-modal-close-button="">
+			<span class="visually-hidden" aria-hidden="true">Stäng sökruta</span>
+			<svg class="icon icon--block">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+			<span class="modal__close-text">Stäng</span>
+		</button>
+		<div class="modal__content" id="modalContent" data-js-modal-content></div>
+	</div>
 
 		<script defer src="/ui/dist/js/mzr.min.js"></script>
-    	<script defer src="/ui/dist/js/analytics.min.js?v=2.1.22.0"></script>
-    	<script defer src="/ui/dist/js/apps.min.js?v=2.1.22.0"></script>
-    	<script defer src="/ui/dist/js/main.min.js?v=2.1.22.0"></script>
+    	<script defer src="/ui/dist/js/analytics.min.js?v=2.1.28.0"></script>
+    	<script defer src="/ui/dist/js/apps.min.js?v=2.1.28.0"></script>
+    	<script defer src="/ui/dist/js/main.min.js?v=2.1.28.0"></script>
 
 	<link rel="preload" as="font" href="/ui/dist/assets/fonts/stag-sans/StagSans-Book-Web.woff" type="font/woff" crossorigin>
 	<link rel="preload" as="font" href="/ui/dist/assets/fonts/stag-sans/StagSans-BookItalic-Web.woff" type="font/woff" crossorigin>
