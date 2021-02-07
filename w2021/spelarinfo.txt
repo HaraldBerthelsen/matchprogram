@@ -1,0 +1,22 @@
+01	                 Anna Tamminen	+	Målvakt		FIN	1994	Nice Futis (Björneborg)	yrke?	2021	Åland United FC	2022	0	0	
+02	                   Eva Nyström	+	Försvarare	FIN	1999?	FC Viikingit (Helsingfors)	Student (juridik)	2021	Umeå IK	2022	0	0
+04	                     Eden Lind	-	Försvarare	SWE	2004	Hammarby	Student (gymnasiet)	-	-	?	4	0
+05	             Petronella Ekroth	-	Försvarare	SWE	1989	Rödsle BK (Oskarshamn)	?	2020	As Roma	sommar 2022	6	0
+06	          Fanny Hjelm Rönnlund	+	Mittfältare	SWE	1995?	Mariehem SK (Umeå)	?	2021	Umeå IK	2022	0	0
+07	               Hanna Lundkvist	-	Mittfältare	SWE	2002	Djurö-Vindö IF	Student?	2019	AIK	2022	55	6
+08	                  Ellen Gibson	-	Mittfältare	SWE	1996	Hammarby	?	-	-	2022	146	6
+09	                Madelen Janogy	+	Anfallare	SWE	1995	Falköpings KIK	?	2021	Piteå IF	2022	0	0
+10	                  Emma Jansson	-	Mittfältare	SWE	1996	Sollentuna FK	?	1996	Kif Örebro 	2022	147	81
+11	              Ellen Wangerheim	-	Anfallare	SWE	2004	Saltsjö-Boo IF	?	2020	Djurgårdens IF	2021	15	2
+13	               Matilda Vinberg	+	Mittfältare	SWE	2003	Enskede IK	Stud	2021	Enskede IK	2022	0	0
+14	                Nina Jacobsson	+	Anfallare	SWE	1994	Morön BK (Skellefteå)	?	2021	Piteå IF	2022	0	0
+15	                 Elsa Karlsson	-	Försvarare	SWE	1992	Kristinebergs FF	?	2020	IFK Kalmar	2021	26	2
+16	                Emilia Larsson	-	Anfallare	SWE	1998	IK Östria Lambohov (Linköping)	?	2019	IFK Norrköping	2021	54	29
+17	               Hanna Folkesson	-	Mittfältare	SWE	1988	Umedalens IF (Umeå)	?	2020	Djurgårdens IF	2022	20	4
+18	                Alice Carlsson	-	Försvarare	SWE	1996	Hyssna IF (Västergötland)	?	2020	BP	2021	26	1
+19	              Frida Thörnqvist	-	Anfallare	SWE	2000	Tyresö FF	?	2020	Tyresö FF	2021	7	2
+20	               Jonna Andersson	-	målvakt		SWE	1995	Mariebo IK (Jönköping)	Journalist	2019	Västerås BK30	2021	11	0	
+22	                   Jonna Ståhl	-	Mittfältare	SWE	1995	Egnahems BK (Huskvarna)	?	2019	Växjö DFF	2021	0	2
+23	                 June Pedersen	-	Försvarare	NOR	1985	Malangshalvøya BK (Tromsø)	?	2020	Piteå IF	2021+2022	24	3
+24	         Britta Elsert Gynning	-	målvakt		SWE	1995	Skå IK	?	2019	Eskilstuna United	Sommar 2021	45	0
+27	                     Helén Eke	-	Försvarare	SWE	1991	Hanvikens SK	Student (Medicin)	2014	Kif Örebro 	2021	111		7
