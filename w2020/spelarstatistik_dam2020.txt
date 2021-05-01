@@ -1,0 +1,34 @@
+nr                              namn	spel/mål speltid gula kort röda kort
+02	               Filippa Graneld	4/0	50	0	0
+04	                   Ida Egegård	1/0	12	0	0
+04	                    Malva Fors	0/0	0	0	0
+05	          Moa Ekmyr Garpenbeck	1/0	3	0	0
+05	             Petronella Ekroth	6/0	360	0	0
+06	                Felicia Saving	23/2	1280	1	0
+07	               Hanna Lundkvist	26/2	1753	3	0
+08	                  Ellen Gibson	23/1	1792	1	0
+09	        Dajan Hashemi-Ghermezi	23/4	1297	1	0
+10	                  Emma Jansson	25/18	2161	3	0
+11	              Ellen Wangerheim	15/2	448	1	0
+13	                  Klara Andrup	23/4	569	0	0
+14	                 Lawlaw Nazeri	8/0	153	0	0
+15	                 Elsa Karlsson	26/2	2340	1	0
+16	                Emilia Larsson	26/17	1830	2	0
+17	               Hanna Folkesson	20/4	1628	3	0
+18	                Alice Carlsson	26/1	2320	1	0
+19	              Frida Thörnqvist	7/2	178	0	0
+20	               Jonna Andersson	6/0	504	0	0
+20	               Nelly Arvidsson	0/0	0	0	0
+21	                   Emma Westin	23/6	1354	1	0
+22	                     Eden Lind	0/0	0	0	0
+22	                   Jonna Ståhl	1/0	3	0	0
+22	        Mercy Sabuni Söderling	1/0	1	0	0
+23	                 June Pedersen	24/3	1933	1	0
+24	         Britta Elsert Gynning	21/0	1836	1	0
+24	               Nelly Arvidsson	0/0	0	0	0
+25	             Ellinor Johansson	5/0	46	0	0
+25	                   Ida Egegård	0/0	0	0	0
+26	                     Eden Lind	0/0	0	0	0
+27	                     Helén Eke	16/1	930	1	0
+28	         Raiza Santos Da Silva	2/0	21	0	0
+29	Ana Caroline Martins Rodrigues	13/6	928	0	0
