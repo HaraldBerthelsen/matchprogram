@@ -1,0 +1,38 @@
+s4 mitten, tredje stycket
+Falkenberg-struppen -> Falkenbergs-truppen
+alls-venska -> all-svenska
+
+s4 Texten om FFF avklippt
+
+s6 vänster trejde stycket
+Hammarbyt-röjan -> Hammarby-tröjan
+
+s12 vänster näst sista stycket
+trot-jänare -> tro-tjänare
+
+s12 vänster sista stycket
+lags-pelare -> lag-spelare
+
+s15 vänster
+Fattas frågetecken efter sista frågan
+
+s16 Jeanettes svar
+föreningdemokrati -> föreningsdemokrati
+
+s18 höger sista frågan
+fattas komma före "vilken"
+
+s22 höger tredje stycket
+Ska väl vara citattecken från "I Allsvenskan" till "i landslaget igen"
+
+s23 höger
+I texten står det "171 matcher", i faktarutan står det "170 serie- och kvalmatcher". Kan vara en match som varken var serie eller kval? Jag har ingen aning, bara undrade över olika siffror.
+
+s26 mitten, frågan i fetstil
+"Hur ser du på de ett och halvt åren i Hammarby?"
+ska vara "ett och ett halvt" men det blir konstigt i meningen tycker jag:
+"Hur ser du på de ett och ett halvt åren i Hammarby?" inte så bra väl?
+
+Förslag: ändra till
+"Hur ser du på tiden i Hammarby?"
+

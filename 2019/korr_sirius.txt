@@ -1,0 +1,69 @@
+s4 vänster, mitten
+Norge som visade intressen men det -> Norge som visade intresse men det
+
+s4 mittenspalt
+De förutsättningar vi
+har budgetmässigt är faktiskt sämre än
+i Kalmar så gäller det att skapa en bra
+och harmonisk grupp.
+
+->
+
+? Kanske
+"De förutsättningar vi
+har budgetmässigt är faktiskt sämre än
+i Kalmar så det gäller att skapa en bra
+och harmonisk grupp."
+?
+
+s4 mittenspalt samma stycke
+Saknas punkt efter Elfsborg
+
+s5 Karl Larson
+Brommapojksfostade -> Brommapojksfostrade
+
+s9 vänster fjärde stycket
+Så därmed är det svårt att inte förstå existens av ovannämnda lobby.
+->
+Så därmed är det inte svårt att förstå existensen av ovannämnda lobby.
+?
+
+s9 höger första stycket
+Stockholm Stadion. -> Stockholms Stadion. (?)
+
+s9 höger andra stycket
+unga spelar som fostras på konstgräs och sedan
+->
+unga spelare som fostras på konstgräs och sedan
+
+s9, vänster, första stycket
+"Har bra driv och vill föra saker framåt."
+Meningen står två gånger
+
+s27 inledningen
+är det hela flera spelare -> är det flera spelare (?)
+
+s30 inledningen
+inför match kom gående i en St Eriks-tröja med ett Hammarby emblem.
+->
+kom gående inför match i en St Eriks-tröja med ett Hammarby-emblem.
+
+s30 första stycket
+frågar om det är Eriks Israelsson
+->
+frågar om det är Erik Israelsson
+
+s30 andra stycket
+Jag har provat att vara lite vidskepliga knep
+->
+Jag har provat lite vidskepliga knep
+
+s30 tredje frågan
+Vilket vidskeplighet har du hållit på med längst?
+->
+Vilken vidskeplighet har du hållit på med längst?
+
+s30 sista raden
+än mysig tradition -> en mysig tradition
+
+

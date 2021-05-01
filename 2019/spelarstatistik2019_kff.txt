@@ -1,0 +1,27 @@
+nr	spelare	matcher/mål	assist	skott	speltid minuter	gula kort	röda kort
+1	Johan Wiland	1/0	0	0	28	0	0
+2	Simon Sandberg	16/0	3	1	1344	4	1
+3	Dennis Widgren	15/0	2	5	1252	2	0
+4	Kossounou Odilon	9/0	0	0	513	3	0
+4	Richard Magyar	3/0	0	1	158	0	0
+5	David Fällman	15/1	0	1	1302	1	0
+6	Darijan Bojanic	18/1	3	6	1239	1	0
+7	Imad Khalili	15/6	2	17	965	3	0
+8	Jeppe Andersen	16/1	3	17	1428	3	0
+11	Vladimir Rodic	12/0	0	3	333	1	0
+13	Mads Fenger	11/0	0	6	871	0	1
+14	Tim Söderström	9/0	1	1	227	0	0
+16	Leo Bengtsson	4/0	0	0	60	0	0
+17	Vidar Örn Kjartansson	15/7	2	38	1350	2	0
+18	Filston Mawana	0/0	0	0	0	0	0
+19	Junior	0/0	0	0	0	0	0
+20	Alexander Kacaniklic	15/5	4	11	941	2	0
+22	Muamer Tankovic	17/10	7	34	1451	2	0
+23	Marcus Degerlund	1/0	0	1	54	0	0
+23	Aron Jóhannsson	2/0	0	0	33	0	0
+25	Davor Blazevic	7/0	0	0	541	0	1
+26	Kalle Björklund	0/0	0	0	0	0	0
+27	Gianluca Curci	12/0	0	0	1048	0	0
+28	Jean Carlos de Brito	3/0	0	0	86	1	0
+40	Nikola Djurdjic	17/9	4	26	1493	3	1
+77	Mats Solheim	16/1	1	8	1043	1	0

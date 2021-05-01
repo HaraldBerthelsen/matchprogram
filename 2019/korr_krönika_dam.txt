@@ -1,0 +1,85 @@
+s 175 höger
+Skulle vi få en match likt Lidköping förra säsongen.
+Frågetecken istf punkt.
+
+s 186 vänster:
+Visst skapades det chanser, men laget sågs inte se ut som vanligt.
+Kanske istället:
+Visst skapades det chanser, men laget såg inte ut som vanligt.
+
+s 198 vänster
+Detta kändes som att den matchen var sista chansen att hänga på lagen från norr,
+Kanske istället:
+Det kändes som att den matchen var sista chansen att hänga på lagen från norr,
+
+s 211 vänster
+Det gul-svarta hemmalaget tar visserligen ta ledningen,
+->
+Det gul-svarta hemmalaget tar visserligen ledningen,
+
+s 221 vänster
+Ändå det var aldrig något snack om saken.
+->
+Ändå var det aldrig något snack om saken.
+
+
+Matchstatistik: publiksiffrorna är "-" flera gånger när det borde vara "50". Det är mitt fel!
+
+-----------------------------------------------------
+
+s15 höger
+Skånebajarna har på olika synts när våra lag spelat söderöver
+->
+Skånebajarna har på olika sätt synts när våra lag spelat söderöver
+
+s 48
+Nynäshamn-strakten
+->
+Nynäshamns-trakten
+
+s72
+nazistuni-form
+->
+nazistuniform
+
+state- ment
+->
+statement
+
+s 80
+sätta sig i bilen för att och lämna
+->
+sätta sig i bilen för att lämna
+
+s 89
+mörkaste Superettanåren konstarerar vi.
+->
+mörkaste Superettanåren konstaterar vi.
+
+------------------------------------------
+
+s120
+IFK GÖTEBROG–HAMMARBY 0–4
+->
+IFK GÖTEBORG–HAMMARBY 0–4
+Eller fast kanske inte förresten, ganska fint med Götebrog..
+
+
+s 131
+från Allsvenskan till en europisk liga.
+->
+från Allsvenskan till en europeisk liga.
+
+s 145
+högtalare kunde hyra på plats i Östersund
+->
+högtalare kunde hyras på plats i Östersund 
+
+s 146
+eftersom vi saknad energi och förmåga
+->
+eftersom vi saknade energi och förmåga
+
+annars kändes det äkta åka 140 mil
+->
+annars kändes det äkta att åka 140 mil
