@@ -24,6 +24,7 @@ def convert_date(date):
         "november":11,
         "december":12
     }
+    sys.stderr.write("DATE: %s\n" % date)
     (_,day,month_name) = date.split(" ")
     return "%s/%s" % (day, months[month_name])
                       
@@ -84,12 +85,26 @@ def main():
 
             match_info_list.append(match_info)
 
+    #Manually adding last match
+    match_info = {
+        "id": 6352,
+        "round": 40,
+        "home/away": "A",
+        "opponent": "Örebro SK",
+        "date": "6/12",
+        "time": "14:30",
+        "arena": "Behrn Arena",
+        "hif_score": 1,
+        "other_score": 2            
+    }
+    match_info_list.append(match_info)
+
 
 
     for match_info in match_info_list:
         match_file = "%s.html" % match_info["id"]
         if os.path.exists(match_file):
-            print("READING %s" % match_file)
+            sys.stderr.write("READING %s\n" % match_file)
 
             with open(match_file) as fh:
                 html_doc = fh.read()
@@ -129,6 +144,118 @@ def main():
             #PLAYERS
 
             squads = data.find("table", "table__trupper")
+            if match_info["id"] == 6352:
+                #Manually add players etc for last game, there is somethine wrong with the html
+                match_info["squad"] = [
+                    {
+                        "name": "Oliver Dovin",
+                        "number": 24,
+                        "starting": True
+                    },
+                    {
+                        "name": "Simon Sandberg",
+                        "number": 2,
+                        "starting": True
+                    },
+                    {
+                        "name": "Richard Magyar",
+                        "number": 4,
+                        "starting": True,
+                        "yellow": True,
+                        "red": True
+                    },
+                    {
+                        "name": "David Fällman",
+                        "number": 5,
+                        "starting": True,
+                        "yellow": True
+                    },
+                    {
+                        "name": "Mohanad Jeahze",
+                        "number": 30,
+                        "starting": True
+                    },
+                    {
+                        "name": "Jeppe Andrup Andersen",
+                        "number": 8,
+                        "starting": True
+                    },
+                    {
+                        "name": "Paulo José De Oliveira",
+                        "number": 9,
+                        "starting": True,
+                        "sub-out":91
+                    },
+                    {
+                        "name": "Abdul Rahman Khalili",
+                        "number": 17,
+                        "starting": True
+                    },
+                    {
+                        "name": "Alexander Kacaniklic",
+                        "number": 20,
+                        "starting": True,
+                        "sub-out":34
+                    },
+                    {
+                        "name": "Aimar Sher",
+                        "number": 31,
+                        "starting": True,
+                        "sub-out":74
+                    },
+                    {
+                        "name": "Gustav Ludwigsson",
+                        "number": 16,
+                        "starting": True,
+                        "goals": 1
+                    },
+
+
+                    {
+                        "name": "David Ousted",
+                        "number": 1,
+                        "starting": False
+                    },
+                    {
+                        "name": "Mads Fenger Nielsen",
+                        "number": 13,
+                        "starting": False,
+                        "sub-in":34,
+                        "yellow": True
+                        
+                    },
+                    {
+                        "name": "Kalle Björklund",
+                        "number": 26,
+                        "starting": False,
+                        "sub-in":74
+                    },
+                    {
+                        "name": "Axel Sjöberg",
+                        "number": 35,
+                        "starting": False
+                    },
+                     {
+                        "name": "Imad Khalili",
+                        "number": 7,
+                        "starting": False
+                    },
+                    {
+                        "name": "Tim Söderström",
+                        "number": 14,
+                        "starting": False,
+                        "sub-in":91
+                    },
+                    {
+                        "name": "Akinkunmi Ayobami Amoo",
+                        "number": 33,
+                        "starting": False
+                    },
+                   
+
+                ]
+                continue
+
             if not squads:
                 squads = data.find("div", "teams__players")
                 extract_match_data_type2(squads, match_info)
@@ -145,10 +272,12 @@ def main():
 
 
 def extract_match_data(squads, match_info):
-    print(squads.text)
-    formation = re.search("Hammarby IF ([0-9-]+)", squads.text).group(1)
+    #print(squads.text)
+    try:
+        formation = re.search("Hammarby IF ([0-9-]+)", squads.text).group(1)
+    except:
+        formation = "N/A"
     match_info["formation"] = formation
-
 
     players = squads.find_all("td")
     hif_players = []
@@ -169,7 +298,7 @@ def extract_match_data(squads, match_info):
         elif "Mayckel Lahdo" in player.text:
             #ML har ingen data-page-url i 6220.html (dif)
             hif_subs.append(player)
-            sys.stderr.write("MAYCKEL LAHDO\n%s\nMAYCKEL LAHDO\n" % player)
+            #sys.stderr.write("MAYCKEL LAHDO\n%s\nMAYCKEL LAHDO\n" % player)
 
 
     #for player in hif_subs:
@@ -196,8 +325,9 @@ def extract_match_data(squads, match_info):
         if out:
             time = out.text
             if time.endswith("'"):
-                #print("UT (%s): %s" % (time[0:-1], name))
                 p["sub-out"] = int(time[0:-1])
+                #if p["sub-out"] >= 90:
+                #    print("UT (%s): %s" % (p["sub-out"], name))
 
         yellow_card = player_info1.find("span", "yellow-card")
         if yellow_card:
@@ -269,8 +399,11 @@ def extract_match_data(squads, match_info):
 
 
 def extract_match_data_type2(squads, match_info):
-    print(squads.text)
-    formation = re.search("Hammarby IF ([0-9-]+)", squads.text).group(1)
+    #print(squads.text)
+    try:
+        formation = re.search("Hammarby IF ([0-9-]+)", squads.text).group(1)
+    except:
+        formation = "N/A"
     match_info["formation"] = formation
 
 
@@ -525,6 +658,7 @@ def print_game_stats():
             y = ""
             r = ""
             g = ""
+            printSubTime = False
             if nr in players_this_match:
                 player = players_this_match[nr]
                 if player["starting"]:
@@ -541,7 +675,22 @@ def print_game_stats():
                     r = "R"
                 if "goals" in player:
                     g = player["goals"]
-            print("%s%s%s%s\t" % (p, y, r, g), end='')
+
+                if printSubTime:
+                    t = ""
+                    if "sub-out" in player:
+                        t = player["sub-out"]
+                    if "sub-in" in player:
+                        t = player["sub-in"]
+                    if t != "":
+                        print("%s(%s)%s%s%s\t" % (p, t, y, r, g), end='')
+                    else:
+                        print("%s%s%s%s\t" % (p, y, r, g), end='')
+                else:
+                    print("%s%s%s%s\t" % (p, y, r, g), end='')
+
+            else:
+                print("%s%s%s%s\t" % (p, y, r, g), end='')
         print("")
 
         
@@ -554,9 +703,9 @@ def print_info(to_print,match_info, nonewline=False):
             print_list2 = []
             for t2 in t:
                 if t2 in match_info:
-                    print_list2.append(match_info[t2])
+                    print_list2.append(str(match_info[t2]))
                 else:
-                    print_list2.append(t2)
+                    print_list2.append(str(t2))
             print_list.append("".join(print_list2))
                     
         elif t in match_info:
@@ -611,15 +760,29 @@ def update_info(player, match_time=90):
     if "red" in player:
             p["nRed"] += 1
 
-    if "sub-in" in player:
+    if "sub-in" in player and player["sub-in"] > match_time:
+        p["timePlayed"] += 1
+    elif "sub-in" in player:
         p["timePlayed"] += match_time-player["sub-in"]
-    if player["starting"] and "sub-out" in player:
-        p["timePlayed"] += match_time-player["sub-out"]
-    if player["starting"]:
+
+
+    if player["starting"] and "sub-out" in player and player["sub-out"] < match_time:
+        p["timePlayed"] += match_time-(match_time-player["sub-out"])
+    elif player["starting"] and "sub-out" in player:
+        p["timePlayed"] += match_time-1
+    elif player["starting"]:
         p["timePlayed"] += match_time
             
     players[nr] = p
 
+    if nr == 30:
+        if "sub-in" in player:
+            sys.stderr.write("MJ played: %s in %s\n" % (p["timePlayed"], player["sub-in"]))
+        elif "sub-out" in player:
+            sys.stderr.write("MJ played: %s ut %s\n" % (p["timePlayed"], player["sub-out"]))
+        else:
+            sys.stderr.write("MJ played: %s\n" % (p["timePlayed"]))
+    
             
 def print_player_stats_by_number():
     #print(players[25])

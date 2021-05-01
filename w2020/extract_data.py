@@ -29,8 +29,8 @@ def main():
         #break
 
     #printSeason(season, squad)
-    printSeasonFormatted(season, squad)
     printPlayerStats(season)
+    printSeasonFormatted(season, squad)
 
     
 def updateSquadInfo(squad, match_info):
@@ -62,6 +62,11 @@ def printSeason(season, squad):
         to_print.append(match["other_score"])
 
         for nr in sorted(squad.keys()):
+
+            #Only players that played..
+            if players[nr]["timePlayed"] == 0:
+                continue
+
             if nr not in match["match_players"]:
                 to_print.append("-")
             elif match["match_players"][nr]["sub"] in ["I", "U"]:
@@ -85,6 +90,10 @@ def printSeasonFormatted(season, squad):
     print("%-20s\t%-20s\t%-25s\t%s\t%-10s" % ("Motståndare", "Tid", "Plats", "HIF", "Inte HIF"), end='\t')
     header = []
     for nr in sorted(squad.keys()):
+        #Only players that played
+        if players[nr]["timePlayed"] == 0:
+            continue
+
         printnr = nr.split("-")[0]
         #Initials
         #header.append("%s %s" % (printnr, initials(squad[nr]["name"])))
@@ -100,6 +109,10 @@ def printSeasonFormatted(season, squad):
         for nr in sorted(squad.keys()):
             printSubTime = False
 
+            #Only players that played
+            if players[nr]["timePlayed"] == 0:
+                continue
+            
             if nr not in match["match_players"]:
                 to_print.append("-")
                 
@@ -176,6 +189,16 @@ def getMatchInfo(game):
     for player in players:
         (nr, info) = getPlayerInfo(player, sub=True)
         match_players[nr] = info
+
+    #Korrigera "Okänd spelare" i Sunnanå-Hammarby
+    if matchid == "4420269":
+        sys.stderr.write("%s\n" % match_players.keys())
+        for p in match_players.keys():
+            if p.startswith("28"):
+                raiza = match_players[p]
+                raiza["sub"] = "I"
+                raiza["sub_time"] = 74
+                sys.stderr.write("%s\n" % raiza)
 
     match_info = {
         "id": matchid,
@@ -263,7 +286,10 @@ def getPlayerInfo(player, sub=False):
 
 def printMatchPlayerInfo(match_players):
     for nr in match_players:
-        
+        #Only players that played
+        if players[nr]["timePlayed"] == 0:
+            continue
+
         print("%s\t%s" % (nr, match_players[nr]["sub"]))
 
         printnr = nr.split("-")[0]
@@ -319,9 +345,11 @@ def update_info(player, nr, match_time=90):
 
     if player["sub"] == "I":
         p["timePlayed"] += match_time-player["sub_time"]
-    if player["sub"] == "U":
+    elif player["sub"] == "U":
+        if player["sub_time"] > match_time:
+            sys.stderr.write("UT: %s %s %s" % (player["name"], player["sub_time"], match_time))                                                  
         p["timePlayed"] += match_time-(match_time-player["sub_time"])
-    if player["sub"] == "S":
+    elif player["sub"] == "S":
         p["timePlayed"] += match_time
             
     players[nr] = p
@@ -331,6 +359,10 @@ def print_player_stats_by_number():
     #print("nr                              namn	spel/mål assist	skott speltid gula kort röda kort")
     print("nr                              namn	spel/mål speltid gula kort röda kort")
     for nr in sorted(players):
+        #Print only players that played :)
+        if players[nr]["timePlayed"] == 0:
+            continue            
+        
         printnr = nr.split("-")[0]        
         #1	Johan Wiland	7/0	0	0	568	0	0
         #print("%s\t%30s\t%s/%s\t%s\t%s\t%s\t%s\t%s" % (printnr, players[nr]["name"], players[nr]["nMatches"], players[nr]["nGoals"], players[nr]["nAssists"], players[nr]["nShots"], players[nr]["timePlayed"], players[nr]["nYellow"], players[nr]["nRed"]))
