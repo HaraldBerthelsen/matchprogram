@@ -168,6 +168,10 @@ def getNrCards(colour, player, season, type=None):
 def printMatchInfo(season):
     for match in season:
         arena = match["Plats"]
+        referee = match["Domare"]
+        date = match["Datum"]
+        time = match["Tid"]
+        attendance = match["Publik"]
         if arena == "Söderstadion" and match["Kommentar"] != "DIF hemma":
             home = "Hammarby"
             away = match["Motståndare"]
@@ -175,6 +179,8 @@ def printMatchInfo(season):
             awayresult = match["Inte HIF"]
             homehalftime = match["Halvtid HIF"]
             awayhalftime = match["Halvtid inte HIF"]
+            opponent_goals = getOppGoals(match["Händelser motståndare"], "A")
+            hif_goals = getHifGoals(match, "H")
         else:
             home = match["Motståndare"]
             away = "Hammarby"
@@ -182,34 +188,43 @@ def printMatchInfo(season):
             awayresult = match["HIF"]
             homehalftime = match["Halvtid inte HIF"]
             awayhalftime = match["Halvtid HIF"]
-        referee = match["Domare"]
-        date = match["Datum"]
-        time = match["Tid"]
-        opponent_goals = getOppGoals(match["Händelser motståndare"])
-        hif_goals = getHifGoals(match)
+            opponent_goals = getOppGoals(match["Händelser motståndare"], "H")
+            hif_goals = getHifGoals(match, "A")
+
 
         out = f"""
 {date} {time}, {arena}: 
 {home}-{away} {homeresult}-{awayresult} ({homehalftime}-{awayhalftime})
-Domare: {referee}
+Domare: {referee}, Publik: {attendance}
 """
         print(out)
         #print(opponent_goals)
         #print(hif_goals)
 
         goals = {**hif_goals, **opponent_goals}
+        h = 0
+        a = 0
         for time in sorted(goals.keys()):
-            player = goals[time][1]
-            print(f"X-Y ({time}) {player}") 
+            (goaltype, player, comment, home_away) = goals[time]
+            if comment == ",str":
+                comment = " (straff)"
+            if comment.startswith("+"):
+                time = f"{time}{comment}"
+                comment = ""
+            if home_away == "H":
+                h += 1
+            else:
+                a += 1
+            print(f"{h}-{a} ({time}) {player}{comment}") 
 
-
+        print()
         lineup = getLineup(match)
         print(lineup)
             
         if date == "01/5":
             sys.exit()
 
-def getOppGoals(opp_events):
+def getOppGoals(opp_events, home_away):
     goals = {}
     for info in opp_events.split("-"):
         #print(info)
@@ -219,10 +234,10 @@ def getOppGoals(opp_events):
             time = int(m.group(2))
             lastname = m.group(3)
             comment = m.group(4)
-            goals[time] = (goaltype, lastname, comment)
+            goals[time] = (goaltype, lastname, comment, home_away)
     return goals
             
-def getHifGoals(match):
+def getHifGoals(match, home_away):    
     goals = {}
     for player in list(match.keys())[firstplayer:]:
         #print(player)
@@ -236,7 +251,7 @@ def getHifGoals(match):
                 time = int(m.group(2))
                 lastname = player.split(" ")[-1]
                 comment = m.group(3)
-                goals[time] = (goaltype, lastname, comment)
+                goals[time] = (goaltype, lastname, comment, home_away)
     return goals
 
 def getLineup(match):
@@ -249,33 +264,38 @@ def getLineup(match):
         for info in playerinfo:
             #print(info)
             if info == "K":
-                fields["K"] = player
+                fields["K"] = " ".join(player.split(" ")[1:])
+
             else:
                 m = re.match("([BMA])([0-9])", info)
                 if m:
                     field = m.group(1)
                     nr = int(m.group(2))
-                    lastname = player
-                    fields[field][nr] = lastname
+                    printplayer = " ".join(player.split(" ")[1:])
+                    fields[field][nr] = printplayer
                     if "U" in match[player]:
                         #print(match[player])
                         m = re.search("U\(([0-9][0-9]a?)\)", match[player])
-                        subout = m.group(1)
-                        #print(subout)
+                        subtime = m.group(1)
                         for player2 in list(match.keys())[firstplayer:]:
-                            if f"I({subout})" in match[player2]:
-                                fields[field][nr] += f" ({player2})"
+                            if f"I({subtime})" in match[player2]:
+                                if subtime.endswith("a"):
+                                    printsubtime = subtime[:-1]
+                                else:
+                                    printsubtime = subtime
+                                printplayer2 = " ".join(player2.split(" ")[1:])
+                                fields[field][nr] += f" ({printplayer2}, {printsubtime})"
 
                                            
 
     lineup = []
     lineup.append(fields["K"])
-    lineup.append("-")
     for field in ["B","M","A"]:
+        fieldlist = []
         for pos in sorted(fields[field].keys()):
-            lineup.append(fields[field][pos])
-        lineup.append("-")
-    return lineup
+            fieldlist.append(fields[field][pos])
+        lineup.append(", ".join(fieldlist))
+    return "\n".join(lineup)
 
 
         
