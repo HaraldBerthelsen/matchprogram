@@ -7,7 +7,7 @@ import sys, re
 import csv
 
 
-firstplayer = 14
+firstplayer = 15
 
 def readCsvFile(csvfile):
     season = []
@@ -18,7 +18,7 @@ def readCsvFile(csvfile):
     return season
 
 def printMatchStatistics(season):
-    fieldnames = ["Typ","Datum","Motståndare", "HIF", "Inte HIF"]
+    fieldnames = ["Typ","Datum","Motståndare", "Resultat", "Publik (bortalag)"]
     players = list(season[0].keys())[firstplayer:]
     fieldnames.extend(players)
     print("\t".join(fieldnames))
@@ -27,8 +27,16 @@ def printMatchStatistics(season):
         row.append(match['Typ'])
         row.append(match['Datum'])
         row.append(match['Motståndare'])
-        row.append(match['HIF'])
-        row.append(match['Inte HIF'])
+        row.append(match['HIF']+"-"+match['Inte HIF'])
+
+        publik = match['Publik']
+        if publik == "":
+            publik = 0
+        bortapublik = match['Publik bortalag']
+        if bortapublik == "":
+            bortapublik = 0        
+        row.append(f"{publik} ({bortapublik})")
+        
         for playerinfo in list(match.keys())[firstplayer:]:
             row.append(getMatchStatisticsPlayerInfo(match[playerinfo]))
         print("\t".join(row))
@@ -82,6 +90,7 @@ def getMatchStatisticsPlayerInfo(playerinfo):
     
 
 def printPlayerStatistics(season, type=None):
+    print("Spelare\tMatcher\tMål\tMinuter\tRöda\tGula")
     match = season[0]
     for player in list(match.keys())[firstplayer:]:
         row = []
@@ -172,7 +181,7 @@ def printMatchInfo(season):
         date = match["Datum"]
         time = match["Tid"]
         attendance = match["Publik"]
-        if arena == "Söderstadion" and match["Kommentar"] != "DIF hemma":
+        if arena in ["Söderstadion","Hammarby IP"] and match["Kommentar"] != "DIF hemma":
             home = "Hammarby"
             away = match["Motståndare"]
             homeresult = match["HIF"]
@@ -218,10 +227,13 @@ Domare: {referee}, Publik: {attendance}
             print(f"{h}-{a} ({time}) {player}{comment}") 
 
         print()
-        lineup = getLineup(match)
+        try:
+            lineup = getLineup(match)
+        except:
+            continue
         print(lineup)
             
-        if date == "01/5":
+        if date == "08/5":
             sys.exit()
 
 def getOppGoals(opp_events, home_away):
@@ -234,7 +246,13 @@ def getOppGoals(opp_events, home_away):
             time = int(m.group(2))
             lastname = m.group(3)
             comment = m.group(4)
-            goals[time] = (goaltype, lastname, comment, home_away)
+            home_away_this_goal = home_away
+            if goaltype == "OG":
+                if home_away == "H":
+                    home_away_this_goal = "A"
+                elif home_away == "A":
+                    home_away_this_goal = "H"
+            goals[time] = (goaltype, lastname, comment, home_away_this_goal)
     return goals
             
 def getHifGoals(match, home_away):    
