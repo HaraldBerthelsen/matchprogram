@@ -233,7 +233,7 @@ Domare: {referee}, Publik: {attendance}
             continue
         print(lineup)
             
-        if date == "08/5":
+        if date == "12/5":
             sys.exit()
 
 def getOppGoals(opp_events, home_away):
@@ -293,11 +293,13 @@ def getLineup(match):
                     fields[field][nr] = printplayer
                     if "U" in match[player]:
                         #print(match[player])
-                        m = re.search("U\(([0-9][0-9]a?)\)", match[player])
+                        m = re.search("U\(([0-9][0-9][ab]?)\)", match[player])
                         subtime = m.group(1)
                         for player2 in list(match.keys())[firstplayer:]:
                             if f"I({subtime})" in match[player2]:
                                 if subtime.endswith("a"):
+                                    printsubtime = subtime[:-1]
+                                elif subtime.endswith("b"):
                                     printsubtime = subtime[:-1]
                                 else:
                                     printsubtime = subtime
@@ -320,8 +322,8 @@ def getLineup(match):
 if __name__ == "__main__":
     csvfile = sys.argv[1]
     season = readCsvFile(csvfile)
-    #printMatchStatistics(season)
+    printMatchStatistics(season)
     #printPlayerStatistics(season, type="Allsvenskan")
     #printPlayerStatistics(season)
-    printMatchInfo(season)
+    #printMatchInfo(season)
     
