@@ -8,6 +8,7 @@ import csv
 
 
 firstplayer = 15
+stopdate = "30/5"
 
 def readCsvFile(csvfile):
     season = []
@@ -15,6 +16,11 @@ def readCsvFile(csvfile):
         reader = csv.DictReader(fh, delimiter='\t')
         for row in reader:
             season.append(row)
+
+    for match in season:
+        #print(match["Typ"])
+        if match["Typ"] == "OBOS Damallsvenskan":
+            match["Typ"] = "Allsvenskan"
     return season
 
 def printMatchStatistics(season):
@@ -41,6 +47,10 @@ def printMatchStatistics(season):
             row.append(getMatchStatisticsPlayerInfo(match[playerinfo]))
         print("\t".join(row))
 
+        if match["Datum"] == stopdate:
+            sys.exit()
+
+        
 def getMatchStatisticsPlayerInfo(playerinfo):
     #if "G" in playerinfo:
     #    print(playerinfo)
@@ -90,7 +100,7 @@ def getMatchStatisticsPlayerInfo(playerinfo):
     
 
 def printPlayerStatistics(season, type=None):
-    print("Spelare\tMatcher\tMål\tMinuter\tRöda\tGula")
+    print("Spelare\tMatcher\tMål\tAssist\tMinuter\tRöda\tGula")
     match = season[0]
     for player in list(match.keys())[firstplayer:]:
         row = []
@@ -98,6 +108,7 @@ def printPlayerStatistics(season, type=None):
         row.append(player)        
         row.append(getNrMatches(player,season, type))
         row.append(getNrGoals(player,season, type))
+        row.append(getNrAssists(player,season, type))
         row.append(getPlayedMinutes(player,season, type))        
         row.append(getNrCards("Y",player,season, type))
         row.append(getNrCards("R",player,season, type))
@@ -133,7 +144,7 @@ def getPlayedMinutes(player, season, type=None):
                 if "S" in info:
                     minutes += playedtime
                 elif "U" in info:
-                    m = re.match("U\(([0-9+]+)a?\)", info)
+                    m = re.match("U\(([0-9+]+)[ab]?\)", info)
                     time = m.group(1)
                     if "+" in time:
                         (t1,t2) = time.split("+")
@@ -142,7 +153,7 @@ def getPlayedMinutes(player, season, type=None):
                             time = playedtime
                     minutes += int(time)
                 elif "I" in info:
-                    m = re.match("I\(([0-9+]+)a?\)", info)
+                    m = re.match("I\(([0-9+]+)[ab]?\)", info)
                     time = m.group(1)
                     if "+" in time:
                         (t1,t2) = time.split("+")
@@ -163,6 +174,16 @@ def getNrGoals(player, season, type=None):
                     goals += 1
     return str(goals)
 
+def getNrAssists(player, season, type=None):
+    assists = 0
+    for match in season:
+        if type == None or match["Typ"] == type:
+            playerinfo = match[player]
+            for info in playerinfo.split("-"):
+                if "P" in info:
+                    assists += 1
+    return str(assists)
+
 def getNrCards(colour, player, season, type=None):
     cards = 0
     for match in season:
@@ -174,8 +195,10 @@ def getNrCards(colour, player, season, type=None):
     return str(cards)
 
 
-def printMatchInfo(season):
+def printMatchInfo(season, type=None):
     for match in season:
+        if type != None and match["Typ"] != type:
+            continue
         arena = match["Plats"]
         referee = match["Domare"]
         date = match["Datum"]
@@ -214,7 +237,7 @@ Domare: {referee}, Publik: {attendance}
         h = 0
         a = 0
         for time in sorted(goals.keys()):
-            (goaltype, player, comment, home_away) = goals[time]
+            (goaltype, player, comment, home_away, assist) = goals[time]
             if comment == ",str":
                 comment = " (straff)"
             if comment.startswith("+"):
@@ -224,7 +247,11 @@ Domare: {referee}, Publik: {attendance}
                 h += 1
             else:
                 a += 1
-            print(f"{h}-{a} ({time}) {player}{comment}") 
+            if assist == None:
+                assist = ""
+            else:
+                assist = "("+assist+")"
+            print(f"{h}-{a} ({time}) {player}{comment} {assist}") 
 
         print()
         try:
@@ -233,7 +260,7 @@ Domare: {referee}, Publik: {attendance}
             continue
         print(lineup)
             
-        if date == "12/5":
+        if date == stopdate:
             sys.exit()
 
 def getOppGoals(opp_events, home_away):
@@ -252,7 +279,7 @@ def getOppGoals(opp_events, home_away):
                     home_away_this_goal = "A"
                 elif home_away == "A":
                     home_away_this_goal = "H"
-            goals[time] = (goaltype, lastname, comment, home_away_this_goal)
+            goals[time] = (goaltype, lastname, comment, home_away_this_goal, None)
     return goals
             
 def getHifGoals(match, home_away):    
@@ -269,7 +296,32 @@ def getHifGoals(match, home_away):
                 time = int(m.group(2))
                 lastname = player.split(" ")[-1]
                 comment = m.group(3)
-                goals[time] = (goaltype, lastname, comment, home_away)
+                home_away_this_goal = home_away
+                if goaltype == "OG":
+                    comment = " (självmål)"
+                    if home_away == "H":
+                        home_away_this_goal = "A"
+                    elif home_away == "A":
+                        home_away_this_goal = "H"
+                goals[time] = [goaltype, lastname, comment, home_away_this_goal, None]
+
+    #Find assist
+    for player in list(match.keys())[firstplayer:]:
+        #print(player)
+        playerinfo = match[player].split("-")
+        #print(playerinfo)
+        for info in playerinfo:
+            #print(info)
+            m = re.match("P\(([0-9]+)(,?[^,\)]*)\)", info)
+            if m:
+                time = int(m.group(1))
+                lastname = player.split(" ")[-1]
+                comment = m.group(2)
+                goals[time][4] = lastname+comment
+
+
+                
+
     return goals
 
 def getLineup(match):
@@ -320,10 +372,27 @@ def getLineup(match):
 
         
 if __name__ == "__main__":
+    match = False
+    player = False
+    info = False
+    if "-m" in sys.argv:
+        match = True
+        sys.argv.remove("-m")
+    if "-p" in sys.argv:
+        player = True
+        sys.argv.remove("-p")
+    if "-i" in sys.argv:
+        info = True
+        sys.argv.remove("-i")
+        
     csvfile = sys.argv[1]
     season = readCsvFile(csvfile)
-    printMatchStatistics(season)
-    #printPlayerStatistics(season, type="Allsvenskan")
-    #printPlayerStatistics(season)
-    #printMatchInfo(season)
+    if match:
+        printMatchStatistics(season)
+    if player:
+        printPlayerStatistics(season, type="Allsvenskan")
+        #printPlayerStatistics(season)
+    if info:
+        printMatchInfo(season, type="Allsvenskan")
+        #printMatchInfo(season)
     
